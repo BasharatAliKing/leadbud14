@@ -49,15 +49,15 @@ const userDropDown = () => {
                     <a onClick={(e) => e.preventDefault()}>
                     <Space>
                         <div className='user'>
-                        <img src={userIcon} alt="icon" />
-                        <div className="content">
+                        <img src={userIcon} alt="icon" className='rounded-full' />
+                        <div className="content hidden sm:flex">
                             <Typography>
                                 <Paragraph className="name">Travis Bradely</Paragraph>
                                 <Paragraph className="company">Company</Paragraph>
 
                             </Typography>
                         </div>
-                        <MdExpandMore size={20} style={{color: '#030621', fontWeight: '500'}} />
+                        <MdExpandMore className='hidden md:flex' size={20} style={{color: '#030621', fontWeight: '500'}} />
                         </div>
                        
                      

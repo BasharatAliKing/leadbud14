@@ -89,7 +89,7 @@ const DashBoard = () => {
   ];
 
   return (
-    <div className="container dashboard">
+    <div className="container dashboard p-2">
       <Layout>
         <Row gutter={20}>
           <Col
@@ -100,7 +100,7 @@ const DashBoard = () => {
           >
             <div className="welcome">
               <div className="content">
-                <Title>Welcome Back!</Title>
+                <h1 className="font-bold text-[26px] sm:text-[30px] lg:text-[38px] text-[#000000]">Welcome Back!</h1>
                 <Paragraph className="desc">
                   {" "}
                   You have generated <span>1856</span> Leads by
@@ -136,7 +136,9 @@ const DashBoard = () => {
               </div>
             </div>
           </Col>
-          <Col lg={{ span: 8 }}>
+          <Col lg={{ span: 8 }}
+           xs={{ span: 24 }}
+          >
             <div className="pie-item">
               <Card>
                 <PieChart />
@@ -144,7 +146,8 @@ const DashBoard = () => {
             </div>
           </Col>
 
-          <Col lg={{ span: 16 }}>
+          <Col lg={{ span: 16 }}
+          xs={{span:24}}>
             <Card>
               <Tabs defaultActiveKey="tab1">
                 <Tabs.TabPane
@@ -156,7 +159,7 @@ const DashBoard = () => {
                   key="tab1"
                 >
                   <div>
-                    <Title level={3}>My Jobs</Title>
+                    <h1 level={3} className="text-[20px] sm:text-[24px] md:text-[26px] font-semibold">My Jobs</h1>
                   </div>
                 </Tabs.TabPane>
 
@@ -245,9 +248,9 @@ const DashBoard = () => {
               </div>
 
               <div className="head">
-                <Title level={3} className="h3">
+                <h2 level={3}  className="text-[20px] sm:text-[24px] md:text-[26px] font-semibold">
                   Outreach
-                </Title>
+                </h2>
               </div>
 
               <div className="lower">
@@ -272,9 +275,9 @@ const DashBoard = () => {
               </div>
 
               <div className="head">
-                <Title level={3} className="h3">
+                <h1 level={3} className="text-[20px] sm:text-[24px] md:text-[26px] font-semibold">
                   Linkedin-Profile-Scraper-20-Sep-2023
-                </Title>
+                </h1>
               </div>
 
               <div className="lower linkedin">
@@ -297,7 +300,10 @@ const DashBoard = () => {
             </Card>
           </Col>
 
-          <Col lg={{ span: 8 }}>
+          <Col 
+               lg={{ span: 8 }}
+               xs={{ span: 24 }}
+               >
             <Card>
               <div className="tools-top">
                 <Title level={3} className="h3">

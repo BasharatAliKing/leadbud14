@@ -40,7 +40,8 @@ const Prospectus = () => {
   return (
     <Layout>
       <Row gutter={20}>
-        <Col lg={{ span: 6 }}>
+        <Col lg={{ span: 6 }}
+        xs={{span:24}}>
           <ProspectsSidebar />
         </Col>
 
@@ -117,7 +118,7 @@ const Prospectus = () => {
               </div>
 
               <div className="prospects-main-view">
-                <Paragraph className="info">
+                <Paragraph className="info ">
                   You Don't Have Any Scrapers Yet. Here Are Some Ways You Can
                   Fill Your Scraper List:
                 </Paragraph>
@@ -161,7 +162,7 @@ const Prospectus = () => {
 
                         <Paragraph className="search-info-p">
                           Find prospects by name, job title,
-                          <br />
+                         
                           location, skills and more
                         </Paragraph>
 

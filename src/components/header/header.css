@@ -100,3 +100,16 @@ input.ant-input{
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
 }
+
+@media (max-width:768px){
+    .ant-layout-header {
+        height: 82px;
+        padding: 20px;
+       }
+}
+@media (max-width:576px){
+    .ant-layout-header {
+        height: 72px;
+        padding: 10px;
+       }
+}

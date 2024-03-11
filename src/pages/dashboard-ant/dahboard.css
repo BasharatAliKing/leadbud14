@@ -60,7 +60,7 @@
 }
 
 .h3{
-    font-size: 24px;
+    font-size: 20px;
     color: #030621;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
@@ -208,4 +208,49 @@ span.tag.failed{
     margin-top: 13px;
     border-radius: 16px;
     margin-bottom: 7px;
+}
+
+@media (max-width:768px){
+    .ant-layout-sider {
+        flex: 0 0 0px !important;
+        width: 60px !important;
+        min-width: 60px !important;
+        max-width: 60px !important;
+    }
+}
+
+@media (max-width:576px){
+    .ant-layout-sider {
+        flex: 0 0 0px !important;
+        width: 50px !important;
+        min-width: 50px !important;
+        max-width: 50px !important;
+    }
+    .welcome .content {
+        padding: 20px;
+    }
+    .desc{
+        color: #030621;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .lower .bots-info{
+        font-size: 14px;
+    }
+    .lower .right .run-again{
+        background-color: #56F444;
+        height: 36px;
+        width: 108px;
+        font-size: 15px;
+    }
+    .dashboard .top .time{
+       margin-top: 10px;
+    }
+    .lower.linkedin{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 5px;
+    }
 }

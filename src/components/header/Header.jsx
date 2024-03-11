@@ -35,14 +35,12 @@ const Header = ({ Pagetitle }) => {
 
   return (
     <div className="header">
-      <img src={logo} alt="logo" />
-
+      <img src={logo} alt="logo" className="w-[50%] sm:w-auto" />
       <div>
-        <Title level={3} className="page-title">
+        <Title level={3} className="page-title hidden lg:flex">
           {Pagetitle}
         </Title>
       </div>
-
       <div className="box">
         {/* <div className="date">
           <img src={calendarIcon} alt="icon" />
@@ -54,7 +52,7 @@ const Header = ({ Pagetitle }) => {
           </div>
         </div> */}
 
-        <div className="search-bar">
+        <div className="search-bar hidden lg:flex">
           <Input
             className="search"
             placeholder="Search"
@@ -79,11 +77,11 @@ const Header = ({ Pagetitle }) => {
           </Dropdown>
         </div> */}
 
-        <div className="upgrade">
+        <div className="upgrade hidden lg:flex">
           <Button className="btn">Upgrade</Button>
         </div>
 
-        <div className="notification">
+        <div className="notification hidden lg:flex">
           <BellOutlined className="bell" />
         </div>
 

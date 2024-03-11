@@ -101,3 +101,15 @@
     font-size: 20px;
     margin-right: 10px;
 }
+@media(max-width:768px){
+    .custom-dropdown{
+        margin-top: 12px;
+      
+    }
+}
+@media(max-width:576px){
+    .custom-dropdown{
+        margin-top: 7px;
+      
+    }
+}

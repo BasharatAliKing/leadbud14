@@ -1,7 +1,7 @@
 
 
 .prospets-data{
-    margin-right: 85px;
+    margin-right: 0px;
 }
 
 .ant-row{
@@ -10,11 +10,12 @@
 
 .list-info{
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
 }
 
 .list-info .list-name{
-    margin-right: 40px;
+    /* margin-right: 40px; */
     font-size: 20px;
     font-weight: 500;
     color: #030621;
@@ -30,6 +31,7 @@
 }
 .tools-area .btn-tools{
     display: flex;
+    flex-wrap: wrap;
     border: none;
     justify-content: center;
     align-items: center;
@@ -39,10 +41,12 @@
 }
 .tools-area{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 .tools-area .top{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 .tools-area .btn-tools{
@@ -94,12 +98,12 @@
 }
 
 .prospects-main-view{
-    margin-left: 140px;
+    margin-left: 0px;
     margin-top: 30px;
 }
 
 .prospects-main-view .info{
-    text-align: center;
+    text-align: start;
 }
 
 .database-search{
@@ -114,8 +118,8 @@
     font-size: 15px;
     font-weight: 500;
     color: #030621;
-    margin-top: 30px;
-    line-height: 4px;
+    margin-top: 10px;
+    line-height: 20px;
 
 
 }
@@ -128,6 +132,7 @@
 .item-first{
     background: linear-gradient(to bottom, #56F444, #48FA72, #F5F5F5 45%);
     padding: 25px 20px;
+    margin: 15px 0px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -151,7 +156,7 @@
     background-color: #fff;
     border-radius: 10px;
     border: none;
-    height: 50px;
+    height: 40px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -170,7 +175,7 @@
 
 .compaign-area .btn-tools{
     display: flex;
-    width: 220px;
+    width: 190px;
     background-color: #56F444;
     color: #030621;
     font-weight: 500;
@@ -178,7 +183,7 @@
     justify-content: center;
     align-items: center;
     margin: 20px auto 4px auto;
-    font-size: 16px;
+    font-size: 15px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
