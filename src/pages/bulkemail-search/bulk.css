@@ -1,0 +1,50 @@
+
+
+.top-content{
+    color: #7B7B7B;
+}
+
+.upload-area{
+    text-align: center;
+    margin-top: 30px;
+    background-color:#F5F5F5 ;
+    padding: 30px 0px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.btn-upload{
+    width: 200px;
+    height: 60px;
+    background: linear-gradient(to right, #56F444 ,#48FA8A) !important;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 22px;
+}
+
+.btn-upload:hover{
+    color: #030621; 
+}
+
+.file-info{
+    font-size: 16px;
+    font-weight: 500;
+    color: #030621;
+}
+
+.csv{
+    color: #B7B7B7;
+    margin-top: 15px;
+}

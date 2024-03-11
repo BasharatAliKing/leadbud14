@@ -1,0 +1,112 @@
+.ant-my-input{
+    border: none;
+    height: 60px;
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+}
+
+.search-btn{
+    width: 170px;
+    height: 60px;
+    background: linear-gradient(to right, #56F444 ,#48FA8A) !important;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.search-btn:hover{
+    color: #030621 !important;
+}
+
+.my-form{
+    margin-top: 30px;
+}
+
+.mylabel{
+    font-size: 16px;
+    font-weight: 500;
+    color: #030621;
+}
+
+.header .page-title{
+    margin-bottom: 0px !important;
+}
+
+
+.new-search-results{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-to-list .add{
+    display: flex;
+    align-items: center;
+}
+
+.send-email .send{
+    display: flex;
+    align-items: center;
+}
+
+.name-and-search-term .name{
+    margin-bottom: 0px;
+}
+
+.table-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail{
+    display: flex;
+    align-items: center;
+}
+.mail .tippy-mail{
+    border-bottom: 2px solid #fff;
+}
+
+.mail .copy-icon{
+    margin-left: 10px;
+    visibility: hidden;
+}
+
+.mail:hover .copy-icon{
+    visibility: visible;
+    color: #48FA8A;
+}
+.status{
+    display: inline-flex;
+    width: 9px;
+    height: 9px;
+    background-color: #f65353;
+    border: 2px solid #f65353;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 5px;
+}
+
+.copy-message {
+    position: absolute;
+    background: #030621;
+    color: #fff;
+    padding: 12px;
+    bottom: 30px;
+    border-radius: 8px;
+    animation: fadeInFromBottom 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInFromBottom {
+    from {
+      bottom: 40px;
+      opacity: 0;
+    }
+    to {
+      bottom: 30px;
+      opacity: 1;
+    }
+  }

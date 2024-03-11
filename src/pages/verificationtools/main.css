@@ -1,0 +1,31 @@
+
+
+.type-in{
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #030621;
+}
+
+.ant-my-input{
+    border: none;
+    height: 60px;
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+}
+
+.search-btn{
+    width: 170px;
+    height: 60px;
+    background: linear-gradient(to right, #56F444 ,#48FA8A) !important;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.search-btn:hover{
+    color: #030621 !important;
+}

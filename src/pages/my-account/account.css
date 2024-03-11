@@ -1,0 +1,29 @@
+
+.user-top-area{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-top-area .upload-photo{
+    color: #56F444;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.user-top-area .file-info{
+    font-size: 14px;
+    color: #B7B7B7;
+}
+
+.label{
+    color: #7B7B7B;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.form-details .my-input{
+    margin-top: 11px;
+}

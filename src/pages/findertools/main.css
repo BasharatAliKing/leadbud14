@@ -1,0 +1,53 @@
+
+
+
+
+.database .item{
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 17px;
+}
+.database .item.db-search{
+    background-color: rgba(86, 244, 68, 10%);
+}
+.database .item.email-search{
+    background-color: rgba(255, 111, 0, 10%);
+}
+.database .item.domain-search{
+    background-color: rgba(71, 96, 255, 10%);
+}
+.database .item.ext-item{
+    background-color: #F5F5F5;
+}
+.database .item.ext-item.last{
+    margin-top: 60px;
+}
+.database .item .content{
+    display: flex;
+}
+
+.database .item .content img{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.content-top{
+    margin-bottom: 30px;
+}
+
+.head-top{
+    font-size: 20px;
+}
+
+.sub-head{
+    font-size: 18px;
+}
+
+.others{
+    margin-top: 20px;
+}

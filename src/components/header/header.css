@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.ant-layout-header {
+ background: #fff;
+ position: sticky;
+ top: 0;
+ height: 92px;
+ box-shadow: 0px 5px 12px rgba(0, 0, 0, 16%);
+}
+
+.header{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100%;
+    line-height: unset !important;
+    
+}
+
+.date{
+    display: flex;
+    align-items: center;
+}
+
+.date img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.time{
+    margin-top: 12px;
+}
+.title{
+    font-size: 14px;
+    font-weight: 500;
+    color: #030621;
+    margin-bottom: 0px;
+    line-height: 5px;
+}
+.para{
+    color: #7B7B7B;
+    font-size: 12px;
+    line-height: 5px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+}
+.search-bar{
+    margin-left: 27px;
+}
+.search-bar .search{
+    background-color: #F5F5F5;
+    padding: 10px;
+    border: none;
+}
+input.ant-input{
+    background-color: #F5F5F5;
+    
+}
+
+.site-form-item-icon{
+    color: #C1c1c1;
+    font-size: 20px;
+}
+.drop-down{
+    margin-left: 27px;
+}
+
+.upgrade .btn{
+    background-color: #F5F5F5;
+    border: none;
+    height: 42px;
+    margin-left: 27px;
+    color: #56F444;
+
+}
+
+.upgrade .btn:hover{
+    color: #56F444 !important;
+}
+.notification{
+    margin-left: 27px;
+}
+
+.bell{
+    background-color: #F5F5F5;
+    height: 42px;
+    font-size: 25px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    color: #56F444 !important;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}

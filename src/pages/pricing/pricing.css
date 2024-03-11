@@ -1,0 +1,195 @@
+
+
+.pricing-container-1{
+    max-width: 1076px;
+}
+
+
+.pricing-container-2{
+    max-width: 1200px;
+}
+
+
+.content-banner{
+    padding: 60px 0px
+}
+.content-banner .h1{
+  
+    font-size: 46px;
+    margin-bottom: 10px;
+    line-height: 10px;
+    color: #030621;
+}
+.content-banner .h1 span.underlined{
+    text-decoration: underline;
+    position: relative;
+    z-index: 1;
+    margin-right: 20px;
+}
+
+.content-banner .h1 span.underlined::after{
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 105%;
+    background-color: #48FA8A;
+    left: -2.5%;
+    bottom: 2px;
+    z-index: -1;
+}
+.content-banner ul.adventages{
+    margin-top: 10px;
+}
+.content-banner ul.adventages li{
+        margin-bottom: 10px;
+}
+
+
+.pricing-container-2 .p{
+    text-align: center;
+    color: #030621;
+    font-weight: 600;
+}
+
+
+.pricing{
+    display: flex;
+    margin-top: 50px;
+}
+
+.pricing .item{
+
+    width: fit-content;
+    box-sizing: border-box;
+    position: relative;
+    flex-basis: 25%;
+    background-color: #fff;
+    padding: 25px 20px 40px 20px;
+    border: 1px solid #e0e1e5;
+    text-align: left;
+}
+
+.pricing .item .title{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.pricing .item .p{
+    font-size: 13px;
+    text-align: left;
+    font-weight: normal;
+}
+.pricing .item .p span{
+    display: inline-block;
+    margin-bottom: 3px;
+}
+.pricing .item .p span.small{
+
+    background-color: #bffff0;
+    box-shadow: -8px 0 0 #bffff0, 8px 0 0 #bffff0;
+}
+
+.pricing .item .p span.medium{
+    background-color: #ffffc2;
+    box-shadow: -8px 0 0 #ffffc2, 8px 0 0 #ffffc2;
+}
+
+.pricing .item .p span.large{
+    background-color: #d6f8ff;
+    box-shadow: -8px 0 0 #d6f8ff, 8px 0 0 #d6f8ff;
+}
+.pricing .item .p span.xl{
+    background-color: #eddfff;
+    box-shadow: -8px 0 0 #eddfff, 8px 0 0 #eddfff;
+}
+
+.pricing .item .p span.xxl{
+    background-color: #ffe6b5;
+    box-shadow: -8px 0 0 #ffe6b5, 8px 0 0 #ffe6b5;
+}
+
+.pricing .item ul{
+    list-style-type: disc;
+    padding-left: 15px;
+    margin-top: 20px;
+}
+.pricing .item ul li{
+    margin-bottom: 10px;
+}
+
+.pricing .item .price span.amount{
+    font-size: 50px;
+    margin-left: 15px;
+}
+
+.pricing .item .price span.sign {
+    font-size: 18px;
+    position: absolute;
+}
+.pricing .item .price span.limit {
+    color: #666;
+    font-size: 15px;
+    margin-left: 3px;
+}
+
+.pricing .item .price{
+    position: relative;
+}
+
+.pricing .item .btn-buy{
+    width: 100%;
+    margin-top: 40px;
+    font-weight: 700;
+    height: 40px;
+    border: 1px solid #644eee;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.pricing .item .btn-buy:hover{
+    background-color: #48FA8A;
+    color: #fff;
+    color: #030621;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+
+.item .most-popular {
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    content: "Most popular";
+    background-color: #ff627e;
+    color: #fff;
+    border-radius: 16px;
+    padding: 7px 15px;
+    line-height: 1;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.item .old-price {
+    position: relative;
+    color: #666;
+    font-size: 20px;
+}
+.item .old-price::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 2px;
+    background-color: #f65353;
+}

@@ -1,0 +1,71 @@
+
+
+.tools-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.tools-area .left-side{
+    display: flex;
+}
+
+
+.list-tools .user-tools:last-child{
+    border-right: none;
+}
+
+.list-tools .user-tools .green{
+
+        display: inline-flex;
+        width: 9px;
+        height: 9px;
+        background-color: #48FA8A;
+        border: 2px solid #48FA8A;
+        border-radius: 50%;
+        flex-shrink: 0;
+        margin-right: 5px;
+    
+}
+
+.list-tools .user-tools .red{
+
+    display: inline-flex;
+    width: 9px;
+    height: 9px;
+    background-color: #FF0000;
+    border: 2px solid #FF0000;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 5px;
+
+}
+
+
+.list-tools .user-tools .orange{
+
+    display: inline-flex;
+    width: 9px;
+    height: 9px;
+    background-color: #FFA200;
+    border: 2px solid #FFA200;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 5px;
+
+}
+
+
+.list-tools .user-tools .blue{
+
+    display: inline-flex;
+    width: 9px;
+    height: 9px;
+    background-color: #00EDFF;
+    border: 2px solid #00EDFF;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 5px;
+
+}

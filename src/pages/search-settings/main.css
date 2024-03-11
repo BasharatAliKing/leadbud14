@@ -1,0 +1,56 @@
+
+
+.prospectes-data{
+    margin-top: 40px;
+}
+
+.prospectes-data .checkbox-form{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.prospectes-data .checkbox-form .checklist{
+    display: flex;
+    align-items: center;
+}
+
+.prospectes-data .checkbox-form .checklist .round{
+    margin-right: 15px;
+}
+.prospectes-data .checkbox-form .checklist [type='checkbox']:checked, [type='radio']:checked{
+    background-color: #56F444;
+}
+
+.search-options{
+    margin-top: 40px;
+}
+.search-through{
+    margin-top: 40px;
+}
+.search-through .checklist{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.search-through .checkbox-form{
+    margin-top: 20px;
+}
+.search-through .checkbox-form .checklist [type='checkbox']:checked, [type='radio']:checked{
+    background-color: #56F444;
+}
+
+.search-through .btn-search{
+    width: 120px;
+    height: 60px;
+    background: linear-gradient(to right, #56F444 ,#48FA8A) !important;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+

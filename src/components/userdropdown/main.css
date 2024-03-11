@@ -1,0 +1,103 @@
+
+
+
+.user{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.content{
+    margin-top: 12px;
+}
+.user img{
+    width: 50px;
+    height: 50px;
+}
+
+.content .name{
+    font-size: 16px;
+    font-weight: 500;
+    color: #030621;
+    line-height: 4px;
+}
+.content .company{
+    font-size: 13px;
+    color: #7B7B7B;
+    line-height: 5px;
+}
+
+.custom-dropdown{
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    min-width: 300px;
+    right: -35px;
+    position: absolute;
+}
+
+
+
+.custom-dropdown .signed{
+    color: #7B7B7B;
+    font-weight: 300;
+    line-height: 10px;
+}
+.custom-dropdown .email{
+    color: #030621;
+    font-weight: 700;
+    line-height: 10px;
+}
+
+.packages{
+    margin-top: 30px;
+}
+.packages .trial{
+    background-color: #56F444;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 4px 20px;
+    color: #fff;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.packages .month{
+    background-color: #030621;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 4px 20px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-left: 10px;
+}
+.custom-dropdown ul{
+    margin-top: 30px;
+}
+.custom-dropdown ul .li{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+}
+
+.li-icon{
+    font-size: 20px;
+    margin-right: 10px;
+}

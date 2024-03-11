@@ -1,0 +1,53 @@
+
+.top-area {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.top-area .right-area{
+    display: flex;
+    gap: 10px;
+
+}
+
+
+.top-area .my-btn{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #56F444 ,#48FA8A) !important;
+    height: 60px;
+    font-size: 16px;
+    color: #030621;
+    width: 220px;
+    font-weight: 500;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.top-area .my-select{
+    background: #F5F5F5 !important;
+    width: 240px;
+    height: 60px;
+    border: none !important;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.top-area .right-area .my-input{
+    width: 240px;
+}
+
+.top-area .right-area .search{
+    background-color: #F5F5F5;
+    border: none;
+    width: 240px;
+    height: 60px;
+}

@@ -1,0 +1,24 @@
+
+
+.my-btn{
+    background: linear-gradient(to right, #56F444 ,#48FA8A) !important;
+    height: 60px;
+    font-size: 16px;
+    color: #030621;
+    width: 120px;
+    font-weight: 500;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.form-item{
+    display: flex;
+    gap: 20px;
+}
+
+.form-item .my-input{
+    width: 330px;
+}
