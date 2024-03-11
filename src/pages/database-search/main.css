@@ -66,3 +66,19 @@
 .searches-history .right .btn-save{
     color: #030621 !important;
 }
+
+
+@media (max-width:576px){
+    .searches-history .left {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .searches-history .right .btn-save {
+        border: none;
+        background-color: #F5F5F5;
+        height: 40px;
+        width: 100px;
+        color: #030621 !important;
+    }
+}

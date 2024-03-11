@@ -3,6 +3,7 @@
 
 
 .database .item{
+    height: 180px;
     padding: 30px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -28,6 +29,8 @@
 }
 .database .item .content{
     display: flex;
+    flex-direction: row;
+    align-items: stretch;
 }
 
 .database .item .content img{
@@ -50,4 +53,20 @@
 
 .others{
     margin-top: 20px;
+}
+@media (max-width:576px){
+    .database .item .content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        align-items: stretch;
+    }
+    .database .item{
+        height: auto;
+    }
+    .database .item .content img{
+        margin: 0px auto;
+    }
+    
 }

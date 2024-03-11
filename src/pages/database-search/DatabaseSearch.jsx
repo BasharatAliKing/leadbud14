@@ -30,15 +30,15 @@ const handleSeeDetails = () => {
           <SideNav />
         </Sider>
       <div className="flex flex-col gap-10 md:flex-row w-full p-5">
-       <div className="w-full z-20 md:w-[40%]">
+       <div className="w-full md:w-[40%]">
         <DbSearchSidebar/>
         </div>
          <div className="w-full md:w-[60%]">
          <Layout>
           <Content style={{ marginTop: "20px", marginBottom: "20px" }}>
-          <div className="container mx-auto">
+          <div className="container mx-auto text-center sm:text-start">
             <Row>
-              <Col lg={{span: 24}}>
+              <Col xs={{span: 24}}>
                 <Card>
                   <Title level={4}>Saved Searches</Title>
 
@@ -51,7 +51,7 @@ const handleSeeDetails = () => {
               </Col>
 
 
-              <Col lg={{span: 24}}>
+              <Col xs={{span: 24}}>
                 <Card>
 
                   <div className="recent-searches-top">
@@ -61,9 +61,9 @@ const handleSeeDetails = () => {
 
                   {
                     isOpen && (
-                      <div className="searches-history">
+                      <div className="searches-history flex flex-col sm:flex-row">
 
-                      <div className="left">
+                      <div className="left flex flex-col sm:flex-row">
                         <img src={SearchIcon} alt="icon" />
                         <div className="time">
                               <Paragraph className="search-time">13 Oct, 1:54 AM</Paragraph>

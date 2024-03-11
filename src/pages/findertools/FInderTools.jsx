@@ -22,7 +22,8 @@ const FInderTools = () => {
               </div>
 
               <Row gutter={20}>
-                <Col lg={{ span: 8 }}>
+                <Col lg={{ span: 8 }}
+                md={{span:12}}>
                   <Title level={5} className="head-top">
                     Database Search
                   </Title>
@@ -43,7 +44,8 @@ const FInderTools = () => {
                   </div>
                 </Col>
 
-                <Col lg={{ span: 8 }}>
+                <Col lg={{ span: 8 }}
+                md={{span:12}}>
                   <Title level={5} className="head-top">
                     Email Search
                   </Title>
@@ -64,7 +66,8 @@ const FInderTools = () => {
                   </div>
                 </Col>
 
-                <Col lg={{ span: 8 }}>
+                <Col lg={{ span: 8 }}
+                md={{span:12}}>
                   <Title level={5} className="head-top">
                     Domain Search
                   </Title>
@@ -92,7 +95,8 @@ const FInderTools = () => {
               <Title level={5}>Chrome Extensions</Title>
 
               <Row gutter={20}>
-                <Col lg={{ span: 8 }}>
+                <Col lg={{ span: 8 }}
+                md={{span:12}}>
                   <div className="item ext-item">
                     <div className="content">
                       <img src={SearchIcon1} alt="icon" />
@@ -109,7 +113,8 @@ const FInderTools = () => {
                     </div>
                   </div>
                 </Col>
-                <Col lg={{ span: 8 }}>
+                <Col lg={{ span: 8 }}
+                md={{span:12}}>
                   <div className="item ext-item">
                     <div className="content">
                       <img src={SearchIcon1} alt="icon" />
@@ -126,7 +131,9 @@ const FInderTools = () => {
                     </div>
                   </div>
                 </Col>
-                <Col lg={{ span: 8 }}>
+                <Col lg={{ span: 8 }}
+                md={{span:12}}
+                xs={{span:24}}>
                   <div className="item ext-item">
                     <div className="content">
                       <img src={SearchIcon1} alt="icon" />
@@ -142,8 +149,8 @@ const FInderTools = () => {
                     </div>
                   </div>
                 </Col>
-
-                <Col lg={{ span: 8 }}>
+             <div className="flex flex-col md:flex-row w-full">
+             <Col lg={{ span: 8 }}>
                     <Title level={5} className="others">Other Tools</Title>
          
          <div className="item ext-item">
@@ -180,6 +187,7 @@ const FInderTools = () => {
            </div>
          </div>
        </Col>
+             </div>
 
             
               </Row>
