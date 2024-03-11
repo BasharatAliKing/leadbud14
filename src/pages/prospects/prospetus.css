@@ -228,3 +228,29 @@
     align-items: center;
     gap: 20px;
 }
+
+
+@media(max-width:576px){
+    .ext-item .first{
+       
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .arrow{
+        display: none;
+    }
+    .tools-area .btn-tools {
+        height: 40px;
+        width: 140px;
+    }
+    .ant-btn {
+        font-size: 14px;
+        height: 32px;
+        padding: 3px 10px;
+        border-radius: 6px;
+    }
+}

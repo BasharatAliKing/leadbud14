@@ -124,10 +124,10 @@ const Prospectus = () => {
                 </Paragraph>
 
                 <Row gutter={20}>
-                  <Col lg={{ span: 8 }}>
+                  <Col lg={{ span: 8 }}
+                       xs={{span:24}}>
                     <div className="item-first">
                       <img src={logo} alt="logo" className="logo" />
-
                       <div className="database-search">
                         <div>
                           <img src={dbIcon} alt="icon" />
