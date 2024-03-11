@@ -30,7 +30,7 @@ const DbSearchSidebar = () => {
   return (
     <div>
    
-        <div className={`${isOpen? 'bg-[#fff] shadow-xl w-[440px] pt-[30px] pb-[30px] fixed' : 'bg-[#fff] shadow-xl w-[80px] fixed pt-[30px] pb-[30px] h-screen'}`}>
+        <div className={`${isOpen? 'bg-[#fff] shadow-xl  pt-[30px] pb-[30px] fixed' : 'bg-[#fff] shadow-xl w-[80px] fixed pt-[30px] pb-[30px] h-screen'}`}>
         {isOpen ? (
           <div>
             <Tippy content='Hide filters'>
@@ -347,9 +347,9 @@ const DbSearchSidebar = () => {
               </Tab.Panel>
 
               <Tab.Panel>
-                <div className="filter flex justify-between items-center mt-[30px] px-[30px]">
+                <div className=" flex justify-between items-center mt-[30px] px-[30px] w-full">
                   <div>
-                    <p className="text-[18px] font-medium font-poppins">
+                    <p className="filter px-3 flex items-center text-[18px] w-auto font-medium font-poppins">
                       Search Filters
                     </p>
                   </div>

@@ -29,14 +29,13 @@ const handleSeeDetails = () => {
         <Sider>
           <SideNav />
         </Sider>
-        <Sider>
+      <div className="flex flex-col gap-10 md:flex-row w-full p-5">
+       <div className="w-full z-20 md:w-[40%]">
         <DbSearchSidebar/>
-        </Sider>
-     
-       
-        
-        <Layout>
-          <Content style={{ marginTop: "20px", marginBottom: "20px", marginLeft: "340px" }}>
+        </div>
+         <div className="w-full md:w-[60%]">
+         <Layout>
+          <Content style={{ marginTop: "20px", marginBottom: "20px" }}>
           <div className="container mx-auto">
             <Row>
               <Col lg={{span: 24}}>
@@ -90,6 +89,11 @@ const handleSeeDetails = () => {
               
           </Content>
         </Layout>
+         </div>
+      </div>
+       
+        
+       
       </Layout>
     </Layout>
   );
