@@ -29,11 +29,11 @@ const handleSeeDetails = () => {
         <Sider>
           <SideNav />
         </Sider>
-      <div className="flex flex-col gap-10 md:flex-row w-full p-5">
-       <div className="w-full md:w-[40%]">
+      <div className="flex flex-col gap-5 md:gap-10 md:flex-row w-full p-5">
+       <div className="w-full md:w-[50%] lg:w-[40%]">
         <DbSearchSidebar/>
         </div>
-         <div className="w-full md:w-[60%]">
+         <div className="w-full md:w-[50%] lg:w-[60%]">
          <Layout>
           <Content style={{ marginTop: "20px", marginBottom: "20px" }}>
           <div className="container mx-auto text-center sm:text-start">
@@ -54,7 +54,7 @@ const handleSeeDetails = () => {
               <Col xs={{span: 24}}>
                 <Card>
 
-                  <div className="recent-searches-top">
+                  <div className="recent-searches-top flex flex-col sm:flex-row">
                     <Title level={4}>Recent Searches</Title>
                     <Button onClick={handleSeeDetails} className="details-btn">Open Details</Button>
                   </div>

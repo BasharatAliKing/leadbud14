@@ -35,7 +35,7 @@ const DbSearchSidebar = () => {
           <div>
             <Tippy content='Hide filters'>
           <button
-            className="absolute -right-4 bg-green rounded-full"
+            className="absolute hidden -right-4 bg-green rounded-full"
             onClick={toggleSidebar}
           >
             {isOpen ? (
@@ -47,20 +47,20 @@ const DbSearchSidebar = () => {
           </button>
           </Tippy>
           <Tab.Group>
-            <Tab.List className="flex pl-[30px] pr-[30px]">
+            <Tab.List className="flex px-[30px]">
               <Tab>
                 {({ selected }) => (
                   <button
                     className={
                       selected
-                        ? "flex items-center bg-dark-blue px-[30px] py-[15px]  text-sm text-[#fff] font-semibold border-none rounded-l-xl outline-0"
-                        : "flex items-center bg-gray-light px-[30px] py-[15px] text-sm text-dark-blue font-semibold border-none rounded-l-xl outline-0"
+                        ? "flex items-center bg-dark-blue px-[10px] xl:px-[30px] py-[15px] text-[16px] xl:text-sm text-[#fff] font-semibold border-none rounded-l-xl outline-0"
+                        : "flex items-center bg-gray-light px-[10px] xl:px-[30px] py-[15px] text-[16px] xl:text-sm text-dark-blue font-semibold border-none rounded-l-xl outline-0"
                     }
                   >
                     <img
                       src={scrappericon}
                       alt="icon"
-                      className={selected ? "mr-3" : "mr-3 brightness-0"}
+                      className={selected ? " pr-1 xl:mr-3" : "pr-1 xL:mr-3 brightness-0"}
                     />{" "}
                     Scrapers
                   </button>
@@ -71,14 +71,14 @@ const DbSearchSidebar = () => {
                   <button
                     className={
                       selected
-                        ? "flex items-center bg-dark-blue px-[30px] py-[15px] text-sm text-[#fff] font-semibold border-none rounded-r-xl outline-0"
-                        : "flex items-center bg-gray-light px-[30px] py-[15px] text-sm text-dark-blue font-semibold border-none rounded-r-xl outline-0"
+                        ? "flex items-center bg-dark-blue px-[10px] xl:px-[30px] py-[15px] text-[16px] xl:text-sm text-[#fff] font-semibold border-none rounded-r-xl outline-0"
+                        : "flex items-center bg-gray-light px-[10px] xl:px-[30px] py-[15px] text-[16px] xl:text-sm text-dark-blue font-semibold border-none rounded-r-xl outline-0"
                     }
                   >
                     <img
                       src={companyIcon}
                       alt="icon"
-                      className={selected ? "mr-3 invert" : "mr-3"}
+                      className={selected ? "pr-1 xl:mr-3 invert" : "pr-1 xl:mr-3"}
                     />{" "}
                     Companies
                   </button>
@@ -88,11 +88,12 @@ const DbSearchSidebar = () => {
             <Tab.Panels>
               <Tab.Panel>
                 <div>
-                  <div className="filter-search flex justify-between items-center mt-[30px] pl-[30px] pr-[30px]">
+                  <div className=" flex justify-between items-center mt-[30px] pl-[30px] pr-[30px]">
                     <div>
-                      <p className="text-[18px] font-medium font-poppins">
-                        Search Filters
-                      </p>
+          
+                    <p className="filter px-3 flex items-center h-[40px] text-[16px] md:text-[18px] w-auto font-medium font-poppins">
+                      Search Filters
+                    </p>
                     </div>
 
                     <div>
@@ -336,10 +337,10 @@ const DbSearchSidebar = () => {
                   </div>
 
                   <div className="button-area pl-[30px] mb-2 flex gap-4">
-                    <button className="bg-green w-[125px] py-[15px] rounded-xl text-[18px] text-dark-blue">
+                    <button className="bg-green w-auto py-2 px-3 md:w-[125px] md:py-[15px] rounded-xl text-[16px] md:text-[18px] text-dark-blue">
                       Search
                     </button>
-                    <button className="text-[18px] text-mygray">
+                    <button className="text-[16px] md:text-[18px] text-mygray">
                       Clear Filter
                     </button>
                   </div>
@@ -349,7 +350,7 @@ const DbSearchSidebar = () => {
               <Tab.Panel>
                 <div className=" flex justify-between items-center mt-[30px] px-[30px] w-full">
                   <div>
-                    <p className="filter px-3 flex items-center text-[18px] w-auto font-medium font-poppins">
+                    <p className="filter px-3 flex items-center h-[40px] text-[16px] md:text-[18px] w-auto font-medium font-poppins">
                       Search Filters
                     </p>
                   </div>
@@ -467,10 +468,10 @@ const DbSearchSidebar = () => {
                 </div>
 
                 <div className="button-area pl-[30px] mb-2 flex gap-4">
-                  <button className="bg-green w-[125px] py-[15px] rounded-xl text-[18px] text-dark-blue">
+                  <button className="bg-green w-auto px-5 text-[16px] py-2 md:w-[125px] md:py-[15px] rounded-xl text-[18px] text-dark-blue">
                     Search
                   </button>
-                  <button className="text-[18px] text-mygray">
+                  <button className="text-[16px] md:text-[18px] text-mygray">
                     Clear Filter
                   </button>
                 </div>

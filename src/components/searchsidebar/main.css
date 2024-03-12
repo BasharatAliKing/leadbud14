@@ -19,7 +19,7 @@
     padding-bottom: 30px;
     margin-left: -12px;
     height: 100vh;
-    position: fixed;
+    /* position: fixed; */
     z-index: 10;
     box-shadow: 0px 5px 12px rgba(0, 0, 0, 16%);
 }
