@@ -48,3 +48,28 @@
     color: #B7B7B7;
     margin-top: 15px;
 }
+
+@media (max-width:992px){
+    .btn-upload{
+        width: auto;
+        padding: 10px 20px;
+        height: 50px;
+        font-size: 17px;
+    }
+}
+@media (max-width:768px){
+    .btn-upload{
+        width: auto;
+        padding: 10px 20px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+@media (max-width:576px){
+    .btn-upload{
+        width: auto;
+        padding: 10px 20px;
+        height: 40px;
+        font-size: 16px;
+    }
+}

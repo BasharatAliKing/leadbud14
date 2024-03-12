@@ -21,7 +21,8 @@
     font-size: 16px;
     font-weight: 500;
     color: #030621;
-    line-height: 4px;
+    line-height: 15px;
+    margin-bottom: 8px;
 }
 .content .company{
     font-size: 13px;

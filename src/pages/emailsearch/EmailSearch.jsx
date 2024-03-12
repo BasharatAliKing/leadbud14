@@ -232,8 +232,8 @@ const rowSelection = {
                   )}
                 </div>
 
-                <div className="time-date w-52 flex">
-                  <span>14 Nov 2023, 9:06 PM</span>
+                <div className="time-date w-48">
+                  <span className="w-48 flex flex-row">14 Nov 2023, 9:06 PM</span>
                 </div>
 
                 <div className="add-to-list">

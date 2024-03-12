@@ -42,7 +42,7 @@ const BulkEmailSearch = () => {
         </Sider>
         <Layout>
           <Content style={{ marginTop: "20px", marginBottom: "20px" }}>
-            <div className="container">
+            <div className="container p-2 md:p-5">
               <Row>
                 <Col lg={{ span: 24 }}>
                   <Card>

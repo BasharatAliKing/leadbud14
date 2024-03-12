@@ -105,7 +105,7 @@ const DomainSearch = () => {
         </Sider>
         <Layout>
           <Content style={{ marginTop: "20px", marginBottom: "20px" }}>
-            <div className="container">
+            <div className="container p-2 md:p-5">
               <Layout>
                 <Row>
                   <Col lg={{ span: 24 }}>
@@ -148,49 +148,55 @@ const DomainSearch = () => {
                       {isOpen && (
                         <div className="search-data">
                           <Row gutter={50}>
-                            <Col lg={{ span: 10 }}>
+                            <Col lg={{ span: 10 }}
+                               xs={{span:24}}>
                               <div className="item-bg">
                                 <span className="name">City:</span>
-                                <span className="data">New York</span>
+                                <span className="data ml-auto">New York</span>
                               </div>
                             </Col>
 
-                            <Col lg={{ span: 10 }}>
+                            <Col lg={{ span: 10 }}
+                               xs={{span:24}}>
                               <div className="item-bg">
                                 <span>Industry:</span>
-                                <span>Software Company</span>
+                                <span className="ml-auto">Software Company</span>
                               </div>
                             </Col>
                           </Row>
 
                           <Row gutter={50}>
-                            <Col lg={{ span: 10 }}>
+                            <Col lg={{ span: 10 }}
+                               xs={{span:24}}>
                               <div className="item">
                                 <span>Founded:</span>
-                                <span>2018</span>
+                                <span className="ml-auto">2018</span>
                               </div>
                             </Col>
 
-                            <Col lg={{ span: 10 }}>
+                            <Col lg={{ span: 10 }}
+                               xs={{span:24}}>
                               <div className="item">
                                 <span>Size:</span>
-                                <span>51 - 200</span>
+                                <span className="ml-auto">51 - 200</span>
                               </div>
                             </Col>
                           </Row>
 
                           <Row gutter={50}>
-                            <Col lg={{ span: 10 }}>
+                            <Col lg={{ span: 10 }}
+                               xs={{span:24}}>
                               <div className="item-bg">
                                 <span className="name">Web Site:</span>
-                                <span className="data">leadbud.io</span>
+                                <span className="data ml-auto">leadbud.io</span>
                               </div>
                             </Col>
 
-                            <Col lg={{ span: 10 }}>
+                            <Col lg={{ span: 10 }}
+                               xs={{span:24}}>
                               <div className="item-bg">
                                 <span>Social:</span>
-                                <ul className="social">
+                                <ul className="social ml-auto">
                                   <li>
                                     <FaLinkedinIn size={20} />
                                   </li>
@@ -206,15 +212,16 @@ const DomainSearch = () => {
                           </Row>
 
                           <Row gutter={50}>
-                            <Col lg={{ span: 10 }}>
+                            <Col lg={{ span: 10 }}
+                               xs={{span:24}}>
                               <div className="item">
                                 <span>HQ Number</span>
-                                <span>+17123456789</span>
+                                <span className="ml-auto">+17123456789</span>
                               </div>
 
                               <div className="item-bg">
                                 <span className="name">List</span>
-                                <Button className="add-list">
+                                <Button className="add-list ml-auto">
                                   <PlusCircleOutlined /> Add to List
                                 </Button>
                               </div>
@@ -226,7 +233,7 @@ const DomainSearch = () => {
                   </Col>
 
                   <Col lg={{ span: 24 }}>
-                    <Card>
+                    <Card className="">
                       <div className="last-card">
                         <Tabs>
                           <Tabs.TabPane
@@ -235,9 +242,9 @@ const DomainSearch = () => {
                             style={{ outline: "none" }}
                           >
                             <div>
-                              <div className="tab-search">
+                              <div className="tab-search ">
                                 <Form>
-                                  <Form.Item className="input-item-search">
+                                  <Form.Item className="input-item-search flex flex-col sm:flex-row">
                                     <Input
                                       placeholder="Search by position"
                                       className="my-input-search"
@@ -263,7 +270,7 @@ const DomainSearch = () => {
                               <div>
                                 <Divider />
 
-                                <Table
+                                <Table className="overflow-x-scroll"
                                   rowSelection={{
                                     type: selectionType,
                                     ...rowSelection,

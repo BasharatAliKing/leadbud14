@@ -134,11 +134,11 @@ const IndividualVerificatinTool = () => {
     }),
   };
   return (
-    <div className="container">
+    <div className="container p-2 md:p-5">
       <Layout>
         <Row>
           <Col lg={{ span: 24 }}>
-            <Card>
+            <Card className="py-5">
               <Paragraph>
                 Verify single tools using our multilayer verification process
                 that includes syntax check, MX record check, and SMTP
@@ -155,12 +155,12 @@ const IndividualVerificatinTool = () => {
                 </Form.Item>
               </Form>
 
-              <Button className="search-btn">Search</Button>
+              <Button className="search-btn text-[16px] sm:text-[18px] md:text-[20px] h-auto mt-0 md:h-[50px] w-auto">Search</Button>
             </Card>
           </Col>
 
           <Col lg={{ span: 24 }}>
-            <Card>
+            <Card className="overflow-x-scroll">
               <div className="new-search-results">
                 <div className="name-and-search-term">
                   <Paragraph className="name">John Doe</Paragraph>
@@ -200,8 +200,8 @@ const IndividualVerificatinTool = () => {
                   )}
                 </div>
 
-                <div className="time-date">
-                  <span>14 Nov 2023, 9:06 PM</span>
+                <div className="time-date w-48">
+                  <span className="w-48 flex flex-row">14 Nov 2023, 9:06 PM</span>
                 </div>
 
                 <div className="add-to-list">
@@ -224,7 +224,7 @@ const IndividualVerificatinTool = () => {
             <span>You have 1 previously verified emails.</span>
 
             <Card>
-              <Table
+              <Table className="overflow-x-scroll"
                 rowSelection={{
                   type: selectionType,
                   ...rowSelection,
