@@ -47,7 +47,7 @@ const DbSearchSidebar = () => {
           </button>
           </Tippy>
           <Tab.Group>
-            <Tab.List className="flex px-[30px]">
+            <Tab.List className="flex px-[10px] sm:px-[30px]">
               <Tab>
                 {({ selected }) => (
                   <button
@@ -88,7 +88,7 @@ const DbSearchSidebar = () => {
             <Tab.Panels>
               <Tab.Panel>
                 <div>
-                  <div className=" flex justify-between items-center mt-[30px] pl-[30px] pr-[30px]">
+                  <div className=" flex justify-between items-center mt-[30px] px-[10px] sm:px-[30px]">
                     <div>
           
                     <p className="filter px-3 flex items-center h-[40px] text-[16px] md:text-[18px] w-auto font-medium font-poppins">
@@ -104,7 +104,7 @@ const DbSearchSidebar = () => {
                   </div>
 
                   <div className="filters h-[610px] overflow-y-scroll overflow-x-hidden mb-[20px]">
-                    <div className="pl-[30px] pr-[30px]">
+                    <div className="px-[10px] sm:px-[30px]">
                       <div className="flex items-center mt-5">
                         <img src={peopleIcon} alt="icon" className="mr-2" />
                         <span className="text-[#B7B7B7] text-xs">People</span>
@@ -336,7 +336,7 @@ const DbSearchSidebar = () => {
                     </div>
                   </div>
 
-                  <div className="button-area pl-[30px] mb-2 flex gap-4">
+                  <div className="button-area px-[10px]  dm:px-[30px] mb-2 flex gap-4">
                     <button className="bg-green w-auto py-2 px-3 lg:w-[125px] lg:py-[15px] rounded-xl text-[16px] md:text-[18px] text-dark-blue">
                       Search
                     </button>
@@ -348,7 +348,7 @@ const DbSearchSidebar = () => {
               </Tab.Panel>
 
               <Tab.Panel>
-                <div className=" flex justify-between items-center mt-[30px] px-[30px] w-full">
+                <div className=" flex justify-between items-center mt-[30px] px-[10px] sm:px-[30px] w-full">
                   <div>
                     <p className="filter px-3 flex items-center h-[40px] text-[16px] md:text-[18px] w-auto font-medium font-poppins">
                       Search Filters
@@ -360,7 +360,7 @@ const DbSearchSidebar = () => {
                   </div>
                 </div>
 
-                <div className="filter-area mt-6 px-[30px] h-[600px]">
+                <div className="filter-area mt-6 px-[10px] sm:px-[30px] h-[600px]">
                   <div className=" bg-gray-light pt-[18px] rounded-t-xl">
                     <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
                       <img
@@ -467,7 +467,7 @@ const DbSearchSidebar = () => {
                   </div>
                 </div>
 
-                <div className="button-area pl-[30px] mb-2 flex gap-4">
+                <div className="button-area px-[10px] sm:px-[30px] mb-2 flex gap-4">
                   <button className="bg-green w-auto px-5 text-[16px] py-2 lg:w-[125px] lg:py-[15px] rounded-xl md:text-[18px] text-dark-blue">
                     Search
                   </button>
