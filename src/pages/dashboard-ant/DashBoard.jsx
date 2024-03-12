@@ -89,8 +89,8 @@ const DashBoard = () => {
   ];
 
   return (
-    <div className="container dashboard p-2">
-      <Layout>
+    <div className="container dashboard pr-0 md:pl-[18px] p-2 md:p-5">
+      <div>
         <Row gutter={20}>
           <Col
             xxl={{ span: 16 }}
@@ -302,6 +302,7 @@ const DashBoard = () => {
 
           <Col 
                lg={{ span: 8 }}
+               md={{span:8}}
                xs={{ span: 24 }}
                >
             <Card>
@@ -337,7 +338,7 @@ const DashBoard = () => {
             </Card>
           </Col>
         </Row>
-      </Layout>
+      </div>
     </div>
   );
 };

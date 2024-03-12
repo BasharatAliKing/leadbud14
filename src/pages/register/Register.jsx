@@ -309,9 +309,6 @@ const Register = () => {
                       </span>
                     )}
                   </div>
-
-          
-
                   <span className="text-mygray text-[16px] md:text-[18px]">
                     Send me Lead updates via email
                   </span>

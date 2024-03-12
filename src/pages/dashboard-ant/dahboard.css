@@ -243,7 +243,7 @@ span.tag.failed{
         width: 108px;
         font-size: 15px;
     }
-    .dashboard .top .time{
+    .dashboard .top {
        margin-top: 10px;
     }
     .lower.linkedin{

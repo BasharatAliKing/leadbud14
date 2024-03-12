@@ -107,8 +107,8 @@ const DomainSearch = () => {
           <Content style={{ marginTop: "20px", marginBottom: "20px" }}>
             <div className="container p-2 md:p-5">
               <Layout>
-                <Row>
-                  <Col lg={{ span: 24 }}>
+                <div>
+                  <div>
                     <Card>
                       <Paragraph className="domain-search-info">
                         Domain Search will find all email addresses attached to
@@ -133,9 +133,8 @@ const DomainSearch = () => {
                         </Form.Item>
                       </Form>
                     </Card>
-                  </Col>
-
-                  <Col lg={{ span: 24 }}>
+                  </div>
+                  <div>
                     <Card>
                       <div className="card-top">
                         <img src={Logo} alt="logo" />
@@ -230,9 +229,9 @@ const DomainSearch = () => {
                         </div>
                       )}
                     </Card>
-                  </Col>
+                  </div>
 
-                  <Col lg={{ span: 24 }}>
+                  <div>
                     <Card className="">
                       <div className="last-card">
                         <Tabs>
@@ -416,8 +415,8 @@ const DomainSearch = () => {
                         </Tabs>
                       </div>
                     </Card>
-                  </Col>
-                </Row>
+                  </div>
+                </div>
               </Layout>
             </div>
           </Content>

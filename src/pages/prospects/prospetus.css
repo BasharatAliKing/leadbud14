@@ -231,6 +231,9 @@
 
 
 @media(max-width:576px){
+    .ant-col{
+        padding-right: 15px;
+    }
     .ext-item .first{
        
         display: flex;

@@ -39,13 +39,12 @@ const Prospectus = () => {
 
   return (
     <Layout>
-      <Row gutter={20}>
-        <Col lg={{ span: 6 }}
-        xs={{span:24}}>
+      <div gutter={20} className="p-2 md:p-5 flex flex-col md:flex-row gap-5 lg:gap-10">
+        <div className="md:w-[40%] mt-3  ">
           <ProspectsSidebar />
-        </Col>
+        </div>
 
-        <Col lg={{ span: 18 }}>
+        <div className="md:w-[60%] ">
           <div className="prospets-data">
             <Card>
               <div className="list-info">
@@ -123,9 +122,8 @@ const Prospectus = () => {
                   Fill Your Scraper List:
                 </Paragraph>
 
-                <Row gutter={20}>
-                  <Col lg={{ span: 8 }}
-                       xs={{span:24}}>
+                <div gutter={20}>
+                  <div>
                     <div className="item-first">
                       <img src={logo} alt="logo" className="logo" />
                       <div className="database-search">
@@ -172,9 +170,9 @@ const Prospectus = () => {
                         </Button>
                       </div>
                     </div>
-                  </Col>
+                  </div>
 
-                  <Col lg={{ span: 14 }}>
+                  <div>
                     <div className="ext-item">
                       <div className="first">
                         <img src={emailExt} alt="ext" />
@@ -243,13 +241,13 @@ const Prospectus = () => {
                         <img src={arrowIcon} alt="arrow" />
                       </div>
                     </div>
-                  </Col>
-                </Row>
+                  </div>
+                </div>
               </div>
             </Card>
           </div>
-        </Col>
-      </Row>
+        </div>
+      </div>
     </Layout>
   );
 };

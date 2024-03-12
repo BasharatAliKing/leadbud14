@@ -137,10 +137,10 @@ const rowSelection = {
 
 
   return (
-    <div className="container p-1 md:p-3">
+    <div className="container p-2 md:p-5">
       <Layout>
-        <Row>
-          <Col xs={{ span: 24 }}>
+        <div>
+          <div>
             <Card>
               <Typography>
                 Find emails from your lead's name and company{" "}
@@ -178,9 +178,9 @@ const rowSelection = {
                 <Button className="search-btn h-[40px] text-[16px] md:text-[18px] w-auto px-5 md:px-8">Find Email</Button>
               </Form>
             </Card>
-          </Col>
+          </div>
 
-          <Col lg={{ span: 24 }}>
+          <div>
             <Card className="overflow-x-scroll">
               <div className="new-search-results">
                 <div className="name-and-search-term">
@@ -249,9 +249,9 @@ const rowSelection = {
                 </div>
               </div>
             </Card>
-          </Col>
+          </div>
 
-          <Col lg={{ span: 24 }} style={{ marginTop: "20px" }}>
+          <div style={{ marginTop: "20px" }}>
             <Title level={4}>Completed email searches</Title>
             <span>You've completed 3 email searches</span>
 
@@ -266,8 +266,8 @@ const rowSelection = {
                 pagination={false}
               />
             </Card>
-          </Col>
-        </Row>
+          </div>
+        </div>
       </Layout>
     </div>
   );

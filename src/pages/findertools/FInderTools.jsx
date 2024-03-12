@@ -11,22 +11,21 @@ const FInderTools = () => {
   return (
     <div className="container database">
       <Layout>
-        <Row gutter={20}>
-          <Col lg={{ span: 24 }}>
+        <div className="p-2">
+          <div >
             <Card>
-              <div className="content-top">
-                <Paragraph>
+              <div className="content-top pt-3">
+                <p>
                   Get accurate, ready-to-use prospect data from almost any
                   online source.
-                </Paragraph>
+                </p>
               </div>
 
-              <Row gutter={20}>
-                <Col lg={{ span: 8 }}
-                md={{span:12}}>
-                  <Title level={5} className="head-top">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div>
+                  <h1 className="font-semibold text-[20px] sm:text-[22px] md:[26px] py-1">
                     Database Search
-                  </Title>
+                  </h1>
                   <div className="item db-search">
                     <div className="content">
                       <img src={SearchIcon1} alt="icon" />
@@ -42,13 +41,11 @@ const FInderTools = () => {
                       </div>
                     </div>
                   </div>
-                </Col>
-
-                <Col lg={{ span: 8 }}
-                md={{span:12}}>
-                  <Title level={5} className="head-top">
+                </div>
+                <div >
+                    <h1 className="font-semibold text-[20px] sm:text-[22px] md:[26px] pt-3">
                     Email Search
-                  </Title>
+                  </h1>
                   <div className="item email-search">
                     <div className="content">
                       <img src={SearchIcon2} alt="icon" />
@@ -64,13 +61,11 @@ const FInderTools = () => {
                       </div>
                     </div>
                   </div>
-                </Col>
-
-                <Col lg={{ span: 8 }}
-                md={{span:12}}>
-                  <Title level={5} className="head-top">
+                </div>
+                <div >
+                    <h1 className="font-semibold text-[20px] sm:text-[22px] md:[26px] pt-3">
                     Domain Search
-                  </Title>
+                  </h1>
                   <div className="item domain-search">
                     <div className="content">
                       <img src={SearchIcon3} alt="icon" />
@@ -85,18 +80,18 @@ const FInderTools = () => {
                       </div>
                     </div>
                   </div>
-                </Col>
-              </Row>
+                </div>
+              </div>
             </Card>
-          </Col>
+          </div>
 
-          <Col lg={{ span: 24 }}>
+          <div lg={{ span: 24 }}>
             <Card>
-              <Title level={5}>Chrome Extensions</Title>
+            <h1 className="font-semibold text-[20px] sm:text-[22px] md:[26px] pt-3">
+                Chrome Extensions</h1>
 
-              <Row gutter={20}>
-                <Col lg={{ span: 8 }}
-                md={{span:12}}>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+               
                   <div className="item ext-item">
                     <div className="content">
                       <img src={SearchIcon1} alt="icon" />
@@ -112,9 +107,7 @@ const FInderTools = () => {
                       </div>
                     </div>
                   </div>
-                </Col>
-                <Col lg={{ span: 8 }}
-                md={{span:12}}>
+              
                   <div className="item ext-item">
                     <div className="content">
                       <img src={SearchIcon1} alt="icon" />
@@ -130,10 +123,8 @@ const FInderTools = () => {
                       </div>
                     </div>
                   </div>
-                </Col>
-                <Col lg={{ span: 8 }}
-                md={{span:12}}
-                xs={{span:24}}>
+               
+               
                   <div className="item ext-item">
                     <div className="content">
                       <img src={SearchIcon1} alt="icon" />
@@ -148,11 +139,14 @@ const FInderTools = () => {
                       </div>
                     </div>
                   </div>
-                </Col>
+                  </div>
+               
              <div className="flex flex-col md:flex-row w-full">
-             <Col lg={{ span: 8 }}>
-                    <Title level={5} className="others">Other Tools</Title>
+             <div >
+                    <h1 className="font-semibold text-[20px] sm:text-[22px] md:[26px] pt-3">
+                    Other Tools</h1>
          
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
          <div className="item ext-item">
            <div className="content">
              <img src={SearchIcon1} alt="icon" />
@@ -168,10 +162,7 @@ const FInderTools = () => {
              </div>
            </div>
          </div>
-       </Col>
-
-       <Col lg={{ span: 8 }}>
-         <div className="item ext-item last">
+         <div className="item ext-item ">
            <div className="content">
              <img src={SearchIcon1} alt="icon" />
 
@@ -186,18 +177,23 @@ const FInderTools = () => {
              </div>
            </div>
          </div>
-       </Col>
+
+         </div>
+       </div>
+
+      
+      
              </div>
 
             
-              </Row>
+             
 
  
               
     
             </Card>
-          </Col>
-        </Row>
+          </div>
+        </div>
       </Layout>
     </div>
   );

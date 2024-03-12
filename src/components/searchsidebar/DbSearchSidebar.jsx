@@ -336,7 +336,7 @@ const DbSearchSidebar = () => {
                     </div>
                   </div>
 
-                  <div className="button-area px-[10px]  dm:px-[30px] mb-2 flex gap-4">
+                  <div className="button-area px-[10px]  md:px-[30px] mb-2 flex gap-4">
                     <button className="bg-green w-auto py-2 px-3 lg:w-[125px] lg:py-[15px] rounded-xl text-[16px] md:text-[18px] text-dark-blue">
                       Search
                     </button>

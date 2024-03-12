@@ -136,8 +136,8 @@ const IndividualVerificatinTool = () => {
   return (
     <div className="container p-2 md:p-5">
       <Layout>
-        <Row>
-          <Col lg={{ span: 24 }}>
+        <div>
+          <div>
             <Card className="py-5">
               <Paragraph>
                 Verify single tools using our multilayer verification process
@@ -157,9 +157,8 @@ const IndividualVerificatinTool = () => {
 
               <Button className="search-btn text-[16px] sm:text-[18px] md:text-[20px] h-auto mt-0 md:h-[50px] w-auto">Search</Button>
             </Card>
-          </Col>
-
-          <Col lg={{ span: 24 }}>
+          </div>
+          <div>
             <Card className="overflow-x-scroll">
               <div className="new-search-results">
                 <div className="name-and-search-term">
@@ -217,9 +216,9 @@ const IndividualVerificatinTool = () => {
                 </div>
               </div>
             </Card>
-          </Col>
+          </div>
 
-          <Col lg={{ span: 24 }} style={{ marginTop: "20px" }}>
+          <div style={{ marginTop: "20px" }}>
             <Title level={4}>Previous email searches</Title>
             <span>You have 1 previously verified emails.</span>
 
@@ -234,8 +233,8 @@ const IndividualVerificatinTool = () => {
                 pagination={false}
               />
             </Card>
-          </Col>
-        </Row>
+          </div>
+        </div>
       </Layout>
     </div>
   );

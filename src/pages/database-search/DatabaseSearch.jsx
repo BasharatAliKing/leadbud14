@@ -29,7 +29,7 @@ const handleSeeDetails = () => {
         <Sider>
           <SideNav />
         </Sider>
-      <div className="flex flex-col gap-5 md:gap-10 md:flex-row w-full p-5">
+      <div className="flex flex-col gap-2 sm:gap-5 md:gap-10 md:flex-row w-full p-2 md:p-5">
        <div className="w-full md:w-[50%] lg:w-[40%]">
         <DbSearchSidebar/>
         </div>
@@ -37,22 +37,20 @@ const handleSeeDetails = () => {
          <Layout>
           <Content style={{ marginTop: "20px", marginBottom: "20px" }}>
           <div className="container mx-auto text-center sm:text-start">
-            <Row>
-              <Col xs={{span: 24}}>
-                <Card>
+            <div>
+              <div>
+                <Card className="p-5">
                   <Title level={4}>Saved Searches</Title>
 
                     <div className="saved-searches">
                     <img src={SavefilterIcon} alt="icon" />
-                    <Paragraph>Select filters and save them to create a new saved search</Paragraph>
+                    <p>Select filters and save them to create a new saved search</p>
                     </div>
 
                 </Card>
-              </Col>
-
-
-              <Col xs={{span: 24}}>
-                <Card>
+              </div>
+              <div>
+                <Card className="p-5">
 
                   <div className="recent-searches-top flex flex-col sm:flex-row">
                     <Title level={4}>Recent Searches</Title>
@@ -82,8 +80,8 @@ const handleSeeDetails = () => {
           
 
                 </Card>
-              </Col>
-            </Row>
+              </div>
+            </div>
           </div>
         
               

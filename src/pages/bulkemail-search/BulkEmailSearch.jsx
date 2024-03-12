@@ -43,8 +43,8 @@ const BulkEmailSearch = () => {
         <Layout>
           <Content style={{ marginTop: "20px", marginBottom: "20px" }}>
             <div className="container p-2 md:p-5">
-              <Row>
-                <Col lg={{ span: 24 }}>
+              <div>
+                <div>
                   <Card>
                     <Paragraph className="top-content">
                       Collect emails in bulk from a list of lead names and
@@ -66,8 +66,8 @@ const BulkEmailSearch = () => {
 up to 50,000 lines per search.</Paragraph>
                     </div>
                   </Card>
-                </Col>
-              </Row>
+                </div>
+              </div>
             </div>
           </Content>
         </Layout>
