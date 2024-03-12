@@ -40,11 +40,11 @@ const Prospectus = () => {
   return (
     <Layout>
       <div gutter={20} className="p-2 md:p-5 flex flex-col md:flex-row gap-5 lg:gap-10">
-        <div className="md:w-[40%] mt-3  ">
+        <div className="md:w-[40%] lg:w-[25%] mt-3  ">
           <ProspectsSidebar />
         </div>
 
-        <div className="md:w-[60%] ">
+        <div className=" md:w-[60%] lg:w-[75%] ">
           <div className="prospets-data">
             <Card>
               <div className="list-info">
@@ -122,9 +122,9 @@ const Prospectus = () => {
                   Fill Your Scraper List:
                 </Paragraph>
 
-                <div gutter={20}>
-                  <div>
-                    <div className="item-first">
+                <div className="flex flex-col lg:flex-row gap-5">
+                
+                    <div className="item-first mb-auto mt-0">
                       <img src={logo} alt="logo" className="logo" />
                       <div className="database-search">
                         <div>
@@ -170,7 +170,7 @@ const Prospectus = () => {
                         </Button>
                       </div>
                     </div>
-                  </div>
+                
 
                   <div>
                     <div className="ext-item">
