@@ -137,17 +137,17 @@ const rowSelection = {
 
 
   return (
-    <div className="container">
+    <div className="container p-1 md:p-3">
       <Layout>
         <Row>
-          <Col lg={{ span: 24 }}>
+          <Col xs={{ span: 24 }}>
             <Card>
               <Typography>
                 Find emails from your lead's name and company{" "}
               </Typography>
 
               <Form className="my-form">
-                <Row gutter={20}>
+                <Row gutter={24}>
                   <Col lg={{ span: 8 }}>
                     <Paragraph className="mylabel">First Name</Paragraph>
                     <Form.Item>
@@ -175,13 +175,13 @@ const rowSelection = {
                   </Col>
                 </Row>
 
-                <Button className="search-btn">Find Email</Button>
+                <Button className="search-btn h-[40px] text-[16px] md:text-[18px] w-auto px-5 md:px-8">Find Email</Button>
               </Form>
             </Card>
           </Col>
 
           <Col lg={{ span: 24 }}>
-            <Card>
+            <Card className="overflow-x-scroll">
               <div className="new-search-results">
                 <div className="name-and-search-term">
                   <Paragraph className="name">John Doe</Paragraph>
@@ -232,7 +232,7 @@ const rowSelection = {
                   )}
                 </div>
 
-                <div className="time-date">
+                <div className="time-date w-52 flex">
                   <span>14 Nov 2023, 9:06 PM</span>
                 </div>
 
@@ -255,7 +255,7 @@ const rowSelection = {
             <Title level={4}>Completed email searches</Title>
             <span>You've completed 3 email searches</span>
 
-            <Card>
+            <Card className="overflow-x-scroll">
               <Table
                 rowSelection={{
                   type: selectionType,

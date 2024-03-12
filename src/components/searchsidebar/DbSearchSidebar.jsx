@@ -30,7 +30,7 @@ const DbSearchSidebar = () => {
   return (
     <div>
    
-        <div className={`${isOpen? 'bg-[#fff] shadow-xl  pt-[30px] pb-[30px] fixed' : 'bg-[#fff] shadow-xl w-[80px] fixed pt-[30px] pb-[30px] h-screen'}`}>
+        <div className={`${isOpen? 'bg-[#fff] shadow-xl  pt-[30px] pb-[30px] ' : 'bg-[#fff] shadow-xl w-[80px] fixed pt-[30px] pb-[30px] h-screen'}`}>
         {isOpen ? (
           <div>
             <Tippy content='Hide filters'>
@@ -337,7 +337,7 @@ const DbSearchSidebar = () => {
                   </div>
 
                   <div className="button-area pl-[30px] mb-2 flex gap-4">
-                    <button className="bg-green w-auto py-2 px-3 md:w-[125px] md:py-[15px] rounded-xl text-[16px] md:text-[18px] text-dark-blue">
+                    <button className="bg-green w-auto py-2 px-3 lg:w-[125px] lg:py-[15px] rounded-xl text-[16px] md:text-[18px] text-dark-blue">
                       Search
                     </button>
                     <button className="text-[16px] md:text-[18px] text-mygray">
@@ -468,7 +468,7 @@ const DbSearchSidebar = () => {
                 </div>
 
                 <div className="button-area pl-[30px] mb-2 flex gap-4">
-                  <button className="bg-green w-auto px-5 text-[16px] py-2 md:w-[125px] md:py-[15px] rounded-xl text-[18px] text-dark-blue">
+                  <button className="bg-green w-auto px-5 text-[16px] py-2 lg:w-[125px] lg:py-[15px] rounded-xl md:text-[18px] text-dark-blue">
                     Search
                   </button>
                   <button className="text-[16px] md:text-[18px] text-mygray">
