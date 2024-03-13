@@ -6,8 +6,8 @@
 
 .prospectes-data .checkbox-form{
     display: flex;
-    align-items: center;
-    gap: 80px;
+    flex-direction: column;
+    gap: 10px;
 }
 .prospectes-data .checkbox-form .checklist{
     display: flex;
@@ -40,8 +40,8 @@
 }
 
 .search-through .btn-search{
-    width: 120px;
-    height: 60px;
+    width: auto;
+    height: 50px;
     background: linear-gradient(to right, #56F444 ,#48FA8A) !important;
     border: none;
     font-size: 18px;
@@ -54,3 +54,10 @@
     -o-border-radius: 10px;
 }
 
+@media (max-width:768px){
+    .search-through .btn-search{
+        width: auto;
+        height: 40px;
+        font-size: 16px;
+    }
+}

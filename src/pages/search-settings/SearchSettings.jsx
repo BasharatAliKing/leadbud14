@@ -23,12 +23,12 @@ const SearchSettings = () => {
         </Sider>
         <Layout>
           <Content>
-            <Row>
-              <Col lg={{ span: 6 }}>
-                <AccountSidebar />
-              </Col>
+          <div className='flex flex-col md:flex-row p-2 md:p-5 gap-5'>
+                <div className='md:w-[30%] md:mt-[16px]'>
+                    <AccountSidebar />
+                </div>
 
-              <Col lg={{ span: 16 }}>
+                <div className='md:w-[70%] md:ml-auto mt-0'>
                 <Card>
                   <Title level={4}>Search Settings</Title>
                   <Paragraph>
@@ -42,8 +42,8 @@ const SearchSettings = () => {
                   <div className="prospectes-data">
                     <Title level={5}>Prospect data</Title>
 
-                    <Form className="checkbox-form">
-                      <div className="checklist">
+                    <Form className="checkbox-form flex flex-col items-start lg:flex-row">
+                      <div className="checklist ">
                         <div class="round">
                           <input
                             name="agreement"
@@ -140,8 +140,8 @@ const SearchSettings = () => {
 
                   </div>
                 </Card>
-              </Col>
-            </Row>
+              </div>
+            </div>
           </Content>
         </Layout>
       </Layout>
