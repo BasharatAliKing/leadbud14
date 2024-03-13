@@ -186,7 +186,9 @@ span.tag.failed{
     background-color: #f24841;
 }
 .slider{
-    max-width: 550px;
+    /* max-width: 600px; */
+    overflow-x: scroll;
+    scrollbar-width: none;  
 }
 .swiper-slide{
     width: unset !important;

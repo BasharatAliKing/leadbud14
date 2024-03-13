@@ -90,6 +90,7 @@ const DashBoard = () => {
 
   return (
     <div className="container dashboard pr-0 md:pl-[18px] p-2 md:p-5">
+     <h1 className="text-2xl md:text-3xl xl:text-4xl font-bold text-[#000000] bg-[#ffffff] p-5 rounded-lg">Dashboard</h1>
       <div>
         <Row gutter={20}>
           <Col
@@ -109,7 +110,7 @@ const DashBoard = () => {
                 </Paragraph>
 
                 <div className="slider">
-                  <div className="flex justify-center items-center gap-3 overflow-x-hidden">
+                  <div className="flex gap-3">
                     <div>
                       <LeadCard />
                     </div>

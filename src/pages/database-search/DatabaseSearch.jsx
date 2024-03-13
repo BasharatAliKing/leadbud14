@@ -29,7 +29,10 @@ const handleSeeDetails = () => {
         <Sider>
           <SideNav />
         </Sider>
-      <div className="flex flex-col gap-2 sm:gap-5 md:gap-10 md:flex-row w-full p-2 md:p-5">
+      <div className="w-full">
+        <div> <h1 className="mx-2 rounded-lg mt-2 md:mx-5 text-2xl md:text-3xl xl:text-4xl font-bold p-5 bg-[#ffffff] text-[#000000]">Prospects</h1>
+        </div>
+      <div className="flex flex-col gap-2 sm:gap-5 md:gap-10 md:flex-row w-full p-2 md:p-5" >
        <div className="w-full md:w-[50%] lg:w-[40%]">
         <DbSearchSidebar/>
         </div>
@@ -88,6 +91,7 @@ const handleSeeDetails = () => {
           </Content>
         </Layout>
          </div>
+      </div>
       </div>
        
         

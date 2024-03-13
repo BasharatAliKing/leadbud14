@@ -36,11 +36,11 @@ const Header = ({ Pagetitle }) => {
   return (
     <div className="header">
       <img src={logo} alt="logo" className="w-[50%] sm:w-auto" />
-      <div>
+      {/* <div>
         <Title level={3} className="page-title hidden lg:flex">
           {Pagetitle}
         </Title>
-      </div>
+      </div> */}
       <div className="box">
         {/* <div className="date">
           <img src={calendarIcon} alt="icon" />

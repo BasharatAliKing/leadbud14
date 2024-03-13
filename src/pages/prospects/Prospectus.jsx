@@ -39,7 +39,8 @@ const Prospectus = () => {
 
   return (
     <Layout>
-      <div gutter={20} className="p-2 md:p-5 flex flex-col md:flex-row gap-5 lg:gap-10">
+      <h1 className="mx-2 rounded-lg mt-2 md:mx-5 text-2xl md:text-3xl xl:text-4xl font-bold p-5 bg-[#ffffff] text-[#000000]">Prospects</h1>
+      <div gutter={20} className="px-2 md:px-5 flex flex-col md:flex-row gap-5 lg:gap-10">
         <div className="md:w-[40%] lg:w-[25%] mt-3  ">
           <ProspectsSidebar />
         </div>
