@@ -48,7 +48,7 @@ const Account = () => {
                     <Title level={4} className='heading-4th'>Details</Title>
                     <Form className=''>
                     <div className=''>
-                      <div className='flex flex-col md:gap-5 w-full md:flex-row p-0'>
+                      <div className='flex flex-col mt-4 md:gap-5 w-full md:flex-row p-0'>
                         <div className='w-full'>
                         <Form.Item>
                           <label className='label'>First Name:</label>
@@ -64,7 +64,7 @@ const Account = () => {
 
                       </div>
                       </div>
-                      <div className='flex flex-col md:gap-5 w-full md:flex-row'>
+                      <div className='flex flex-col mt-4 md:gap-5 w-full md:flex-row'>
                       <div className='w-full'>
                         <Form.Item>
                           <label className='label'>Email Address:</label>
@@ -80,7 +80,7 @@ const Account = () => {
 
                       </div>
                       </div>
-                      <div className='flex flex-col md:gap-5 w-full md:flex-row'>
+                      <div className='flex flex-col mt-4 md:gap-5 w-full md:flex-row'>
                       <div className='w-full'>
                         <Form.Item>
                           <label className='label'>IP:</label>
@@ -95,7 +95,7 @@ const Account = () => {
                         </Form.Item>
 
                       </div> </div>
-                      <div className='flex flex-col md:gap-5 w-full md:flex-row'>
+                      <div className='flex flex-col mt-4 md:gap-5 w-full md:flex-row'>
                       <div className='w-full'>
                         <Form.Item>
                           <label className='label'>Location:</label>
