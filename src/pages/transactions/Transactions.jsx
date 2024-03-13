@@ -144,7 +144,7 @@ const Transactions = () => {
                   <Title level={4}>Transactions</Title>
 
                   <div className="transaction-area">
-                    <Form className="transaction-form">
+                    <Form className="transaction-form flex-wrap">
                       <div>
                         <label>Transaction type</label>
                         <Form.Item>
@@ -190,7 +190,7 @@ const Transactions = () => {
 
 
 
-                  <div className="table-area-transaction">
+                  <div className="table-area-transaction overflow-x-scroll">
                         <Table
                                   rowSelection={{
                                     type: selectionType,
