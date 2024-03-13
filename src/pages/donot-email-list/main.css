@@ -7,3 +7,7 @@
 .table-area-email{
     margin-top: 20px;
 }
+.ant-table-cell a{
+    display: flex;
+    width: 150px;
+}

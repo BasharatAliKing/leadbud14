@@ -17,10 +17,10 @@
     display: flex;
     align-items: center;
     background: linear-gradient(to right, #56F444 ,#48FA8A) !important;
-    height: 60px;
+    height: 50px;
     font-size: 16px;
     color: #030621;
-    width: 220px;
+    width: auto;
     font-weight: 500;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -31,8 +31,8 @@
 
 .top-area .my-select{
     background: #F5F5F5 !important;
-    width: 240px;
-    height: 60px;
+    width: auto;
+    height: 50px;
     border: none !important;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -42,12 +42,28 @@
 }
 
 .top-area .right-area .my-input{
-    width: 240px;
+    width: auto;
 }
 
 .top-area .right-area .search{
     background-color: #F5F5F5;
     border: none;
-    width: 240px;
-    height: 60px;
+    width: auto;
+    height: 50px;
+}
+@media (max-width:576px){
+    .top-area .my-btn{
+          height: 40px;
+          font-size: 15px;
+    }
+    .top-area .my-select{
+        height: 40px;
+        font-size: 15px;
+    }
+    .top-area .right-area .search{
+        width: auto;
+        height: 40px;
+        font-size: 15px;
+    }
+    
 }

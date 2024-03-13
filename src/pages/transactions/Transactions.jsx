@@ -134,12 +134,12 @@ const Transactions = () => {
         </Sider>
         <Layout>
           <Content>
-            <Row>
-              <Col lg={{ span: 6 }}>
-                <AccountSidebar />
-              </Col>
+          <div className='flex flex-col md:flex-row p-2 md:p-5 gap-5'>
+                <div className='md:w-[30%] md:mt-[16px]'>
+                    <AccountSidebar />
+                </div>
 
-              <Col lg={{ span: 16 }}>
+                <div className='md:w-[70%] md:ml-auto mt-0'>
                 <Card>
                   <Title level={4}>Transactions</Title>
 
@@ -205,8 +205,8 @@ const Transactions = () => {
 
 
                 </Card>
-              </Col>
-            </Row>
+              </div>
+            </div>
           </Content>
         </Layout>
       </Layout>

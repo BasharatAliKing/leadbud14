@@ -105,12 +105,12 @@ const DontEmailList = () => {
       </Sider>
       <Layout>
         <Content>
-          <Row>
-            <Col lg={{ span: 6 }}>
+        <div className='flex flex-col md:flex-row p-2 md:p-5 gap-5'>
+                <div className='md:w-[30%] md:mt-[16px]'>
               <AccountSidebar />
-            </Col>
+            </div>
 
-            <Col lg={{ span: 16 }}>
+            <div className='md:w-[70%] md:ml-auto mt-0'>
                 <Card>
                     <Title level={4}>Do-Not-Email List</Title>
                     <Paragraph>Add a do-not-email list to your campaigns to never accidentally send an email to someone you shouldn’t. Note, the domains and addresses<br />
@@ -118,16 +118,11 @@ you add to this list will be blocked for all team members.</Paragraph>
 
                     <div className="top-area">
                         <Button className='my-btn'><PlusCircleOutlined className='text-medium text-dark-blue' />Create new list</Button>
-
-                       
-
-                      
-
                         
                     </div>
 
 
-                    <div className="table-area-email">
+                    <div className="table-area-email overflow-x-scroll">
                         <Table
                                   rowSelection={{
                                     type: selectionType,
@@ -140,8 +135,8 @@ you add to this list will be blocked for all team members.</Paragraph>
                         </div>
 
                 </Card>
-            </Col>
-          </Row>
+            </div>
+          </div>
         </Content>
       </Layout>
     </Layout>

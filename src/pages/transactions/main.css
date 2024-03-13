@@ -13,7 +13,7 @@
 .transaction-area .transaction-form{
     display: flex;
     gap: 20px;
-    align-items: baseline;
+    align-items:flex-end;
 }
 
 .date-range .ant-picker {

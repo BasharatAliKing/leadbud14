@@ -23,16 +23,16 @@ const MyTeam = () => {
         </Sider>
         <Layout>
           <Content>
-            <Row>
-              <Col lg={{ span: 6 }}>
-                <AccountSidebar />
-              </Col>
+          <div className='flex flex-col md:flex-row p-2 md:p-5 gap-5'>
+                <div className='md:w-[30%] md:mt-[16px]'>
+                    <AccountSidebar />
+                </div>
 
-              <Col lg={{ span: 16 }}>
+                <div className='md:w-[70%] md:ml-auto mt-0'>
                 <Card>
                   <Title level={4}>My Team</Title>
 
-                  <Paragraph className="tetx-[#7B7B7B] text-[15px]">
+                  <Paragraph className="text-[#7B7B7B] text-[15px]">
                     Invite users to your team to share your account credits and
                     recipients. Plus, unlock team CRM features, share data and
                     templates, manage
@@ -41,7 +41,7 @@ const MyTeam = () => {
                     View plans.
                   </Paragraph>
 
-                  <Form className="form-item">
+                  <Form className="form-item flex-wrap">
                     <Form.Item >
                       <Input placeholder="example.com" className="my-input" />
                      
@@ -49,8 +49,8 @@ const MyTeam = () => {
                     <Button className="my-btn">Search</Button>
                   </Form>
                 </Card>
-              </Col>
-            </Row>
+              </div>
+            </div>
           </Content>
         </Layout>
       </Layout>

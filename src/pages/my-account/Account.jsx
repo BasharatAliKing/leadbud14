@@ -16,8 +16,6 @@ import './account.css'
 
 const Account = () => {
   return (
-
-
     <Layout>
     <Header className="header">
       <Topbar />
@@ -28,12 +26,12 @@ const Account = () => {
       </Sider>
       <Layout>
         <Content>
-            <Row>
-                <Col lg={{span:6}}>
+            <div className='flex flex-col md:flex-row p-2 md:p-5 gap-5'>
+                <div className='md:w-[30%] md:mt-[16px]'>
                     <AccountSidebar />
-                </Col>
+                </div>
 
-                <Col lg={{span:16}}>
+                <div className='md:w-[70%] md:ml-auto mt-0'>
                   <Card>
 
                     <div className="user-top-area">
@@ -48,101 +46,95 @@ const Account = () => {
 
 
                     <Title level={4} className='heading-4th'>Details</Title>
-                    <Form className='form-details'>
-                    <Row gutter={34}>
-                      <Col lg={{span:12}}>
+                    <Form className=''>
+                    <div className=''>
+                      <div className='flex flex-col md:gap-5 w-full md:flex-row p-0'>
+                        <div className='w-full'>
                         <Form.Item>
                           <label className='label'>First Name:</label>
                           <Input placeholder='Alex' className='my-input'/>
                         </Form.Item>
 
-                      </Col>
-
-                      <Col lg={{span:12}}>
+                      </div>
+                      <div className='w-full'>
                         <Form.Item>
                           <label className='label'>Last Name:</label>
                           <Input placeholder='Summers' className='my-input'/>
                         </Form.Item>
 
-                      </Col>
-
-                      <Col lg={{span:12}}>
+                      </div>
+                      </div>
+                      <div className='flex flex-col md:gap-5 w-full md:flex-row'>
+                      <div className='w-full'>
                         <Form.Item>
                           <label className='label'>Email Address:</label>
                           <Input placeholder='alexsummers@gmail.com' className='my-input'/>
                         </Form.Item>
 
-                      </Col>
-
-                      <Col lg={{span:12}}>
+                      </div>
+                      <div className='w-full'>
                         <Form.Item>
                           <label className='label'>Phone Number:</label>
                           <Input placeholder='+01234567891'className='my-input'/>
                         </Form.Item>
 
-                      </Col>
-
-
-                      <Col lg={{span:12}}>
+                      </div>
+                      </div>
+                      <div className='flex flex-col md:gap-5 w-full md:flex-row'>
+                      <div className='w-full'>
                         <Form.Item>
                           <label className='label'>IP:</label>
                           <Input placeholder='206.84.188.52' className='my-input'/>
                         </Form.Item>
 
-                      </Col>
-
-
-                      <Col lg={{span:12}}>
+                      </div>
+                      <div className='w-full'>
                         <Form.Item>
                           <label className='label'>Currency:</label>
                           <Input placeholder='US Dollar' className='my-input'/>
                         </Form.Item>
 
-                      </Col>
-
-
-                      <Col lg={{span:12}}>
+                      </div> </div>
+                      <div className='flex flex-col md:gap-5 w-full md:flex-row'>
+                      <div className='w-full'>
                         <Form.Item>
                           <label className='label'>Location:</label>
                           <Input placeholder='United State of America' className='my-input'/>
                         </Form.Item>
 
-                      </Col>
-
-
-                      <Col lg={{span:12}}>
+                      </div>
+                      <div className='w-full'>
                         <Form.Item>
                           <label className='label'>Timezone:</label>
                           <Input placeholder='Asia/Karachi +05:00' className='my-input'/>
                         </Form.Item>
 
-                      </Col>
+                      </div>
+                      </div>
 
-                      <Col lg={{span:12}} className="col-span-12 send-leads flex items-center">
+                      <div className="col-span-12 send-leads flex md:items-center">
                 <div className="round">
                   <input
                     type="checkbox"
                     id="checkbox"
-                    className="h-8 w-8 cursor-pointer rounded-full border-red-300 bg-[#fff] text-[#C1C1C1] focus:ring-green"
+                    className="h-4 w-4 md:h-8 md:w-8 cursor-pointer rounded-full border-red-300 bg-[#fff] text-[#C1C1C1] focus:ring-green"
                   />
                 </div>
                 <span className="text-[#030621] text-[14px]">
                 I want to receive important updates and news from leadbud.io
                 </span>
-              </Col>
+              </div>
 
-              
+                    </div>
 
-                    </Row>
-
-                    <Button className='search-btn'>Save</Button>
+                    <Button className='search-btn '>Save</Button>
                     </Form>
                   </Card>
                 
-                </Col>
+                </div>
 
 
-            </Row>
+            </div>
        
         </Content>
       </Layout>

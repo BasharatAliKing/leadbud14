@@ -78,19 +78,18 @@ const EmailAccounts = () => {
       </Sider>
       <Layout>
         <Content>
-          <Row>
-            <Col lg={{ span: 6 }}>
+        <div className='flex flex-col md:flex-row p-2 md:p-5 gap-5'>
+        <div className='md:w-[30%] md:mt-[16px]'>
               <AccountSidebar />
-            </Col>
-
-            <Col lg={{ span: 16 }}>
+            </div>
+            <div className='md:w-[70%] md:ml-auto mt-0'>
                 <Card>
                     <Title level={4}>Email Accounts</Title>
 
-                    <div className="top-area">
+                    <div className="top-area flex-wrap gap-3">
                         <Button className='my-btn'><PlusCircleOutlined className='text-medium text-dark-blue' /> Add email account</Button>
 
-                        <div className='right-area'>
+                        <div className='right-area flex-wrap gap-3'>
                         <Select className='my-select'
                         defaultValue="All email accounts"
                         onChange={handleChange}
@@ -114,7 +113,7 @@ const EmailAccounts = () => {
                     </div>
 
 
-                    <div className="table-area">
+                    <div className="table-area overflow-x-scroll">
                         <Table
                                   rowSelection={{
                                     type: selectionType,
@@ -126,8 +125,8 @@ const EmailAccounts = () => {
                         </div>
 
                 </Card>
-            </Col>
-          </Row>
+            </div>
+          </div>
         </Content>
       </Layout>
     </Layout>
