@@ -32,7 +32,7 @@ const handleSeeDetails = () => {
       <div className="w-full">
         {/* <div> <h1 className="mx-2 rounded-lg mt-2 md:mx-5 text-[22px] md:text-[24px] font-bold p-3 bg-[#ffffff] text-[#000000] capitalize">{window.location.pathname.substr(1,)}</h1>
         </div> */}
-      <div className="flex flex-col gap-2 sm:gap-5 md:gap-10 md:flex-row h-[90vh] w-full" >
+      <div className="flex flex-col gap-2 sm:gap-5 md:gap-10 md:flex-row h-[90vh] px-2 md:px-5 w-full" >
        <div className="w-full md:w-[50%] lg:w-[40%]">
         <DbSearchSidebar/>
         </div>
@@ -42,7 +42,7 @@ const handleSeeDetails = () => {
           <div className="container mx-auto text-center sm:text-start">
             <div>
               <div>
-                <Card className="p-0">
+                <Card className="p-0 mt-5">
                   <h2 className="text-[18px] md:text-[20px] font-bold">Saved Searches</h2>
 
                     <div className="saved-searches ">
