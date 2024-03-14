@@ -19,7 +19,7 @@ import revenueIcon from "../../assets/images/revenue-icon.png";
 import specialityIcon from "../../assets/images/speciality-icon.png";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import Tippy from '@tippyjs/react';
-
+import "./main.css";
 const DbSearchSidebar = () => {
   const [isOpen, setisOpen] = useState(true);
 
@@ -28,7 +28,7 @@ const DbSearchSidebar = () => {
   };
 
   return (
-    <div>
+    <div className="database-search-sidebar">
    
         <div className={`${isOpen? 'bg-[#fff] shadow-xl  pt-[30px] pb-[30px] ' : 'bg-[#fff] shadow-xl w-[80px] fixed pt-[30px] pb-[30px] h-screen'}`}>
         {isOpen ? (

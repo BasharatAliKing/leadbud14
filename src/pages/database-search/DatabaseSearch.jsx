@@ -30,7 +30,7 @@ const handleSeeDetails = () => {
           <SideNav />
         </Sider>
       <div className="w-full">
-        <div> <h1 className="mx-2 rounded-lg mt-2 md:mx-5 text-2xl md:text-3xl xl:text-4xl font-bold p-5 bg-[#ffffff] text-[#000000] capitalize">{window.location.pathname.substr(1,)}</h1>
+        <div> <h1 className="mx-2 rounded-lg mt-2 md:mx-5 text-[22px] md:text-[24px] font-bold p-3 bg-[#ffffff] text-[#000000] capitalize">{window.location.pathname.substr(1,)}</h1>
         </div>
       <div className="flex flex-col gap-2 sm:gap-5 md:gap-10 md:flex-row w-full p-2 md:p-5" >
        <div className="w-full md:w-[50%] lg:w-[40%]">
@@ -42,10 +42,10 @@ const handleSeeDetails = () => {
           <div className="container mx-auto text-center sm:text-start">
             <div>
               <div>
-                <Card className="p-5">
-                  <Title level={4}>Saved Searches</Title>
+                <Card className="p-0">
+                  <h2 className="text-[18px] md:text-[20px] font-bold">Saved Searches</h2>
 
-                    <div className="saved-searches">
+                    <div className="saved-searches mt-0">
                     <img src={SavefilterIcon} alt="icon" />
                     <p>Select filters and save them to create a new saved search</p>
                     </div>
@@ -53,7 +53,7 @@ const handleSeeDetails = () => {
                 </Card>
               </div>
               <div>
-                <Card className="p-5">
+                <Card className="p-0">
 
                   <div className="recent-searches-top flex flex-col sm:flex-row">
                     <Title level={4}>Recent Searches</Title>
@@ -62,7 +62,7 @@ const handleSeeDetails = () => {
 
                   {
                     isOpen && (
-                      <div className="searches-history flex flex-col sm:flex-row">
+                      <div className="searches-history flex flex-col sm:flex-row mt-0">
 
                       <div className="left flex flex-col sm:flex-row">
                         <img src={SearchIcon} alt="icon" />

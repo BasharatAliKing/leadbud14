@@ -135,7 +135,7 @@ const IndividualVerificatinTool = () => {
   };
   return (
     <div className="container p-2 md:p-5">
-           <h1 className="text-2xl md:text-3xl xl:text-4xl font-bold text-[#000000] bg-[#ffffff] p-5 rounded-lg capitalize">{window.location.pathname.substr(1,)}</h1>
+         <h1 className="text-2xl md:text-3xl xl:text-4xl font-bold text-[#000000] bg-[#ffffff] p-5 rounded-lg capitalize">{window.location.pathname.substr(1,)}</h1>
       <Layout>
         <div>
           <div>
