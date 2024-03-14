@@ -28,9 +28,9 @@ const DbSearchSidebar = () => {
   };
 
   return (
-    <div className="database-search-sidebar h-full">
+    <div className="database-search-sidebar h-[90vh] relative">
    
-        <div className={`${isOpen? 'bg-[#fff] shadow-xl  pt-[30px] pb-[30px] h-full ' : 'bg-[#fff] shadow-xl w-[80px] fixed pt-[30px] pb-[30px] h-full'}`}>
+        <div className={`${isOpen? 'bg-[#fff] shadow-xl  pt-[30px]  h-full ' : 'bg-[#fff] shadow-xl w-[80px] fixed pt-[30px] pb-[30px] h-full'}`}>
         {isOpen ? (
           <div className="h-full">
             <Tippy content='Hide filters'>
@@ -46,8 +46,8 @@ const DbSearchSidebar = () => {
             )}
           </button>
           </Tippy>
-          <Tab.Group>
-            <Tab.List className="flex px-[10px] sm:px-[30px]">
+          <Tab.Group >
+            <Tab.List className="flex  px-[10px] sm:px-[30px]">
               <Tab>
                 {({ selected }) => (
                   <button
@@ -103,7 +103,7 @@ const DbSearchSidebar = () => {
                     </div>
                   </div>
 
-                  <div className="filters h-[250px] overflow-y-scroll overflow-x-hidden mb-[20px]">
+                  <div className="filters h-[50vh] overflow-y-scroll mt-[10px]  mb-[10px]">
                     <div className="px-[10px] sm:px-[30px]">
                       <div className="flex items-center mt-5">
                         <img src={peopleIcon} alt="icon" className="mr-2" />
@@ -227,7 +227,7 @@ const DbSearchSidebar = () => {
                         </span>
                       </div>
 
-                      <div className="filter-area mt-6">
+                      <div className="filter-area  mt-6">
                         <div className=" bg-gray-light pt-[18px] rounded-t-xl">
                           <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
                             <img
@@ -335,8 +335,7 @@ const DbSearchSidebar = () => {
                       </div>
                     </div>
                   </div>
-
-                  <div className="button-area px-[10px]  md:px-[30px] mb-2 flex gap-4">
+                  <div className="button-area bg-[#ffffff] absolute left-0 w-full bottom-0  md:px-[30px] p-2 flex gap-4">
                     <button className="bg-green w-auto py-2 px-3 lg:w-[125px] lg:py-[10px] rounded-xl text-[16px] md:text-[18px] text-dark-blue">
                       Search
                     </button>
@@ -360,7 +359,7 @@ const DbSearchSidebar = () => {
                   </div>
                 </div>
 
-                <div className="filter-area mt-6 px-[10px] sm:px-[30px] h-[600px]">
+                <div className="filters mt-6 h-[50vh] overflow-y-scroll px-[10px] sm:px-[30px]">
                   <div className=" bg-gray-light pt-[18px] rounded-t-xl">
                     <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
                       <img
@@ -467,8 +466,8 @@ const DbSearchSidebar = () => {
                   </div>
                 </div>
 
-                <div className="button-area px-[10px] sm:px-[30px] mb-2 flex gap-4">
-                  <button className="bg-green w-auto px-5 text-[16px] py-2 lg:w-[125px] lg:py-[15px] rounded-xl md:text-[18px] text-dark-blue">
+                <div className="button-area bg-[#ffffff] absolute left-0 w-full bottom-0 px-[10px] sm:px-[30px] p-2 flex gap-4">
+                  <button className="bg-green w-auto px-5 text-[16px] py-2 lg:w-[125px] lg:py-[10px] rounded-xl md:text-[18px] text-dark-blue">
                     Search
                   </button>
                   <button className="text-[16px] md:text-[18px] text-mygray">

@@ -7,8 +7,8 @@
     margin-left: -12px;
    
     height: auto;
-    overflow-y: scroll;
-    scrollbar-width: none;
+    /* overflow-y: scroll; */
+    /* scrollbar-width: none; */
 
 }
 
