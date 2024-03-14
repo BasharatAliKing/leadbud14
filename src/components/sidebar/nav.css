@@ -71,7 +71,7 @@
     color: #030621;
     height: 100vh;
     position: absolute;
-    left: 78px;
+    left: 68px;
     transition: 0.3s ease-in-out;
     -webkit-transition: 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out;
@@ -90,7 +90,8 @@
     transition: background-color .25s linear;
 }
 .sidebar .menu-item:hover .sub-menu{
-    display: block !important;
+    display: flex !important;
+    flex-direction: column;
     transition: 0.3s ease-in-out;
     -webkit-transition: 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out;
@@ -117,7 +118,7 @@
         padding: 10px;
     }
     .sidebar {
-      width: 60px;
+      width: 55px;
     }
     .ant-layout-sider {
         flex: 0 0 0px !important;
@@ -140,7 +141,7 @@
         padding: 10px;
     }
     .sidebar {
-      width: 50px;
+      width: 45px;
     }
     .ant-layout-sider {
         flex: 0 0 0px !important;

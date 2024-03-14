@@ -10,6 +10,7 @@ import "./main.css";
 const FInderTools = () => {
   return (
     <div className="container database">
+           <h1 className="text-2xl mx-2 md:mx-4 md:text-3xl xl:text-4xl font-bold text-[#000000] bg-[#ffffff] p-5 rounded-lg capitalize">{window.location.pathname.substr(1,)}</h1>
       <Layout>
         <div className="p-2">
           <div >

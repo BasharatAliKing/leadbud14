@@ -13,7 +13,7 @@ import { Tabs } from "antd";
 import OwlCarousel from "react-owl-carousel2";
 import "react-owl-carousel2/src/owl.carousel.css";
 
-const DashBoard = () => {
+const DashBoard =() => {
   const [totalSeconds, setTotalSeconds] = useState(0);
   const [isTimerRunning, setIsTimerRunning] = useState(false);
 
@@ -90,7 +90,9 @@ const DashBoard = () => {
 
   return (
     <div className="container dashboard pr-0 md:pl-[18px] p-2 md:p-5">
-     <h1 className="text-2xl md:text-3xl xl:text-4xl font-bold text-[#000000] bg-[#ffffff] p-5 rounded-lg">Dashboard</h1>
+     <h1 className="text-2xl md:text-3xl xl:text-4xl font-bold text-[#000000] bg-[#ffffff] p-5 rounded-lg capitalize">{window.location.pathname.substr(1,)}</h1>
+      
+       
       <div>
         <Row gutter={20}>
           <Col
