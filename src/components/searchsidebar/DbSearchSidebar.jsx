@@ -103,7 +103,7 @@ const DbSearchSidebar = () => {
                     </div>
                   </div>
 
-                  <div className="filters h-[610px] overflow-y-scroll overflow-x-hidden mb-[20px]">
+                  <div className="filters h-[210px] overflow-y-scroll overflow-x-hidden mb-[20px]">
                     <div className="px-[10px] sm:px-[30px]">
                       <div className="flex items-center mt-5">
                         <img src={peopleIcon} alt="icon" className="mr-2" />
@@ -337,7 +337,7 @@ const DbSearchSidebar = () => {
                   </div>
 
                   <div className="button-area px-[10px]  md:px-[30px] mb-2 flex gap-4">
-                    <button className="bg-green w-auto py-2 px-3 lg:w-[125px] lg:py-[15px] rounded-xl text-[16px] md:text-[18px] text-dark-blue">
+                    <button className="bg-green w-auto py-2 px-3 lg:w-[125px] lg:py-[10px] rounded-xl text-[16px] md:text-[18px] text-dark-blue">
                       Search
                     </button>
                     <button className="text-[16px] md:text-[18px] text-mygray">
