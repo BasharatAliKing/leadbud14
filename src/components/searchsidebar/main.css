@@ -33,3 +33,9 @@
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
 }
+
+@media (min-width:800px) and (max-width:2000){
+    .database-search-sidebar{
+       height: 100vh;
+    }
+}
