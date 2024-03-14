@@ -28,7 +28,7 @@ const DbSearchSidebar = () => {
   };
 
   return (
-    <div className="database-search-sidebar h-[90vh] relative">
+    <div className="database-search-sidebar h-[92vh] relative">
    
         <div className={`${isOpen? 'bg-[#fff] shadow-xl  pt-[30px]  h-full ' : 'bg-[#fff] shadow-xl w-[80px] fixed pt-[30px] pb-[30px] h-full'}`}>
         {isOpen ? (
@@ -103,7 +103,7 @@ const DbSearchSidebar = () => {
                     </div>
                   </div>
 
-                  <div className="filters h-[50vh] overflow-y-scroll mt-[10px]  mb-[10px]">
+                  <div className="filters  h-[50vh] overflow-y-scroll mt-[10px]  mb-[10px]">
                     <div className="px-[10px] sm:px-[30px]">
                       <div className="flex items-center mt-5">
                         <img src={peopleIcon} alt="icon" className="mr-2" />
@@ -335,7 +335,7 @@ const DbSearchSidebar = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="button-area bg-[#ffffff] absolute left-0 w-full bottom-0  md:px-[30px] p-2 flex gap-4">
+                  <div className="button-area bg-[#ffffff] absolute left-0 w-full bottom-0  md:px-[30px] p-4 flex gap-4">
                     <button className="bg-green w-auto py-2 px-3 lg:w-[125px] lg:py-[10px] rounded-xl text-[16px] md:text-[18px] text-dark-blue">
                       Search
                     </button>
