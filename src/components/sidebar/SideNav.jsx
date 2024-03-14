@@ -20,7 +20,7 @@ const SideNav = () => {
           <NavLink to="/prospects">
             <img src={searchIcon} alt="icon" />
           </NavLink>
-          <ul className="sub-menu">
+          <ul className="sub-menu z-20">
             <Link to="/prospects">
               <li className="sub-menu-link">Prospects</li>
             </Link>

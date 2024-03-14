@@ -28,14 +28,15 @@ const DbSearchSidebar = () => {
   };
 
   return (
-    <div className="database-search-sidebar h-[100vh] md:w-[42%] pl-2 md:pl-0 lg:w-[35%] md:fixed top-0 ">
+    <div className="database-search-sidebar h-[100vh] md:w-[42%] bg-[#fff] pl-2 md:pl-0 lg:w-[362px] xl:w-[450px] -z-0 md:fixed top-0 ">
    
-        <div className={`${isOpen? 'bg-[#fff] shadow-xl mt-[40px] pt-[30px]  h-full ' : 'bg-[#fff] shadow-xl w-[80px] top-20 fixed pt-[30px] pb-[30px] h-full'}`}>
+      <div>
+      <div className={`${isOpen? 'bg-[#fff] shadow-xl  mt-[40px] pt-[30px]  h-full ' : 'bg-[#fff] shadow-xl w-[80px] top-10 fixed pt-[30px] pb-[30px] h-full'}`}>
         {isOpen ? (
-          <div className="h-full">
+          <div className="h-full ">
             <Tippy content='Hide filters'>
           <button
-            className="absolute hidden -right-4 bg-green rounded-full"
+            className="absolute hidden md:flex -right-4 bg-green rounded-full"
             onClick={toggleSidebar}
           >
             {isOpen ? (
@@ -103,7 +104,7 @@ const DbSearchSidebar = () => {
                     </div>
                   </div>
 
-                  <div className="filters h-[50vh]  overflow-y-scroll mt-[10px]  mb-[10px]">
+                  <div className="h-[60vh] xl:h-[70vh] overflow-y-scroll filters mt-[10px]  mb-[10px]">
                     <div className="px-[10px] sm:px-[30px]">
                       <div className="flex items-center mt-5">
                         <img src={peopleIcon} alt="icon" className="mr-2" />
@@ -335,7 +336,7 @@ const DbSearchSidebar = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="button-area bg-[#ffffff] md:absolute left-0 w-full bottom-0  md:px-[30px] p-4 flex gap-4">
+                  <div className="button-area bg-[#ffffff] shadow-r-xl md:absolute left-0 w-full bottom-0  md:px-[30px] p-4 flex gap-4">
                     <button className="bg-green w-auto py-2 px-3 lg:w-[125px] lg:py-[10px] rounded-xl text-[16px] md:text-[18px] text-dark-blue">
                       Search
                     </button>
@@ -359,7 +360,7 @@ const DbSearchSidebar = () => {
                   </div>
                 </div>
 
-                <div className="filters mt-6 h-[50vh] overflow-y-scroll px-[10px] sm:px-[30px]">
+                <div className="filters mt-6 h-[60vh] xl:h-[70vh] overflow-y-scroll px-[10px] sm:px-[30px]">
                   <div className=" bg-gray-light pt-[18px] rounded-t-xl">
                     <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
                       <img
@@ -507,6 +508,7 @@ const DbSearchSidebar = () => {
           
         </div>
       )}
+      </div>
       </div>
     </div>
   );

@@ -36,7 +36,7 @@ const handleSeeDetails = () => {
        <div className="w-full md:w-[50%] lg:w-[40%] h-full">
         <DbSearchSidebar/>
         </div>
-         <div className="w-full h-[87vh] md:w-[50%] lg:w-[60%]">
+         <div className="w-full h-[87vh] md:w-[50%] lg:w-[60%] xl:w-[100%]">
          <Layout>
           <Content style={{ marginTop: "-10px", marginBottom: "20px" }}>
           <div className="container mx-auto text-center sm:text-start">
