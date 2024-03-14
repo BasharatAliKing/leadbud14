@@ -28,7 +28,7 @@ const DbSearchSidebar = () => {
   };
 
   return (
-    <div className="database-search-sidebar h-[100vh] md:w-[42%] lg:w-[35%] md:fixed top-0 ">
+    <div className="database-search-sidebar h-[100vh] md:w-[42%] pl-2 md:pl-0 lg:w-[35%] md:fixed top-0 ">
    
         <div className={`${isOpen? 'bg-[#fff] shadow-xl mt-[40px] pt-[30px]  h-full ' : 'bg-[#fff] shadow-xl w-[80px] top-20 fixed pt-[30px] pb-[30px] h-full'}`}>
         {isOpen ? (

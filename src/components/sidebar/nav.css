@@ -118,13 +118,13 @@
         padding: 10px;
     }
     .sidebar {
-      width: 55px;
+      width: 60px;
     }
     .ant-layout-sider {
         flex: 0 0 0px !important;
-        width: 60px !important;
-        min-width: 60px !important;
-        max-width: 60px !important;
+        width: 55px !important;
+        min-width: 55px !important;
+        max-width: 55px !important;
     }
     .sub-menu {
      
@@ -141,7 +141,7 @@
         padding: 10px;
     }
     .sidebar {
-      width: 45px;
+      width: 50px;
     }
     .ant-layout-sider {
         flex: 0 0 0px !important;
