@@ -28,11 +28,11 @@ const DbSearchSidebar = () => {
   };
 
   return (
-    <div className="database-search-sidebar">
+    <div className="database-search-sidebar h-full">
    
         <div className={`${isOpen? 'bg-[#fff] shadow-xl  pt-[30px] pb-[30px] h-full ' : 'bg-[#fff] shadow-xl w-[80px] fixed pt-[30px] pb-[30px] h-full'}`}>
         {isOpen ? (
-          <div>
+          <div className="h-full">
             <Tippy content='Hide filters'>
           <button
             className="absolute hidden -right-4 bg-green rounded-full"
@@ -103,7 +103,7 @@ const DbSearchSidebar = () => {
                     </div>
                   </div>
 
-                  <div className="filters h-[210px] overflow-y-scroll overflow-x-hidden mb-[20px]">
+                  <div className="filters h-[250px] overflow-y-scroll overflow-x-hidden mb-[20px]">
                     <div className="px-[10px] sm:px-[30px]">
                       <div className="flex items-center mt-5">
                         <img src={peopleIcon} alt="icon" className="mr-2" />
