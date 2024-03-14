@@ -30,7 +30,7 @@ const DbSearchSidebar = () => {
   return (
     <div className="database-search-sidebar">
    
-        <div className={`${isOpen? 'bg-[#fff] shadow-xl  pt-[30px] pb-[30px] ' : 'bg-[#fff] shadow-xl w-[80px] fixed pt-[30px] pb-[30px] h-screen'}`}>
+        <div className={`${isOpen? 'bg-[#fff] shadow-xl  pt-[30px] pb-[30px] h-full ' : 'bg-[#fff] shadow-xl w-[80px] fixed pt-[30px] pb-[30px] h-full'}`}>
         {isOpen ? (
           <div>
             <Tippy content='Hide filters'>

@@ -45,7 +45,7 @@ const handleSeeDetails = () => {
                 <Card className="p-0">
                   <h2 className="text-[18px] md:text-[20px] font-bold">Saved Searches</h2>
 
-                    <div className="saved-searches mt-0">
+                    <div className="saved-searches ">
                     <img src={SavefilterIcon} alt="icon" />
                     <p>Select filters and save them to create a new saved search</p>
                     </div>
@@ -62,7 +62,7 @@ const handleSeeDetails = () => {
 
                   {
                     isOpen && (
-                      <div className="searches-history flex flex-col sm:flex-row mt-0">
+                      <div className="searches-history flex flex-col sm:flex-row ">
 
                       <div className="left flex flex-col sm:flex-row">
                         <img src={SearchIcon} alt="icon" />
