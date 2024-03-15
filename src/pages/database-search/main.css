@@ -1,4 +1,6 @@
-
+.ant-layout-header{
+    width:100%;
+}
 .sectwo{
     display: flex;
     flex-direction: column;
