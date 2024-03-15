@@ -32,7 +32,7 @@ const handleSeeDetails = () => {
       <div className="w-full">
         {/* <div> <h1 className="mx-2 rounded-lg mt-2 md:mx-5 text-[22px] md:text-[24px] font-bold p-3 bg-[#ffffff] text-[#000000] capitalize">{window.location.pathname.substr(1,)}</h1>
         </div> */}
-      <div className="flex  gap-2 sm:gap-5 md:gap-10flex-row md:pr-5 w-full main" >
+      <div className="flex gap-2 sm:gap-5 md:gap-10 flex-row md:pr-5 w-full main overflow-x-scroll" >
        <div className="w-auto z-10">
         <DbSearchSidebar/>
         </div>
