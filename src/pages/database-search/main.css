@@ -20,7 +20,7 @@
     /* margin-left: var(--nav-aside-width); */
     background-color: #f6f8fd;
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
     scrollbar-width: none;
 }
 .saved-searches{
