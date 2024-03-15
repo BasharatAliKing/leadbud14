@@ -43,7 +43,7 @@ const handleSeeDetails = () => {
             <div>
               <div>
                 <Card className="p-0 mt-5">
-                  <h2 className="text-[18px] md:text-[20px] font-bold">Saved Searches</h2>
+                  <h2 className="text-[16px] lg:text-[20px] font-bold">Saved Searches</h2>
 
                     <div className="saved-searches ">
                     <img src={SavefilterIcon} alt="icon" />
@@ -55,14 +55,14 @@ const handleSeeDetails = () => {
               <div>
                 <Card className="p-0">
 
-                  <div className="recent-searches-top flex flex-col sm:flex-row">
-                    <Title level={4}>Recent Searches</Title>
+                  <div className="recent-searches-top flex flex-col lg:flex-row">
+                    <h2 className="text-[16px] lg:text-[20px] font-bold">Recent Searches</h2>
                     <Button onClick={handleSeeDetails} className="details-btn">Open Details</Button>
                   </div>
 
                   {
                     isOpen && (
-                      <div className="searches-history flex flex-col sm:flex-row ">
+                      <div className="searches-history flex flex-col lg:flex-row ">
 
                       <div className="left flex flex-col sm:flex-row">
                         <img src={SearchIcon} alt="icon" />

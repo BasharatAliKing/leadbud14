@@ -103,10 +103,10 @@ const DbSearchSidebar = () => {
             </Tab.List>
             <Tab.Panels>
               <Tab.Panel className="h-full">
-                  <div className="thirdbar">
+                  <div className=" flex justify-between items-center mt-[30px] px-[10px] sm:px-[30px] w-full ">
                     <div>
           
-                    <p className="filter px-3 flex items-center h-[40px] text-[14px] md:text-[18px] w-auto font-medium font-poppins">
+                    <p className="filter px-3 flex items-center h-[40px] text-[14px] md:text-[16px] w-auto font-medium font-poppins">
                       Search Filters
                     </p>
                     </div>
@@ -121,12 +121,12 @@ const DbSearchSidebar = () => {
                     <div className="px-[10px] sm:px-[30px]">
                       <div className="flex items-center mt-5">
                         <img src={peopleIcon} alt="icon" className="mr-2" />
-                        <span className="text-[#B7B7B7] text-xs">People</span>
+                        <span className="text-[#B7B7B7] text-[14px]">People</span>
                       </div>
 
                       <div className="filter-area mt-6 bg-gray-light rounded-xl">
                         <div className=" pt-[18px] ">
-                          <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                          <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                             <img
                               src={locationIcon}
                               alt="location"
@@ -141,7 +141,7 @@ const DbSearchSidebar = () => {
                         </div>
 
                         <div className="pt-[18px]">
-                          <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                          <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                             <img
                               src={firstnameIcon}
                               alt="location"
@@ -156,7 +156,7 @@ const DbSearchSidebar = () => {
                         </div>
 
                         <div className=" pt-[18px]">
-                          <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                          <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                             <img
                               src={lastnameIcon}
                               alt="location"
@@ -171,7 +171,7 @@ const DbSearchSidebar = () => {
                         </div>
 
                         <div className="pt-[18px]">
-                          <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                          <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                             <img
                               src={jobIcon}
                               alt="location"
@@ -186,7 +186,7 @@ const DbSearchSidebar = () => {
                         </div>
 
                         <div className="pt-[18px]">
-                          <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                          <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                             <img
                               src={skillIcon}
                               alt="location"
@@ -201,7 +201,7 @@ const DbSearchSidebar = () => {
                         </div>
 
                         <div className="pt-[18px]">
-                          <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                          <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                             <img
                               src={keywordIcon}
                               alt="location"
@@ -218,7 +218,7 @@ const DbSearchSidebar = () => {
                         </div>
 
                         <div className=" pt-[18px]">
-                          <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                          <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                             <img
                               src={scnarioIcon}
                               alt="location"
@@ -236,14 +236,14 @@ const DbSearchSidebar = () => {
 
                       <div className="flex items-center mt-5">
                         <img src={companiesIcon} alt="icon" className="mr-2" />
-                        <span className="text-[#B7B7B7] text-xs">
+                        <span className="text-[#B7B7B7] text-[14px]">
                           Companies
                         </span>
                       </div>
 
                       <div className="filter-area  mt-6">
                         <div className=" bg-gray-light pt-[18px] rounded-t-xl">
-                          <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                          <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                             <img
                               src={lastnameIcon}
                               alt="location"
@@ -258,7 +258,7 @@ const DbSearchSidebar = () => {
                         </div>
 
                         <div className=" bg-gray-light pt-[18px]">
-                          <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                          <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                             <img
                               src={locationIcon}
                               alt="location"
@@ -273,7 +273,7 @@ const DbSearchSidebar = () => {
                         </div>
 
                         <div className=" bg-gray-light pt-[18px]">
-                          <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                          <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                             <img
                               src={IndustryIcon}
                               alt="location"
@@ -288,7 +288,7 @@ const DbSearchSidebar = () => {
                         </div>
 
                         <div className=" bg-gray-light pt-[18px]">
-                          <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                          <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                             <img
                               src={sizeIcon}
                               alt="location"
@@ -303,7 +303,7 @@ const DbSearchSidebar = () => {
                         </div>
 
                         <div className=" bg-gray-light pt-[18px]">
-                          <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                          <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                             <img
                               src={fundedIcon}
                               alt="location"
@@ -318,7 +318,7 @@ const DbSearchSidebar = () => {
                         </div>
 
                         <div className=" bg-gray-light pt-[18px]">
-                          <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                          <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                             <img
                               src={revenueIcon}
                               alt="location"
@@ -333,7 +333,7 @@ const DbSearchSidebar = () => {
                         </div>
 
                         <div className=" bg-gray-light pt-[18px] rounded-b-xl">
-                          <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                          <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                             <img
                               src={specialityIcon}
                               alt="location"
@@ -350,10 +350,10 @@ const DbSearchSidebar = () => {
                     </div>
                   </div>
                   <div className="bottom-btn-search ">
-                    <button className="bg-green w-auto py-2 px-3 lg:w-[125px] lg:py-[10px] rounded-xl text-[16px] md:text-[18px] text-dark-blue">
+                    <button className="bg-green w-auto py-2 px-3 lg:w-[125px] lg:py-[10px] rounded-xl text-[14px] lg:text-[18px] text-dark-blue">
                       Search
                     </button>
-                    <button className="text-[16px] ml-[10px] md:text-[18px] text-mygray">
+                    <button className="text-[16px] ml-[10px] lg:text-[18px] text-mygray">
                       Clear Filter
                     </button>
                   </div>
@@ -363,7 +363,7 @@ const DbSearchSidebar = () => {
               <Tab.Panel className="h-full">
                 <div className=" flex justify-between items-center mt-[30px] px-[10px] sm:px-[30px] w-full">
                   <div>
-                    <p className="filter px-3 flex items-center h-[40px] text-[14px] md:text-[18px] w-auto font-medium font-poppins">
+                    <p className="filter px-3 flex items-center h-[40px] text-[14px] md:text-[16px] w-auto font-medium font-poppins">
                       Search Filters
                     </p>
                   </div>
@@ -375,7 +375,7 @@ const DbSearchSidebar = () => {
 
                 <div className="leadinput-search px-[20px] mt-[20px]">
                   <div className=" bg-gray-light pt-[18px] rounded-t-xl">
-                    <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                    <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                       <img
                         src={lastnameIcon}
                         alt="location"
@@ -390,7 +390,7 @@ const DbSearchSidebar = () => {
                   </div>
 
                   <div className=" bg-gray-light pt-[18px]">
-                    <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                    <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                       <img
                         src={locationIcon}
                         alt="location"
@@ -405,7 +405,7 @@ const DbSearchSidebar = () => {
                   </div>
 
                   <div className=" bg-gray-light pt-[18px]">
-                    <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                    <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                       <img
                         src={IndustryIcon}
                         alt="location"
@@ -420,7 +420,7 @@ const DbSearchSidebar = () => {
                   </div>
 
                   <div className=" bg-gray-light pt-[18px]">
-                    <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                    <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                       <img
                         src={sizeIcon}
                         alt="location"
@@ -435,7 +435,7 @@ const DbSearchSidebar = () => {
                   </div>
 
                   <div className=" bg-gray-light pt-[18px]">
-                    <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                    <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                       <img
                         src={fundedIcon}
                         alt="location"
@@ -450,7 +450,7 @@ const DbSearchSidebar = () => {
                   </div>
 
                   <div className=" bg-gray-light pt-[18px]">
-                    <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                    <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                       <img
                         src={revenueIcon}
                         alt="location"
@@ -465,7 +465,7 @@ const DbSearchSidebar = () => {
                   </div>
 
                   <div className=" bg-gray-light pt-[18px] rounded-b-xl">
-                    <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
+                    <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                       <img
                         src={specialityIcon}
                         alt="location"
@@ -481,10 +481,10 @@ const DbSearchSidebar = () => {
                 </div>
 
                 <div className="bottom-btn-search">
-                  <button className="bg-green w-auto px-5 text-[16px] py-2 lg:w-[125px] lg:py-[10px] rounded-xl md:text-[18px] text-dark-blue">
+                  <button className="bg-green w-auto px-5 text-[14px] py-2 lg:w-[125px] lg:py-[10px] rounded-xl lg:text-[18px] text-dark-blue">
                     Search
                   </button>
-                  <button className="text-[16px] ml-[10px] md:text-[18px] text-mygray">
+                  <button className="text-[16px] ml-[10px] lg:text-[18px] text-mygray">
                     Clear Filter
                   </button>
                 </div>

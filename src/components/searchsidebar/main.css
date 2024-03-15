@@ -31,16 +31,17 @@
 .thirdbar{
     display: flex;
     justify-content: space-between;
+     padding: 10px 20px;
     align-items: center;
-    padding: 19px 17px 13px 21px;
+    /* padding: 19px 17px 13px 21px; */
     font-size: 16px;
-    font-weight: 600;
 }
 .leadinput-search{
     height: 40vh;
     overflow-y: scroll;
     overflow-x: hidden;
     margin-bottom: 107px;
+    font-size: 14px;
     scrollbar-width: none;
 }
 .leadinput-search-side{
@@ -103,5 +104,26 @@
     .menes{
         height: 70vh;
         overflow-y: hidden;
+    }
+}
+
+@media (max-width:900px) and (max-height:600px){
+    .leadinput-search {
+        height: 55vh;
+    }
+}
+@media (max-width:1366px) and (max-height:768px){
+    .leadinput-search {
+        height: 55vh;
+    }
+}
+@media (max-width:1920px) and (max-height:1080px){
+    .leadinput-search {
+        height: 70vh;
+    }
+}
+@media (max-width:1536px) and (max-height:864px){
+    .leadinput-search {
+        height:65vh;
     }
 }
