@@ -373,7 +373,7 @@ const DbSearchSidebar = () => {
                   </div>
                 </div>
 
-                <div className="leadinput-search px-[20px] mt-[20px]">
+                <div className="leadinput-search leadsecond px-[20px] mt-[20px]">
                   <div className=" bg-gray-light pt-[18px] rounded-t-xl">
                     <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                       <img

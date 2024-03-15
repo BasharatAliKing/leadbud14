@@ -40,6 +40,7 @@
     height: 40vh;
     overflow-y: scroll;
     overflow-x: hidden;
+    margin-top: 20px;
     margin-bottom: 107px;
     font-size: 14px;
     scrollbar-width: none;
@@ -106,7 +107,7 @@
         overflow-y: hidden;
     }
 }
-/* 
+
 @media (width:900px) and (max-height:600px){
     .leadinput-search {
         height: 55vh;
@@ -126,4 +127,13 @@
     .leadinput-search {
         height:65vh;
     }
-} */
+}
+@media (width:800px) and (max-height:600px){
+    .leadinput-search {
+        height:46vh;
+        margin-top: 20px;
+    }
+    .leadsecond{
+        height: 46vh;
+    }
+}
