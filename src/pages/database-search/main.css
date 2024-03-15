@@ -94,9 +94,9 @@
 }
 
 @media (max-width:576px){
-    .ant-layout-header{
+    /* .ant-layout-header{
         width:112%;
-    }
+    } */
     .searches-history .left {
         display: flex;
         align-items: center;
