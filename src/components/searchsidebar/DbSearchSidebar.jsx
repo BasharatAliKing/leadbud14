@@ -63,7 +63,7 @@ const DbSearchSidebar = () => {
           </button>
           </Tippy>
           <Tab.Group >
-            <Tab.List className="flex  px-[10px] sm:px-[30px]">
+            <Tab.List className="flex px-[10px] sm:px-[30px]">
               <Tab>
                 {({ selected }) => (
                   <button
@@ -102,7 +102,7 @@ const DbSearchSidebar = () => {
               </Tab>
             </Tab.List>
             <Tab.Panels>
-              <Tab.Panel>
+              <Tab.Panel className="h-full">
                   <div className="thirdbar">
                     <div>
           
@@ -360,7 +360,7 @@ const DbSearchSidebar = () => {
                
               </Tab.Panel>
 
-              <Tab.Panel>
+              <Tab.Panel className="h-full">
                 <div className=" flex justify-between items-center mt-[30px] px-[10px] sm:px-[30px] w-full">
                   <div>
                     <p className="filter px-3 flex items-center h-[40px] text-[14px] md:text-[18px] w-auto font-medium font-poppins">
