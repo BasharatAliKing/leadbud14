@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Tab } from "@headlessui/react";
 import scrappericon from "../../assets/images/scraper-icon.png";
 import companyIcon from "../../assets/images/company-icon.png";
@@ -26,18 +26,31 @@ const DbSearchSidebar = () => {
   const toggleSidebar = () => {
     setisOpen(!isOpen);
   };
+  useEffect(() => {
+    const sidebarsearch=document.querySelector(".sidebar-search");
+    const icon=document.querySelector("#icon");
+    icon.addEventListener("click", (e)=>{
+           if(icon.className==="absolute -right-4 bg-green rounded-full"){
+            sidebarsearch.style="max-width:70px; margin-top:10px; min-width:70px";
+            icon.className="absolute -right-4  bg-green rounded-full "
+           }else{
+            icon.className="absolute -right-4 bg-green rounded-full open"
+            sidebarsearch.style="max-width:362px; margin-top:10px; min-width:362px";
+           }
+    })
+  },[])
+  
 
   return (
-    <div className="w-250px md:w-auto md:bg-[#fff] md:shadow-xl fixed h-full ">
-   
+    <div className="sidebar-search">
       <div>
-      <div className={`${isOpen? 'bg-[#fff] shadow-xl pt-[30px]  h-full ' : 'bg-[#fff] shadow-xl w-[60px] md:w-[80px] overflow-y-scroll mt-10 md:mt-0 top-10 fixed pt-[30px] pb-[30px] h-full'}`}>
+      <div className={`${isOpen? 'bg-[#fff]  md:pt-[30px]  h-full ' : 'bg-[#fff] shadow-xl w-[70px]  md:mt-0 top-10 pt-[30px] pb-[30px] h-full'}`}>
         {isOpen ? (
           <div className="">
             <Tippy content='Hide filters'>
-          <button
-            className="absolute  -right-4 bg-green rounded-full"
-            onClick={toggleSidebar}
+          <button id="icon"
+            className="absolute -right-4 bg-green rounded-full"
+             onClick={toggleSidebar}
           >
             {isOpen ? (
               <MdChevronLeft size={30}
@@ -72,9 +85,9 @@ const DbSearchSidebar = () => {
                   <button
                     className={
                       selected
-                        ? "flex items-center bg-dark-blue px-[6px] xl:px-[30px] py-[10px] md:py-[15px] text-[14px] md:text-[16px] xl:text-sm text-[#fff] font-semibold border-none rounded-r-xl outline-0"
-                        : "flex items-center bg-gray-light px-[6px] xl:px-[30px] py-[10px] md:py-[15px] text-[14px] md:text-[16px] xl:text-sm text-dark-blue font-semibold border-none rounded-r-xl outline-0"
-                    }
+                      ? "flex items-center bg-dark-blue px-[6px] xl:px-[30px] py-[10px] text-[14px] md:text-[16px] xl:text-sm text-[#fff] font-semibold border-none rounded-l-xl outline-0"
+                        : "flex items-center bg-gray-light px-[6px] xl:px-[30px] py-[10px] text-[14px] md:text-[16px] xl:text-sm text-dark-blue font-semibold border-none rounded-l-xl outline-0"
+                  }
                   >
                     <img
                       src={companyIcon}
@@ -89,7 +102,7 @@ const DbSearchSidebar = () => {
             <Tab.Panels>
               <Tab.Panel>
                 <div>
-                  <div className=" flex justify-between items-center mt-[30px] px-[10px] sm:px-[30px]">
+                  <div className="thirdbar">
                     <div>
           
                     <p className="filter px-3 flex items-center h-[40px] text-[14px] md:text-[18px] w-auto font-medium font-poppins">
@@ -104,7 +117,7 @@ const DbSearchSidebar = () => {
                     </div>
                   </div>
 
-                  <div className="h-[60vh] xl:h-[70vh] overflow-y-scroll filters mt-[10px]  mb-[10px]">
+                  <div className="leadinput-search">
                     <div className="px-[10px] sm:px-[30px]">
                       <div className="flex items-center mt-5">
                         <img src={peopleIcon} alt="icon" className="mr-2" />
@@ -336,7 +349,7 @@ const DbSearchSidebar = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="button-area bg-[#ffffff] shadow-r-xl md:absolute left-0 w-full bottom-12  md:px-[30px] p-4 flex gap-4">
+                  <div className="bottom-btn-search ">
                     <button className="bg-green w-auto py-2 px-3 lg:w-[125px] lg:py-[10px] rounded-xl text-[16px] md:text-[18px] text-dark-blue">
                       Search
                     </button>
@@ -360,7 +373,7 @@ const DbSearchSidebar = () => {
                   </div>
                 </div>
 
-                <div className="filters mt-6 h-[60vh] xl:h-[70vh] overflow-y-scroll px-[10px] sm:px-[30px]">
+                <div className="leadinput-search px-[20px] mt-[20px]">
                   <div className=" bg-gray-light pt-[18px] rounded-t-xl">
                     <p className="flex items-center font-medium text-dark-blue text-xs px-[22px]">
                       <img
@@ -467,7 +480,7 @@ const DbSearchSidebar = () => {
                   </div>
                 </div>
 
-                <div className="button-area bg-[#ffffff] md:absolute left-0 w-full bottom-14 px-[10px] sm:px-[30px] p-2 flex gap-4">
+                <div className="bottom-btn-search">
                   <button className="bg-green w-auto px-5 text-[16px] py-2 lg:w-[125px] lg:py-[10px] rounded-xl md:text-[18px] text-dark-blue">
                     Search
                   </button>
