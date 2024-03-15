@@ -28,14 +28,16 @@ const DbSearchSidebar = () => {
   };
   useEffect(() => {
     const sidebarsearch=document.querySelector(".sidebar-search");
+    const subsidebar=document.querySelector(".subsidebar");
     const icon=document.querySelector("#icon");
     icon.addEventListener("click", (e)=>{
            if(icon.className==="absolute -right-4 bg-green rounded-full"){
-            sidebarsearch.style="max-width:70px; margin-top:10px; min-width:70px";
+            sidebarsearch.style="max-width:70px; min-width:70px";
             icon.className="absolute -right-4  bg-green rounded-full "
+            
            }else{
             icon.className="absolute -right-4 bg-green rounded-full open"
-            sidebarsearch.style="max-width:362px; margin-top:10px; min-width:362px";
+            sidebarsearch.style="max-width:362px; min-width:362px";
            }
     })
   },[])
@@ -44,7 +46,7 @@ const DbSearchSidebar = () => {
   return (
     <div className="sidebar-search">
       <div>
-      <div className={`${isOpen? 'bg-[#fff]  md:pt-[30px]  h-full ' : 'bg-[#fff] shadow-xl w-[70px]  md:mt-0 top-10 pt-[30px] pb-[30px] h-full'}`}>
+      <div id="subsidebar" className={`${isOpen? 'bg-[#fff] pt-[20px]  ' : 'bg-[#fff] shadow-xl pt-[20px] w-[70px] '}`}>
         {isOpen ? (
           <div className="">
             <Tippy content='Hide filters'>
@@ -101,7 +103,6 @@ const DbSearchSidebar = () => {
             </Tab.List>
             <Tab.Panels>
               <Tab.Panel>
-                <div>
                   <div className="thirdbar">
                     <div>
           
@@ -116,7 +117,6 @@ const DbSearchSidebar = () => {
                       <button className="text-[#B7B7B7]">Save</button>
                     </div>
                   </div>
-
                   <div className="leadinput-search">
                     <div className="px-[10px] sm:px-[30px]">
                       <div className="flex items-center mt-5">
@@ -353,11 +353,11 @@ const DbSearchSidebar = () => {
                     <button className="bg-green w-auto py-2 px-3 lg:w-[125px] lg:py-[10px] rounded-xl text-[16px] md:text-[18px] text-dark-blue">
                       Search
                     </button>
-                    <button className="text-[16px] md:text-[18px] text-mygray">
+                    <button className="text-[16px] ml-[10px] md:text-[18px] text-mygray">
                       Clear Filter
                     </button>
                   </div>
-                </div>
+               
               </Tab.Panel>
 
               <Tab.Panel>
@@ -484,7 +484,7 @@ const DbSearchSidebar = () => {
                   <button className="bg-green w-auto px-5 text-[16px] py-2 lg:w-[125px] lg:py-[10px] rounded-xl md:text-[18px] text-dark-blue">
                     Search
                   </button>
-                  <button className="text-[16px] md:text-[18px] text-mygray">
+                  <button className="text-[16px] ml-[10px] md:text-[18px] text-mygray">
                     Clear Filter
                   </button>
                 </div>
@@ -498,7 +498,7 @@ const DbSearchSidebar = () => {
 
          <Tippy content='Show Filters'><button className="bg-green rounded-full mb-3" onClick={toggleSidebar}><MdChevronRight size={30} /></button></Tippy> 
 
-          <div onMouseEnter={() => setisOpen(true)}>
+          <div>
           <div className="">
             <img src={locationIcon} alt="icon" className="icon"/>
             <img src={jobIcon} alt="icon" className="icon"/>
