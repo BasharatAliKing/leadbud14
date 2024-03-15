@@ -69,8 +69,8 @@ const DbSearchSidebar = () => {
                   <button
                     className={
                       selected
-                        ? "flex items-center bg-dark-blue px-[6px] py-[10px] text-[14px] md:text-[16px] xl:text-sm text-[#fff] font-semibold border-none rounded-l-xl outline-0"
-                        : "flex items-center bg-gray-light px-[6px] py-[10px] text-[14px] md:text-[16px] xl:text-sm text-dark-blue font-semibold border-none rounded-l-xl outline-0"
+                        ? "flex items-center bg-dark-blue px-[6px] py-[10px] text-[14px] md:text-[16px]  text-[#fff] font-semibold border-none rounded-l-xl outline-0"
+                        : "flex items-center bg-gray-light px-[6px] py-[10px] text-[14px] md:text-[16px]  text-dark-blue font-semibold border-none rounded-l-xl outline-0"
                     }
                   >
                     <img
@@ -87,8 +87,8 @@ const DbSearchSidebar = () => {
                   <button
                     className={
                       selected
-                      ? "flex items-center bg-dark-blue px-[6px]  py-[10px] text-[14px] md:text-[16px] xl:text-sm text-[#fff] font-semibold border-none rounded-r-xl outline-0"
-                        : "flex items-center bg-gray-light px-[6px]  py-[10px] text-[14px] md:text-[16px] xl:text-sm text-dark-blue font-semibold border-none rounded-r-xl outline-0"
+                      ? "flex items-center bg-dark-blue px-[6px]  py-[10px] text-[14px] md:text-[16px]  text-[#fff] font-semibold border-none rounded-r-xl outline-0"
+                        : "flex items-center bg-gray-light px-[6px]  py-[10px] text-[14px] md:text-[16px]  text-dark-blue font-semibold border-none rounded-r-xl outline-0"
                   }
                   >
                     <img
