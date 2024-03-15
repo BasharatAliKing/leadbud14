@@ -69,8 +69,8 @@ const DbSearchSidebar = () => {
                   <button
                     className={
                       selected
-                        ? "flex items-center bg-dark-blue px-[6px] xl:px-[30px] py-[10px] text-[14px] md:text-[16px] xl:text-sm text-[#fff] font-semibold border-none rounded-l-xl outline-0"
-                        : "flex items-center bg-gray-light px-[6px] xl:px-[30px] py-[10px] text-[14px] md:text-[16px] xl:text-sm text-dark-blue font-semibold border-none rounded-l-xl outline-0"
+                        ? "flex items-center bg-dark-blue px-[6px] py-[10px] text-[14px] md:text-[16px] xl:text-sm text-[#fff] font-semibold border-none rounded-l-xl outline-0"
+                        : "flex items-center bg-gray-light px-[6px] py-[10px] text-[14px] md:text-[16px] xl:text-sm text-dark-blue font-semibold border-none rounded-l-xl outline-0"
                     }
                   >
                     <img
@@ -87,8 +87,8 @@ const DbSearchSidebar = () => {
                   <button
                     className={
                       selected
-                      ? "flex items-center bg-dark-blue px-[6px] xl:px-[30px] py-[10px] text-[14px] md:text-[16px] xl:text-sm text-[#fff] font-semibold border-none rounded-l-xl outline-0"
-                        : "flex items-center bg-gray-light px-[6px] xl:px-[30px] py-[10px] text-[14px] md:text-[16px] xl:text-sm text-dark-blue font-semibold border-none rounded-l-xl outline-0"
+                      ? "flex items-center bg-dark-blue px-[6px]  py-[10px] text-[14px] md:text-[16px] xl:text-sm text-[#fff] font-semibold border-none rounded-r-xl outline-0"
+                        : "flex items-center bg-gray-light px-[6px]  py-[10px] text-[14px] md:text-[16px] xl:text-sm text-dark-blue font-semibold border-none rounded-r-xl outline-0"
                   }
                   >
                     <img
@@ -498,7 +498,7 @@ const DbSearchSidebar = () => {
 
          <Tippy content='Show Filters'><button className="bg-green rounded-full mb-3" onClick={toggleSidebar}><MdChevronRight size={30} /></button></Tippy> 
 
-          <div>
+          <div className="leadinput-search-side">
           <div className="">
             <img src={locationIcon} alt="icon" className="icon"/>
             <img src={jobIcon} alt="icon" className="icon"/>
