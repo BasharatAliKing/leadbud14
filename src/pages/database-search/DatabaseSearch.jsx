@@ -32,11 +32,11 @@ const handleSeeDetails = () => {
       <div className="w-full">
         {/* <div> <h1 className="mx-2 rounded-lg mt-2 md:mx-5 text-[22px] md:text-[24px] font-bold p-3 bg-[#ffffff] text-[#000000] capitalize">{window.location.pathname.substr(1,)}</h1>
         </div> */}
-      <div className="flex flex-col gap-2 sm:gap-5 md:gap-10 md:flex-row p-2 md:pr-5 w-full" >
-       <div className="w-full md:w-[50%] lg:w-[40%] h-full">
+      <div className="flex  gap-2 sm:gap-5 md:gap-10flex-row md:pr-5 w-full main" >
+       <div className="w-auto z-10">
         <DbSearchSidebar/>
         </div>
-         <div className="w-full h-[87vh] md:w-[50%] lg:w-[60%] xl:w-[100%]">
+         <div className="w-[80%] md:p-0 ml-auto md:w-[50%] lg:w-[60%] xl:w-[66%] -z-0">
          <Layout>
           <Content style={{ marginTop: "-10px", marginBottom: "20px" }}>
           <div className="container mx-auto text-center sm:text-start">
