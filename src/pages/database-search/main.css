@@ -1,6 +1,4 @@
-.ant-layout-header{
-    width:112%;
-}
+
 .sectwo{
     display: flex;
     flex-direction: column;
@@ -96,6 +94,9 @@
 }
 
 @media (max-width:576px){
+    .ant-layout-header{
+        width:112%;
+    }
     .searches-history .left {
         display: flex;
         align-items: center;
