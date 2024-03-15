@@ -28,7 +28,7 @@ const DbSearchSidebar = () => {
   };
 
   return (
-    <div className="w-40% md:w-auto bg-[#fff] shadow-xl  fixed w-auto h-full ">
+    <div className="w-250px md:w-auto md:bg-[#fff] md:shadow-xl fixed h-full ">
    
       <div>
       <div className={`${isOpen? 'bg-[#fff] shadow-xl pt-[30px]  h-full ' : 'bg-[#fff] shadow-xl w-[60px] md:w-[80px] overflow-y-scroll mt-10 md:mt-0 top-10 fixed pt-[30px] pb-[30px] h-full'}`}>
@@ -54,8 +54,8 @@ const DbSearchSidebar = () => {
                   <button
                     className={
                       selected
-                        ? "flex items-center bg-dark-blue px-[10px] xl:px-[30px] py-[15px] text-[16px] xl:text-sm text-[#fff] font-semibold border-none rounded-l-xl outline-0"
-                        : "flex items-center bg-gray-light px-[10px] xl:px-[30px] py-[15px] text-[16px] xl:text-sm text-dark-blue font-semibold border-none rounded-l-xl outline-0"
+                        ? "flex items-center bg-dark-blue px-[6px] xl:px-[30px] py-[10px] text-[14px] md:text-[16px] xl:text-sm text-[#fff] font-semibold border-none rounded-l-xl outline-0"
+                        : "flex items-center bg-gray-light px-[6px] xl:px-[30px] py-[10px] text-[14px] md:text-[16px] xl:text-sm text-dark-blue font-semibold border-none rounded-l-xl outline-0"
                     }
                   >
                     <img
@@ -72,8 +72,8 @@ const DbSearchSidebar = () => {
                   <button
                     className={
                       selected
-                        ? "flex items-center bg-dark-blue px-[10px] xl:px-[30px] py-[15px] text-[16px] xl:text-sm text-[#fff] font-semibold border-none rounded-r-xl outline-0"
-                        : "flex items-center bg-gray-light px-[10px] xl:px-[30px] py-[15px] text-[16px] xl:text-sm text-dark-blue font-semibold border-none rounded-r-xl outline-0"
+                        ? "flex items-center bg-dark-blue px-[6px] xl:px-[30px] py-[10px] md:py-[15px] text-[14px] md:text-[16px] xl:text-sm text-[#fff] font-semibold border-none rounded-r-xl outline-0"
+                        : "flex items-center bg-gray-light px-[6px] xl:px-[30px] py-[10px] md:py-[15px] text-[14px] md:text-[16px] xl:text-sm text-dark-blue font-semibold border-none rounded-r-xl outline-0"
                     }
                   >
                     <img
@@ -92,7 +92,7 @@ const DbSearchSidebar = () => {
                   <div className=" flex justify-between items-center mt-[30px] px-[10px] sm:px-[30px]">
                     <div>
           
-                    <p className="filter px-3 flex items-center h-[40px] text-[16px] md:text-[18px] w-auto font-medium font-poppins">
+                    <p className="filter px-3 flex items-center h-[40px] text-[14px] md:text-[18px] w-auto font-medium font-poppins">
                       Search Filters
                     </p>
                     </div>
@@ -350,7 +350,7 @@ const DbSearchSidebar = () => {
               <Tab.Panel>
                 <div className=" flex justify-between items-center mt-[30px] px-[10px] sm:px-[30px] w-full">
                   <div>
-                    <p className="filter px-3 flex items-center h-[40px] text-[16px] md:text-[18px] w-auto font-medium font-poppins">
+                    <p className="filter px-3 flex items-center h-[40px] text-[14px] md:text-[18px] w-auto font-medium font-poppins">
                       Search Filters
                     </p>
                   </div>

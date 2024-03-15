@@ -21,7 +21,7 @@ const handleSeeDetails = () => {
 
 
   return (
-    <Layout>
+    <Layout className="w-[120%">
       <Header className="header">
         <Topbar Pagetitle="Database Search"/>
       </Header>
