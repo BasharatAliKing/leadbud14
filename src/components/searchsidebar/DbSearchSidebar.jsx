@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Tab } from "@headlessui/react";
 import scrappericon from "../../assets/images/scraper-icon.png";
 import companyIcon from "../../assets/images/company-icon.png";
 import peopleIcon from "../../assets/images/people-icon.png";
@@ -27,28 +26,46 @@ const DbSearchSidebar = () => {
     setisOpen(!isOpen);
   };
   useEffect(() => {
-    const sidebarsearch=document.querySelector(".sidebar-search");
-    const subsidebar=document.querySelector(".subsidebar");
+    const scrapers=document.querySelector("#scrapers");
+    const companies=document.querySelector("#companies");
+    const subsidebar=document.querySelector("#subsidebar");
+    const scrapmenu=document.querySelector("#scraper-menu");
+    const companymenu=document.querySelector("#company-menu");
+    const leadinput=document.querySelector(".leadinput-search");
+
+    companymenu.remove();
     const icon=document.querySelector("#icon");
     icon.addEventListener("click", (e)=>{
            if(icon.className==="absolute -right-4 bg-green rounded-full"){
-            sidebarsearch.style="max-width:70px; min-width:70px";
+            subsidebar.style="max-width:70px; min-width:70px";
             icon.className="absolute -right-4  bg-green rounded-full "
             
            }else{
             icon.className="absolute -right-4 bg-green rounded-full open"
-            sidebarsearch.style="max-width:362px; min-width:362px";
+            subsidebar.style="max-width:362px; min-width:362px";
            }
+    });
+    companies.addEventListener("click",(e)=>{
+      e.preventDefault();
+      companies.style="background-color:#030621; color:white;"
+      scrapers.style="background-color:transparent; color:#030621; border: 2px solid #030621";
+      leadinput.appendChild(companymenu);
+      scrapmenu.remove();
+    });
+    scrapers.addEventListener("click",(e)=>{
+      e.preventDefault();
+      scrapers.style="background-color:#030621; color:white;"
+      companies.style="background-color:transparent; color:#030621; border: 2px solid #030621";
+      leadinput.appendChild(scrapmenu);
+      companymenu.remove();
     })
   },[])
   
 
   return (
-    <div className="sidebar-search">
-      <div>
-      <div id="subsidebar" className={`${isOpen? 'bg-[#fff] pt-[20px]  ' : 'bg-[#fff] shadow-xl pt-[20px] w-[70px] '}`}>
+      <div id="subsidebar" className={`${isOpen? 'bg-[#fff] pt-[20px] ' : 'bg-[#fff] shadow-xl pt-[20px] w-[70px] '}`}>
         {isOpen ? (
-          <div className="">
+          <div className="mainsidebar">
             <Tippy content='Hide filters'>
           <button id="icon"
             className="absolute -right-4 bg-green rounded-full"
@@ -62,55 +79,36 @@ const DbSearchSidebar = () => {
             )}
           </button>
           </Tippy>
-          <Tab.Group >
-            <Tab.List className="flex px-[10px] sm:px-[30px]">
-              <Tab>
-                {({ selected }) => (
-                  <button
-                    className={
-                      selected
-                        ? "flex items-center bg-dark-blue px-[6px] py-[10px] text-[14px] text-[#fff] font-semibold border-none rounded-l-xl outline-0"
-                        : "flex items-center bg-gray-light px-[6px] py-[10px] text-[14px]  text-dark-blue font-semibold border-none rounded-l-xl outline-0"
-                    }
-                  >
-                    <img
+         
+            <div className="flex px-[10px] sm:px-[30px]">
+              {/* buttons */}
+              <div className="flex ">
+                  <button id="scrapers" className="flex items-center bg-dark-blue px-[6px] py-[10px] text-[14px] text-[#fff] font-semibold border-none rounded-l-xl outline-0">
+                  <img
                       src={scrappericon}
                       alt="icon"
-                      className={selected ? " pr-1 xl:mr-3" : "pr-1 xL:mr-3 brightness-0"}
+                      className="text-dark-blue"
                     />{" "}
                     Scrapers
                   </button>
-                )}
-              </Tab>
-              <Tab>
-                {({ selected }) => (
-                  <button
-                    className={
-                      selected
-                      ? "flex items-center bg-dark-blue px-[6px]  py-[10px] text-[14px] text-[#fff] font-semibold border-none rounded-r-xl outline-0"
-                        : "flex items-center bg-gray-light px-[6px]  py-[10px] text-[14px] md:text-[16px] text-dark-blue font-semibold border-none rounded-r-xl outline-0"
-                  }
-                  >
+                  <button id="companies" className="flex items-center border-[2px] text-dark-blue border-dark-blue px-[6px] py-[10px] text-[14px]  font-semibold  rounded-r-xl outline-0">
                     <img
-                      src={companyIcon}
+                      src={scrappericon}
                       alt="icon"
-                      className={selected ? "pr-1 xl:mr-3 invert" : "pr-1 xl:mr-3"}
+                    
                     />{" "}
                     Companies
                   </button>
-                )}
-              </Tab>
-            </Tab.List>
-            <Tab.Panels>
-              <Tab.Panel className="h-full">
-                  <div className=" flex justify-between items-center mt-[30px] px-[10px] sm:px-[30px] w-full ">
+                
+              </div>
+            </div>
+            {/* Search Filter button */}
+               <div className=" flex justify-between items-center mt-[30px] px-[10px] sm:px-[30px] w-full ">
                     <div>
-          
                     <p className="filter px-3 flex items-center h-[40px] text-[14px] md:text-[16px] w-auto font-medium font-poppins">
                       Search Filters
                     </p>
                     </div>
-
                     <div>
                       <button className="text-[#B7B7B7]">Load</button>{" "}
                       <span className="text-[#B7B7B7]">|</span>{" "}
@@ -118,10 +116,10 @@ const DbSearchSidebar = () => {
                     </div>
                   </div>
                   <div className="leadinput-search">
-                    <div className="px-[10px] sm:px-[30px]">
+                    <div id="scraper-menu" className="px-[10px] sm:px-[30px]">
                       <div className="flex items-center mt-5">
-                        <img src={peopleIcon} alt="icon" className="mr-2" />
-                        <span className="text-[#B7B7B7] text-[14px]">People</span>
+                        <img src={peopleIcon} alt="icon" className="mr-2 text-[#fff]" />
+                        <span className="text-[#000] text-[14px]">People</span>
                       </div>
 
                       <div className="filter-area mt-6 bg-gray-light rounded-xl">
@@ -236,7 +234,7 @@ const DbSearchSidebar = () => {
 
                       <div className="flex items-center mt-5">
                         <img src={companiesIcon} alt="icon" className="mr-2" />
-                        <span className="text-[#B7B7B7] text-[14px]">
+                        <span className="text-[#000] text-[14px]">
                           Companies
                         </span>
                       </div>
@@ -348,32 +346,8 @@ const DbSearchSidebar = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="bottom-btn-search ">
-                    <button className="bg-green w-auto py-2 px-3 lg:w-[125px] lg:py-[10px] rounded-xl text-[14px] lg:text-[18px] text-dark-blue">
-                      Search
-                    </button>
-                    <button className="text-[16px] ml-[10px] lg:text-[18px] text-mygray">
-                      Clear Filter
-                    </button>
-                  </div>
-               
-              </Tab.Panel>
-
-              <Tab.Panel className="h-full">
-                <div className=" flex justify-between items-center mt-[30px] px-[10px] sm:px-[30px] w-full">
-                  <div>
-                    <p className="filter px-3 flex items-center h-[40px] text-[14px] md:text-[16px] w-auto font-medium font-poppins">
-                      Search Filters
-                    </p>
-                  </div>
-
-                  <div>
-                    <button>Load</button> <span>|</span> <button>Save</button>
-                  </div>
-                </div>
-
-                <div className="leadinput-search leadsecond px-[20px] mt-[20px]">
+                    <div id="company-menu" className="">
+                <div className="leadinput-search leadsecond px-[20px]  mt-[20px]">
                   <div className=" bg-gray-light pt-[18px] rounded-t-xl">
                     <p className="flex items-center font-medium text-dark-blue text-[14px] px-[22px]">
                       <img
@@ -479,19 +453,19 @@ const DbSearchSidebar = () => {
                     />
                   </div>
                 </div>
-
-                <div className="bottom-btn-search">
-                  <button className="bg-green w-auto px-5 text-[14px] py-2 lg:w-[125px] lg:py-[10px] rounded-xl lg:text-[18px] text-dark-blue">
-                    Search
-                  </button>
-                  <button className="text-[16px] ml-[10px] lg:text-[18px] text-mygray">
-                    Clear Filter
-                  </button>
-                </div>
-              </Tab.Panel>
-            </Tab.Panels>
-          </Tab.Group>
-          </div>
+              </div>
+                  </div>
+                  <div className="bottom-btn-search ">
+                    <button className="bg-green w-auto py-2 px-3 lg:w-[125px] lg:py-[10px] rounded-xl text-[14px]  text-dark-blue">
+                      Search
+                    </button>
+                    <button className="text-[16px] ml-[10px] text-mygray">
+                      Clear Filter
+                    </button>
+                  </div>       
+            </div>
+        
+         
        
       ) : (
         <div className="flex flex-col items-center justify-center">
@@ -522,8 +496,6 @@ const DbSearchSidebar = () => {
         </div>
       )}
       </div>
-      </div>
-    </div>
   );
 };
 
