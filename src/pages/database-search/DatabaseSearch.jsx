@@ -32,7 +32,7 @@ const handleSeeDetails = () => {
       <div className="w-full">
         {/* <div> <h1 className="mx-2 rounded-lg mt-2 md:mx-5 text-[22px] md:text-[24px] font-bold p-3 bg-[#ffffff] text-[#000000] capitalize">{window.location.pathname.substr(1,)}</h1>
         </div> */}
-      <div className="main w-[100%]" >
+      <div className="main">
        <div>
         <DbSearchSidebar/>
         </div>

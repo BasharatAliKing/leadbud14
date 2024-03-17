@@ -19,7 +19,7 @@
     /* margin-top: 60px; */
     /* margin-left: var(--nav-aside-width); */
     background-color: #f6f8fd;
-    width: 100%;
+    width:auto;
     overflow-x: auto;
     scrollbar-width: none;
 }
