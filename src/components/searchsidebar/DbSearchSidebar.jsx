@@ -45,7 +45,7 @@ const DbSearchSidebar = () => {
             antcardbody.style="width:auto";
            }else{
             icon.className="absolute -right-4 bg-green rounded-full open"
-            subsidebar.style="max-width:362px; min-width:362px";
+            subsidebar.style="max-width:300px; min-width:300px";
             // antcardbody.style="width:300px";
             const x = window.matchMedia("(max-width:576px)");
             const handle = ()=>{
@@ -99,20 +99,12 @@ const DbSearchSidebar = () => {
             <div className="flex px-[10px] sm:px-[30px]">
               {/* buttons */}
               <div className="flex ">
-                  <button id="scrapers" className="flex items-center bg-dark-blue px-[6px] py-[10px] text-[14px] text-[#fff] font-semibold border-none rounded-l-xl outline-0">
-                  <img
-                      src={scrappericon}
-                      alt="icon"
-                      className="text-dark-blue"
-                    />{" "}
+                  <button id="scrapers" className="flex items-center gap-1 bg-dark-blue px-[6px] py-[10px] text-[14px] text-[#fff] font-semibold border-none rounded-l-xl outline-0">
+                  <i class="fa-solid fa-user-tie text-[18px] md:text-[20px]"></i>
                     Scrapers
                   </button>
-                  <button id="companies" className="flex items-center border-[2px] text-dark-blue border-dark-blue px-[6px] py-[10px] text-[14px]  font-semibold  rounded-r-xl outline-0">
-                    <img
-                      src={scrappericon}
-                      alt="icon"
-                    
-                    />{" "}
+                  <button id="companies" className="flex items-center gap-1 border-[2px] text-dark-blue border-dark-blue px-[6px] py-[10px] text-[14px]  font-semibold  rounded-r-xl outline-0">
+                  <i class="fa-solid fa-building text-[18px] md:text-[20px]"></i>
                     Companies
                   </button>
                 
