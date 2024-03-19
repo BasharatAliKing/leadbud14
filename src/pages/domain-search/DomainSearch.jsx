@@ -146,54 +146,45 @@ const DomainSearch = () => {
                       </div>
 
                       {isOpen && (
-                        <div className="search-data">
-                          <Row gutter={50}>
-                            <Col lg={{ span: 10 }}
-                               xs={{span:24}}>
+                        <div className="search-data grid grid-cols-1 md:grid-cols-2 gap-5">
+                         
+                            <div>
                               <div className="item-bg">
                                 <span className="name">City:</span>
                                 <span className="data ml-auto">New York</span>
                               </div>
-                            </Col>
+                            </div>
 
-                            <Col lg={{ span: 10 }}
-                               xs={{span:24}}>
+                            <div>
                               <div className="item-bg">
                                 <span>Industry:</span>
                                 <span className="ml-auto">Software Company</span>
                               </div>
-                            </Col>
-                          </Row>
-
-                          <Row gutter={50}>
-                            <Col lg={{ span: 10 }}
-                               xs={{span:24}}>
+                            </div>
+                         
+                         
+                            <div>
                               <div className="item">
                                 <span>Founded:</span>
                                 <span className="ml-auto">2018</span>
                               </div>
-                            </Col>
+                            </div>
 
-                            <Col lg={{ span: 10 }}
-                               xs={{span:24}}>
+                            <div>
                               <div className="item">
                                 <span>Size:</span>
                                 <span className="ml-auto">51 - 200</span>
                               </div>
-                            </Col>
-                          </Row>
-
-                          <Row gutter={50}>
-                            <Col lg={{ span: 10 }}
-                               xs={{span:24}}>
+                            </div>
+                         
+                            <div >
                               <div className="item-bg">
                                 <span className="name">Web Site:</span>
                                 <span className="data ml-auto">leadbud.io</span>
                               </div>
-                            </Col>
+                            </div>
 
-                            <Col lg={{ span: 10 }}
-                               xs={{span:24}}>
+                            <div>
                               <div className="item-bg">
                                 <span>Social:</span>
                                 <ul className="social ml-auto">
@@ -208,12 +199,9 @@ const DomainSearch = () => {
                                   </li>
                                 </ul>
                               </div>
-                            </Col>
-                          </Row>
-
-                          <Row gutter={50}>
-                            <Col lg={{ span: 10 }}
-                               xs={{span:24}}>
+                            </div>
+                         
+                            <div>
                               <div className="item">
                                 <span>HQ Number</span>
                                 <span className="ml-auto">+17123456789</span>
@@ -225,8 +213,8 @@ const DomainSearch = () => {
                                   <PlusCircleOutlined /> Add to List
                                 </Button>
                               </div>
-                            </Col>
-                          </Row>
+                            </div>
+                        
                         </div>
                       )}
                     </Card>
