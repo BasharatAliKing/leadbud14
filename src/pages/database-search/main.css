@@ -91,21 +91,9 @@
 }
 @media (max-width:768px){
    
-    .ant-layout-header {
-         /* position: fixed;
-         height: 50px; */
-    }
-    .ant-layout-sider{
-        margin-top: 50px;
-        height: fit-content;
-    }
-    .ant-layout.ant-layout-has-sider {
-        flex-direction:row;
-       
-    }
-    .ant-card-body{
+    /* .ant-card-body{
         width: 200px;
-    }
+    } */
     #subsidebar{
         height: 100%;
         max-height: 100%;

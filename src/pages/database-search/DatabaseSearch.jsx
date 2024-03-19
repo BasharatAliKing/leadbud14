@@ -22,9 +22,9 @@ const handleSeeDetails = () => {
 
   return (
     <div className="">
-      <div className="header px-3 md:px-10">
+      <Header className="header">
         <Topbar Pagetitle="Database Search"/>
-      </div>
+      </Header>
       <Layout>
         <Sider>
           <SideNav />
