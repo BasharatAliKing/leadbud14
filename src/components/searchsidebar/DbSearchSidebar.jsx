@@ -35,10 +35,15 @@ const DbSearchSidebar = () => {
     const antcardbody=document.querySelector(".ant-card-body");
   //  antcardbody.remove();
   // Create a MediaQueryList object
-   var x = window.matchMedia("(max-width: 700px)");
-   function myFunction(x) {
-     antcardbody.style="width:300px";
+  const x = window.matchMedia("(min-width:768px)");
+  const handle = ()=>{
+    if(x.matches){
+      antcardbody.style="width:auto";
+    }else{
+      antcardbody.style="width:300px";
+    }
   }
+  handle(x);
     companymenu.remove();
     const icon=document.querySelector("#icon");
     icon.addEventListener("click", (e)=>{
