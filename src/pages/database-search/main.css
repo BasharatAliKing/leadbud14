@@ -19,6 +19,8 @@
     /* margin-top: 60px; */
     /* margin-left: var(--nav-aside-width); */
     background-color: #f6f8fd;
+    max-height: calc(100vh - 75px - 0px);
+    height: calc(100vh - 75px - 0px);
     width:auto;
     overflow-x: auto;
     scrollbar-width: none;

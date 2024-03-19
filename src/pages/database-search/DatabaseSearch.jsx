@@ -30,7 +30,7 @@ const handleSeeDetails = () => {
           <SideNav />
         </Sider>
      
-      <div className="main w-[87%] h-screen md:h-auto md:w-full overflow-x-scroll">
+      <div className="main w-[87%] md:w-full overflow-x-scroll">
        <div>
         <DbSearchSidebar/>
         </div>
