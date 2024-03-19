@@ -34,7 +34,11 @@ const DbSearchSidebar = () => {
     const leadinput=document.querySelector(".leadinput-search");
     const antcardbody=document.querySelector(".ant-card-body");
   //  antcardbody.remove();
-  antcardbody.style="width:300px";
+  // Create a MediaQueryList object
+   var x = window.matchMedia("(max-width: 700px)");
+   function myFunction(x) {
+     antcardbody.style="width:300px";
+  }
     companymenu.remove();
     const icon=document.querySelector("#icon");
     icon.addEventListener("click", (e)=>{
