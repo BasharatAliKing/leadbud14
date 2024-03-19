@@ -21,10 +21,10 @@ const handleSeeDetails = () => {
 
 
   return (
-    <Layout className="">
-      <Header className="header">
+    <div className="">
+      <div className="header px-3 md:px-10">
         <Topbar Pagetitle="Database Search"/>
-      </Header>
+      </div>
       <Layout>
         <Sider>
           <SideNav />
@@ -32,12 +32,12 @@ const handleSeeDetails = () => {
       <div className="w-full">
         {/* <div> <h1 className="mx-2 rounded-lg mt-2 md:mx-5 text-[22px] md:text-[24px] font-bold p-3 bg-[#ffffff] text-[#000000] capitalize">{window.location.pathname.substr(1,)}</h1>
         </div> */}
-      <div className="main">
+      <div className="main w-[100%] overflow-x-scroll">
        <div>
         <DbSearchSidebar/>
         </div>
          <div className="sectwo ">
-         <Layout>
+         <div>
           <Content style={{ marginTop: "-10px", marginBottom: "20px" }}>
           <div className="container mx-auto text-center sm:text-start">
             <div>
@@ -89,15 +89,13 @@ const handleSeeDetails = () => {
         
               
           </Content>
-        </Layout>
+        </div>
          </div>
       </div>
       </div>
        
-        
-       
       </Layout>
-    </Layout>
+    </div>
   );
 };
 

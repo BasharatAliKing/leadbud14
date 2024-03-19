@@ -32,7 +32,7 @@ function App() {
       <Router>
       <Routes>
         
-        {/* <Route exact path='/' element={<Register />} />
+        <Route exact path='/' element={<Register />} />
         <Route path='/verify-email'  element={<VerifyEmail />}/>
         <Route  path='/login' element={<Login /> } />
         <Route path="/dashboard"  element = {<DashBoardAnt />} />
@@ -51,7 +51,7 @@ function App() {
         <Route path='/account/do-not-email-list' element={<DontEmailList />} />
         <Route path='/account/team' element={<MyTeam />} />
         <Route path='/account/transactions' element={<Transactions />} />
-        <Route path='/account/search-settings' element={<SearchSettings />} /> */}
+        <Route path='/account/search-settings' element={<SearchSettings />} />
         <Route path='*' element={<Error/>} />
 
       </Routes>

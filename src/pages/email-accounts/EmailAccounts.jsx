@@ -113,7 +113,7 @@ const EmailAccounts = () => {
                     </div>
 
 
-                    <div className="table-area overflow-x-scroll">
+                    <div className="table-area overflow-x-scroll mt-2">
                         <Table
                                   rowSelection={{
                                     type: selectionType,

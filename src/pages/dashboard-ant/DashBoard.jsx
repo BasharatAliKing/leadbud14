@@ -139,7 +139,7 @@ const DashBoard =() => {
               </div>
             </div>
           </Col>
-          <Col lg={{ span: 8 }}
+          <Col xl={{ span: 8 }}
            xs={{ span: 24 }}
           >
             <div className="pie-item">
@@ -149,7 +149,7 @@ const DashBoard =() => {
             </div>
           </Col>
 
-          <Col lg={{ span: 16 }}
+          <Col xl={{ span: 16 }}
           xs={{span:24}}>
             <Card>
               <Tabs defaultActiveKey="tab1">
@@ -304,8 +304,7 @@ const DashBoard =() => {
           </Col>
 
           <Col 
-               lg={{ span: 8 }}
-               md={{span:8}}
+               xl={{ span: 8 }}
                xs={{ span: 24 }}
                >
             <Card>
