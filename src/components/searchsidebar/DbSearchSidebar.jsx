@@ -50,7 +50,6 @@ const DbSearchSidebar = () => {
             const x = window.matchMedia("(max-width:576px)");
             const handle = ()=>{
               if(x.matches){
-          
                 antcardbody.style="width:300px";
                
               }else{
@@ -62,6 +61,7 @@ const DbSearchSidebar = () => {
     });
     companies.addEventListener("click",(e)=>{
       e.preventDefault();
+      console.log("clicked..")
       companies.style="background-color:#030621; color:white;"
       scrapers.style="background-color:transparent; color:#030621; border: 2px solid #030621";
       leadinput.appendChild(companymenu);

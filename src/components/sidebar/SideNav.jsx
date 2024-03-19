@@ -17,7 +17,7 @@ const SideNav = () => {
     <div className="sidebar">
       <ul className="menu">
         <li key="1" className="menu-item">
-          <NavLink to="/prospects">
+          <NavLink to="">
             <img src={searchIcon} alt="icon" />
           </NavLink>
           <ul className="sub-menu z-20">
@@ -31,7 +31,7 @@ const SideNav = () => {
         </li>
 
         <li key="2" className="menu-item">
-          <NavLink to="/finder-tools">
+          <NavLink to="">
             <img src={toolsIcon} alt="icon" />
           </NavLink>
           <ul className="sub-menu">
@@ -63,7 +63,7 @@ const SideNav = () => {
         </li>
 
         <li key="3" className="menu-item">
-          <NavLink to="/verify-individual-emails">
+          <NavLink to="">
             <img src={userIcon} alt="icon" />
           </NavLink>
           <ul className="sub-menu">
@@ -77,7 +77,7 @@ const SideNav = () => {
         </li>
 
         <li key="4" className="menu-item">
-          <NavLink href="/">
+          <NavLink href="">
             <img src={listIcon} alt="icon" />
           </NavLink>
           <ul className="sub-menu">
@@ -91,7 +91,7 @@ const SideNav = () => {
         </li>
 
         <li key="5" className="menu-item">
-          <NavLink href="/">
+          <NavLink href="">
             <img src={stockIcon} alt="icon" />
           </NavLink>
           <ul className="sub-menu">
@@ -111,7 +111,7 @@ const SideNav = () => {
         </li>
 
         <li key="6" className="menu-item">
-          <Link to="/">
+          <Link to="">
             <img src={cloudIcon} alt="icon" />
           </Link>
           <ul className="sub-menu">
@@ -131,7 +131,7 @@ const SideNav = () => {
         </li>
 
         <li key="7" className="menu-item">
-          <NavLink href="/">
+          <NavLink href="">
             <img src={centrlIcon} alt="icon" />
           </NavLink>
           <ul className="sub-menu">
@@ -151,7 +151,7 @@ const SideNav = () => {
         </li>
 
         <li key="8" className="menu-item">
-          <NavLink href="/">
+          <NavLink href="">
             <img src={settigIcon} alt="icon" />
           </NavLink>
         </li>
