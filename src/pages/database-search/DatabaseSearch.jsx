@@ -29,10 +29,8 @@ const handleSeeDetails = () => {
         <Sider>
           <SideNav />
         </Sider>
-      <div className="w-[87%] md:w-full">
-        {/* <div> <h1 className="mx-2 rounded-lg mt-2 md:mx-5 text-[22px] md:text-[24px] font-bold p-3 bg-[#ffffff] text-[#000000] capitalize">{window.location.pathname.substr(1,)}</h1>
-        </div> */}
-      <div className="main w-[100%] overflow-x-scroll">
+     
+      <div className="main w-[87%] overflow-x-scroll">
        <div>
         <DbSearchSidebar/>
         </div>
@@ -92,7 +90,7 @@ const handleSeeDetails = () => {
         </div>
          </div>
       </div>
-      </div>
+      
        
       </Layout>
     </div>
