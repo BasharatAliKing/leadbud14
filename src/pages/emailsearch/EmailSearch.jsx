@@ -149,21 +149,30 @@ const rowSelection = {
 
               <Form className="my-form">
                 <Row gutter={24}>
-                  <Col lg={{ span: 8 }}>
+                  <Col lg={{ span: 8 }}
+                      md={{span:12}}
+                      xs={{span:24}}
+                  >
                     <Paragraph className="mylabel">First Name</Paragraph>
                     <Form.Item>
                       <Input placeholder="Sarah" className="ant-my-input" />
                     </Form.Item>
                   </Col>
 
-                  <Col lg={{ span: 8 }}>
+                  <Col lg={{ span: 8 }}
+                      md={{span:12}}
+                      xs={{span:24}}
+                  >
                     <Paragraph className="mylabel">Last Name</Paragraph>
                     <Form.Item>
                       <Input placeholder="Standin" className="ant-my-input" />
                     </Form.Item>
                   </Col>
 
-                  <Col lg={{ span: 8 }}>
+                  <Col lg={{ span: 8 }}
+                      md={{span:12}}
+                      xs={{span:24}}
+                  >
                     <Paragraph className="mylabel">
                       Company Domain Name
                     </Paragraph>

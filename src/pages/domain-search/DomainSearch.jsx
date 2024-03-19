@@ -270,7 +270,7 @@ const DomainSearch = () => {
                               <div>
                                 <Divider />
 
-                                <Table className="overflow-x-scroll"
+                                <Table className="overflow-x-scroll mt-2"
                                   rowSelection={{
                                     type: selectionType,
                                     ...rowSelection,

@@ -156,7 +156,7 @@ const IndividualVerificatinTool = () => {
                 </Form.Item>
               </Form>
 
-              <Button className="search-btn text-[16px] sm:text-[18px] md:text-[20px] h-auto mt-0 md:h-[50px] w-auto">Search</Button>
+              <Button className="search-btn text-[16px] sm:text-[18px] md:text-[20px] h-auto mt-2 md:h-[50px] w-auto">Search</Button>
             </Card>
           </div>
           <div>

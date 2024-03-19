@@ -190,7 +190,7 @@ const Transactions = () => {
 
 
 
-                  <div className="table-area-transaction overflow-x-scroll">
+                  <div className="table-area-transaction overflow-x-scroll mt-2">
                         <Table
                                   rowSelection={{
                                     type: selectionType,

@@ -117,6 +117,15 @@
       opacity: 1;
     }
   }
+  @media (max-width:768px){
+    .send-email{
+        margin-left: 10px;
+    }
+    .mylabel{
+        font-size: 16px;
+        margin-top: 15px;
+    }
+  }
   @media (max-width:576px){
     .ant-my-input{
         height: 35px;
@@ -129,4 +138,6 @@
         align-items: center;
         width: 200px;
     }
+   
+   
   }
