@@ -10,6 +10,7 @@ import {Typography} from "antd";
 const { Title, Paragraph} = Typography;
 import './main.css'
 import SearchIcon from '../../assets/images/recent-searches-icon.png'
+import { useEffect } from "react";
 
 const DatabaseSearch = () => {
 
@@ -18,7 +19,6 @@ const [isOpen, setIsOpen] = useState(true);
 const handleSeeDetails = () => {
   setIsOpen(!isOpen)
 }
-
 
   return (
     <div className="">
@@ -40,7 +40,7 @@ const handleSeeDetails = () => {
           <div className="container mx-auto text-center sm:text-start">
             <div>
               <div>
-                <Card className="p-0 mt-5">
+                <Card className="p-0 mt-5 w-[300px] md:w-auto savedcard ">
                   <h2 className="text-[16px] lg:text-[20px] font-bold">Saved Searches</h2>
 
                     <div className="saved-searches ">

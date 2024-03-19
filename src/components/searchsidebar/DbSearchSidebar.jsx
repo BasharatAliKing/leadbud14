@@ -32,18 +32,10 @@ const DbSearchSidebar = () => {
     const scrapmenu=document.querySelector("#scraper-menu");
     const companymenu=document.querySelector("#company-menu");
     const leadinput=document.querySelector(".leadinput-search");
-    const antcardbody=document.querySelector(".ant-card-body");
+    const antcardbody=document.querySelector(".savedcard");
   //  antcardbody.remove();
   // Create a MediaQueryList object
-  const x = window.matchMedia("(min-width:768px)");
-  const handle = ()=>{
-    if(x.matches){
-      antcardbody.style="width:auto";
-    }else{
-      antcardbody.style="width:300px";
-    }
-  }
-  handle(x);
+  
     companymenu.remove();
     const icon=document.querySelector("#icon");
     icon.addEventListener("click", (e)=>{
@@ -51,11 +43,21 @@ const DbSearchSidebar = () => {
             subsidebar.style="max-width:70px; min-width:70px";
             icon.className="absolute -right-4  bg-green rounded-full ";
             antcardbody.style="width:auto";
-            
            }else{
             icon.className="absolute -right-4 bg-green rounded-full open"
             subsidebar.style="max-width:362px; min-width:362px";
-            antcardbody.style="width:300px";
+            // antcardbody.style="width:300px";
+            const x = window.matchMedia("(max-width:576px)");
+            const handle = ()=>{
+              if(x.matches){
+          
+                antcardbody.style="width:300px";
+               
+              }else{
+                antcardbody.style="width:auto";
+              }
+            }
+            handle(x);
            }
     });
     companies.addEventListener("click",(e)=>{
