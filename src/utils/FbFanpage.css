@@ -6,6 +6,9 @@ table tbody td ,th{
     font-size: 14px;
     white-space: nowrap;
 }
+button{
+    white-space: nowrap;
+}
 .main-body{
     margin: 40px 80px;
 }
@@ -25,5 +28,8 @@ table tbody td ,th{
 @media (max-width:596px) {
      table td,th{
         font-size: 13px;
+     }
+     .main-body{
+        margin: 20px 10px;
      }
 }
