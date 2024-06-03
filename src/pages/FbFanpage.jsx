@@ -153,6 +153,56 @@ export default function FbFanpage() {
                                     <td>London</td>
                                     <td>CEO</td>
                                 </tr>
+                                <tr className='odd:bg-[#fff] even:bg-[#F5F5F5]'>
+                                    <td><div className='flex gap-3 items-center'><input type="checkbox" /><div><h3 className='font-medium text-[#000]'>Alex Summers</h3><p className=' -mt-1'>CEO</p></div></div></td>
+                                    <td> <div className='flex gap-2 items-center'><div className='h-3 w-3 bg-green rounded-full shadow-xl'></div><p>alexsummers@gmail.com</p></div> </td>
+                                    <td>Salesforce</td>
+                                    <td>Male</td>
+                                    <td>United Kingdom</td>
+                                    <td>+44 123456789</td>
+                                    <td>London</td>
+                                    <td>CEO</td>
+                                </tr>
+                                <tr className='odd:bg-[#fff] even:bg-[#F5F5F5]'>
+                                    <td><div className='flex gap-3 items-center'><input type="checkbox" /><div><h3 className='font-medium text-[#000]'>Alex Summers</h3><p className=' -mt-1'>CEO</p></div></div></td>
+                                    <td> <div className='flex gap-2 items-center'><div className='h-3 w-3 bg-green rounded-full shadow-xl'></div><p>alexsummers@gmail.com</p></div> </td>
+                                    <td>Salesforce</td>
+                                    <td>Male</td>
+                                    <td>United Kingdom</td>
+                                    <td>+44 123456789</td>
+                                    <td>London</td>
+                                    <td>CEO</td>
+                                </tr>
+                                <tr className='odd:bg-[#fff] even:bg-[#F5F5F5]'>
+                                    <td><div className='flex gap-3 items-center'><input type="checkbox" /><div><h3 className='font-medium text-[#000]'>Alex Summers</h3><p className=' -mt-1'>CEO</p></div></div></td>
+                                    <td> <div className='flex gap-2 items-center'><div className='h-3 w-3 bg-green rounded-full shadow-xl'></div><p>alexsummers@gmail.com</p></div> </td>
+                                    <td>Salesforce</td>
+                                    <td>Male</td>
+                                    <td>United Kingdom</td>
+                                    <td>+44 123456789</td>
+                                    <td>London</td>
+                                    <td>CEO</td>
+                                </tr>
+                                <tr className='odd:bg-[#fff] even:bg-[#F5F5F5]'>
+                                    <td><div className='flex gap-3 items-center'><input type="checkbox" /><div><h3 className='font-medium text-[#000]'>Alex Summers</h3><p className=' -mt-1'>CEO</p></div></div></td>
+                                    <td> <div className='flex gap-2 items-center'><div className='h-3 w-3 bg-green rounded-full shadow-xl'></div><p>alexsummers@gmail.com</p></div> </td>
+                                    <td>Salesforce</td>
+                                    <td>Male</td>
+                                    <td>United Kingdom</td>
+                                    <td>+44 123456789</td>
+                                    <td>London</td>
+                                    <td>CEO</td>
+                                </tr>
+                                <tr className='odd:bg-[#fff] even:bg-[#F5F5F5]'>
+                                    <td><div className='flex gap-3 items-center'><input type="checkbox" /><div><h3 className='font-medium text-[#000]'>Alex Summers</h3><p className=' -mt-1'>CEO</p></div></div></td>
+                                    <td> <div className='flex gap-2 items-center'><div className='h-3 w-3 bg-green rounded-full shadow-xl'></div><p>alexsummers@gmail.com</p></div> </td>
+                                    <td>Salesforce</td>
+                                    <td>Male</td>
+                                    <td>United Kingdom</td>
+                                    <td>+44 123456789</td>
+                                    <td>London</td>
+                                    <td>CEO</td>
+                                </tr>
                             </tbody>
                         </table>
                       </div>
