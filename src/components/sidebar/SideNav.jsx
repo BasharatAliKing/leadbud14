@@ -27,6 +27,9 @@ const SideNav = () => {
             <Link to="/database-search">
               <li className="sub-menu-link">Companies</li>
             </Link>
+            <Link to="/facebook">
+              <li className="sub-menu-link">Fb FanPage</li>
+            </Link>
           </ul>
         </li>
 

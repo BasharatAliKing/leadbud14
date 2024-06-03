@@ -24,6 +24,7 @@ import MyTeam from './pages/my-team/MyTeam'
 import Transactions from './pages/transactions/Transactions'
 import SearchSettings from './pages/search-settings/SearchSettings'
 import Error from './pages/Error/Error'
+import FbFanpage from './pages/FbFanpage'
 
 function App() {
 
@@ -31,10 +32,9 @@ function App() {
     <div className='app'>
       <Router>
       <Routes>
-        
         <Route exact path='/' element={<Register />} />
         <Route path='/verify-email'  element={<VerifyEmail />}/>
-        <Route  path='/login' element={<Login /> } />
+        <Route path='/login' element={<Login /> } />
         <Route path="/dashboard"  element = {<DashBoardAnt />} />
         <Route path="/verify-individual-emails" element={<IndividualVerificatinToolPage />} />
         <Route path="/email-search" element={<EmailSearch />} />
@@ -52,6 +52,7 @@ function App() {
         <Route path='/account/team' element={<MyTeam />} />
         <Route path='/account/transactions' element={<Transactions />} />
         <Route path='/account/search-settings' element={<SearchSettings />} />
+        <Route path="/facebook" element={<FbFanpage/>} />
         <Route path='*' element={<Error/>} />
 
       </Routes>
