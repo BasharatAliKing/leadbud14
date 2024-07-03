@@ -3,9 +3,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Register from './pages/register/Register'
 import Login from './pages/login/Login'
 import DatabaseSearch from './pages/database-search/DatabaseSearch'
-import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
-import Loader from './components/Loader'
 import VerifyEmail from './pages/verifyemail/VerifyEmail'
 import DashBoardAnt from './pages/dashboard-ant'
 import IndividualVerificatinToolPage from './pages/verificationtools'
@@ -25,6 +23,7 @@ import Transactions from './pages/transactions/Transactions'
 import SearchSettings from './pages/search-settings/SearchSettings'
 import Error from './pages/Error/Error'
 import FbFanpage from './pages/FbFanpage'
+import RecentActivities from './pages/recent-act/RecentActivities';
 
 function App() {
 
@@ -53,6 +52,7 @@ function App() {
         <Route path='/account/transactions' element={<Transactions />} />
         <Route path='/account/search-settings' element={<SearchSettings />} />
         <Route path="/facebook" element={<FbFanpage/>} />
+        <Route path="/recent-activities" element={<RecentActivities/>} />
         <Route path='*' element={<Error/>} />
 
       </Routes>

@@ -30,6 +30,9 @@ const SideNav = () => {
             <Link to="/facebook">
               <li className="sub-menu-link">Fb FanPage</li>
             </Link>
+            <Link to="/recent-activities">
+              <li className="sub-menu-link">Recent Activities</li>
+            </Link>
           </ul>
         </li>
 
