@@ -23,8 +23,7 @@ import Transactions from './pages/transactions/Transactions'
 import SearchSettings from './pages/search-settings/SearchSettings'
 import Error from './pages/Error/Error'
 import FbFanpage from './pages/FbFanpage'
-import RecentActivities from './pages/recent-act/RecentActivities';
-
+import RecentActivity from './pages/recent-activity/RecentActivity'
 function App() {
 
   return (
@@ -52,7 +51,7 @@ function App() {
         <Route path='/account/transactions' element={<Transactions />} />
         <Route path='/account/search-settings' element={<SearchSettings />} />
         <Route path="/facebook" element={<FbFanpage/>} />
-        <Route path="/recent-activities" element={<RecentActivities/>} />
+        <Route path="/recent-activities" element={<RecentActivity/>} />
         <Route path='*' element={<Error/>} />
 
       </Routes>

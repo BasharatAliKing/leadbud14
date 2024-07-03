@@ -5,11 +5,11 @@ import { IoMdSettings } from "react-icons/io";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { BiBuildings } from "react-icons/bi";
 import { LuPlusCircle } from "react-icons/lu";
-import "./recent.css";
-export default function MainSidebar() {
+import "./recentactivity.css";
+export default function RecentActivitySidebar() {
   return (
     <>
-     <div className="p-3 md:p-5 pr-0 mainsidebar flex flex-col gap-2">
+     <div id='recentmainsidebar' className="p-3 md:p-5 pr-0 flex flex-col gap-2">
          <div className="flex justify-between items-center">
             <h3 className="text-[#030621] text-[18px] md:text-[22px] font-semibold font-poppins">Tina Z</h3>
             <HiDotsHorizontal className="text-[20px] text-[#030621]" />
@@ -26,11 +26,13 @@ export default function MainSidebar() {
             </div>
             <IoMdSettings className="text-[18px] text-[#B7B7B7]" />
          </div>
-         <div className="bg-[#F5F5F5] mt-2 btns rounded-md h-auto">
-            <button className="text-[13px] font-medium font-poppins p-2 bg-[#030621] text-[#fff]">Details</button>
+         <div className="bg-[#F5F5F5] mt-2 rounded-[10px] w-full">
+          <div id='recentbtns'>
+          <button className="text-[13px] active font-medium font-poppins p-2 bg-[#030621] text-[#fff]">Details</button>
             <button className="text-[13px] font-medium font-poppins p-2">Deals</button>
             <button className="text-[13px] font-medium font-poppins p-2">Related Companies</button>
             <button className="text-[13px] font-medium font-poppins p-2">Signals</button>
+          </div>
          </div>
          <div className="bg-[#F5F5F5] p-3 rounded-md">
           <div className="p-2 flex gap-2 md:gap-0 items-center ">
