@@ -7,7 +7,7 @@ import { Row, Col, Card, Button } from "antd";
 import {Typography} from "antd";
 const { Title, Paragraph} = Typography;
 // import './recentactivity.css'
-import RecentActivitySidevar from "./RecentActivitySidebar";
+import RecentActivitySidebar from "./RecentActivitySidebar";
 import { GiNotebook } from "react-icons/gi";
 import { LuRefreshCw } from "react-icons/lu";
 import { HiOutlineMail } from "react-icons/hi";
@@ -23,13 +23,16 @@ export default function RecentActivity() {
                 <Sider>
                     <SideNav />
                 </Sider>
-                <div className="recentmain w-[87%] md:w-full overflow-x-scroll py-5 md:py-0">
-                    <div className="p-2  md:p-0"> 
-                      <RecentActivitySidevar/>
+           <Content>
+              <div className="recentmain py-5 md:py-0">
+                    <div className="p-2  md:p-0 "> 
+                      <RecentActivitySidebar/>
                         </div>
-                    <div className="recentsectwo">
-                        <div className="flex flex-col gap-4 lg:w-[80%] md:mr-2 ">
-                            <div className="p-6 md:mt-3 bg-[#fff]  rounded-xl shadow-lg flex flex-col gap-4">
+                       
+           <div className="recentsectwo">
+                       <div className=" p-2 lg:p-5 lg:w-5/6">
+                       <div className="flex flex-col gap-4">
+                            <div className="p-6 md:mt-3  bg-[#fff]  rounded-xl shadow-lg flex flex-col gap-4">
                                 <div className="flex gap-5 lg:gap-10 items-center">
                                     <h1 className=" text-[16px] xl:text-[20px] font-semibold font-poppins text-[#030621]">Recent Activities</h1>
                                     <LuRefreshCw className="text-[16px] xl:text-[20px]" />
@@ -46,8 +49,10 @@ export default function RecentActivity() {
                                 <div className="flex whitespace-nowrap overflow-scroll hide-scrollbar  bg-[#fff] rounded-md p-2 gap-1 items-center text-[14px] xl:text-[16px] font-poppins font-normal w-full"><AiFillPlusCircle className="text-[#56F444] text-[16px]" /> You added this prospect through Bulk Domain Search to list new 342 Industry</div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                       </div>
+           </div>
+              </div>
+              </Content>
             </Layout>
             </div>
     </>

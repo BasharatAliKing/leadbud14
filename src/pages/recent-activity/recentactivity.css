@@ -1,10 +1,24 @@
-
+.recentmain{
+    display: flex;
+    flex-direction: row;
+    /* flex-grow: 1; */
+    gap: 8px;
+    /* margin-top: 60px; */
+    /* margin-left: var(--nav-aside-width); */
+    background-color: #f6f8fd;
+    max-height: calc(100vh - 60px - 0px);
+    height: calc(100vh - 60px - 0px);
+    width:100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
 .recentsectwo{
     display: flex;
     flex-direction: column;
     flex: 1;
     position: relative;
     padding: 10px;
+    width: 45%;
 }
 /* .ant-layout{
     background: none;
@@ -12,20 +26,7 @@
     top: 0;
     padding: 0px;
 }*/
-.recentmain{ 
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    gap: 8px;
-    /* margin-top: 60px; */
-    /* margin-left: var(--nav-aside-width); */
-    background-color: #F5F5F5;
-    max-height: calc(100vh - 58px - 0px);
-    height: calc(100vh - 58px - 0px);
-    width:auto;
-    overflow-x: auto;
-    scrollbar-width: none;
-}
+
 
 #recentmainsidebar{
     position: relative;
@@ -65,9 +66,18 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+@media (max-width:805px){
+    
+}
 @media (max-width:768px){
     .recentmain{
+        height: auto;
+        max-height: 10000px;
         flex-direction: column;
+    }
+    .recentsectwo{
+        width: 100%;
+        padding: 0px;
     }
     #recentmainsidebar{
         position: relative;

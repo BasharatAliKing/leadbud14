@@ -13,9 +13,7 @@ import SearchIcon from '../../assets/images/recent-searches-icon.png'
 import { useEffect } from "react";
 
 const DatabaseSearch = () => {
-
 const [isOpen, setIsOpen] = useState(true);
-
 const handleSeeDetails = () => {
   setIsOpen(!isOpen)
 }
@@ -42,7 +40,7 @@ const handleSeeDetails = () => {
               <div>
                 <Card className="p-0 mt-5 w-[300px] md:w-auto savedcard ">
                   <h2 className="text-[16px] lg:text-[20px] font-bold">Saved Searches</h2>
-
+                  
                     <div className="saved-searches ">
                     <img src={SavefilterIcon} alt="icon" />
                     <p>Select filters and save them to create a new saved search</p>
@@ -83,9 +81,7 @@ const handleSeeDetails = () => {
                 </Card>
               </div>
             </div>
-          </div>
-        
-              
+          </div>       
           </Content>
         </div>
          </div>
