@@ -80,7 +80,7 @@ export default function ProspectsActivity() {
                                         {
                                             companykeywords.map((val) => {
                                                 return (
-                                                    <p className='bg-[#F5F5F5] p-1 px-4 rounded-full text-[#7B7B7B] text-[11px] sm:text-[13px] xl:text-[14px]'>{val}</p>
+                                                    <p className='bg-[#F5F5F5] p-1 px-4 rounded-full text-[#7B7B7B] text-[10px] sm:text-[13px] xl:text-[14px]'>{val}</p>
                                                 )
                                             })
                                         }
