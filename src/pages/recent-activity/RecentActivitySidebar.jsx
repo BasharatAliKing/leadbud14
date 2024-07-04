@@ -9,7 +9,7 @@ import "./recentactivity.css";
 export default function RecentActivitySidebar() {
   return (
     <>
-     <div id='recentmainsidebar' className="p-3 md:p-5 pr-0 flex flex-col gap-2">
+     <div id='recentmainsidebar' className="p-3 md:p-5  flex flex-col gap-2">
          <div className="flex justify-between items-center">
             <h3 className="text-[#030621] text-[18px] md:text-[22px] font-semibold font-poppins">Tina Z</h3>
             <HiDotsHorizontal className="text-[20px] text-[#030621]" />

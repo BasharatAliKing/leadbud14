@@ -27,7 +27,7 @@ export default function News() {
                         <h2 className='font-[300]'>Launches</h2>
                         <h3>Aug 11, 2023</h3>
                     </div> </div>
-                <div className="p-2 text-[13px] md:-2 flex flex-col bg-[rgb(245,245,245)] rounded-md whitespace-nowrap overflow-scroll lg:overflow-auto">
+                <div className="p-2 text-[13px] md:-2 flex flex-col bg-[rgb(245,245,245)] rounded-md whitespace-nowrap lg:whitespace-normal overflow-scroll lg:overflow-auto">
                     <p className="text-[14px] md:text-[16px] font-normal font-poppins text-[#030621] lg:w-3/4">Payments infrastructure provider paddles launches $10M Al program to
                         support software founders</p>
                     <div className="text-[15px] text-[#7B7B7B] font-normal font-poppins flex gap-5">
