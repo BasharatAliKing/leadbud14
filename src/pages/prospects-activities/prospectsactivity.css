@@ -36,4 +36,10 @@
     color: #333;
   }
   
-  
+  @media (max-width:596px){
+    .btnsprospects button{
+      padding: 10px 10px;
+      font-size: 13px; 
+    }
+   
+  }

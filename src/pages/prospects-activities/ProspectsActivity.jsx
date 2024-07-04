@@ -48,14 +48,14 @@ export default function ProspectsActivity() {
                     <SideNav />
                 </Sider>
                 <Content>
-                    <div className='mx-auto lg:w-[90%] xl:w-[75%] m-10 flex flex-col gap-8'>
-                        <div className='flex justify-between shadow-xl bg-[#fff] p-5 rounded-md items-center'>
-                            <img src={Logo} alt="my-img" />
+                    <div className='mx-auto  w-[95%] md:w-[80%] lg:w-[95%] py-5  xl:w-[75%]  xl:p-10 flex flex-col gap-8'>
+                        <div className='flex justify-between shadow-xl bg-[#fff] p-3 md:p-5 rounded-md items-center'>
+                            <img className='w-[30%] md:w-[20%]' src={Logo} alt="my-img" />
                             <div className="flex gap-3  text-[#56F444]">
-                                <div className='h-[37px] w-[37px] border border-[#56F444] flex items-center justify-center rounded-full'> <FaFacebookF className='text-[20px]' /></div>
-                                <div className='h-[37px] w-[37px] border border-[#56F444] flex items-center justify-center rounded-full'> <FaLinkedinIn className='text-[20px]' /></div>
-                                <div className='h-[37px] w-[37px] border border-[#56F444] flex items-center justify-center rounded-full'> <FaTwitter className='text-[20px]' /></div>
-                                <div className='h-[37px] w-[37px] border border-[#56F444] flex items-center justify-center rounded-full'> <FaInstagram className='text-[20px]' /></div>
+                                <div className='h-[22px] w-[22px] sm:h-[37px] sm:w-[37px] border border-[#56F444] flex items-center justify-center rounded-full'> <FaFacebookF className='text-[12px] sm:text-[16px] md:text-[20px]' /></div>
+                                <div className='h-[22px] w-[22px] sm:h-[37px] sm:w-[37px] border border-[#56F444] flex items-center justify-center rounded-full'> <FaLinkedinIn className='text-[12px] sm:text-[16px] md:text-[20px]' /></div>
+                                <div className='h-[22px] w-[22px] sm:h-[37px] sm:w-[37px] border border-[#56F444] flex items-center justify-center rounded-full'> <FaTwitter className='text-[12px] sm:text-[16px] md:text-[20px]' /></div>
+                                <div className='h-[22px] w-[22px] sm:h-[37px] sm:w-[37px] border border-[#56F444] flex items-center justify-center rounded-full'> <FaInstagram className='text-[12px] sm:text-[16px] md:text-[20px]' /></div>
                             </div>
                         </div>
                         <div className=" bg-[#fff] shadow-xl mt-2 rounded-[10px] w-full">
@@ -70,8 +70,8 @@ export default function ProspectsActivity() {
                                 <button className=''>Custom Fields</button>
                             </div>
                         </div>
-                        <div className='w-full flex flex-col md:flex-row gap-5'>
-                            <div className='md:w-[60%] flex flex-col gap-6'>
+                        <div className='w-full flex flex-col lg:flex-row gap-5'>
+                            <div className='lg:w-[60%] flex flex-col gap-6'>
                                 <div className='flex flex-col gap-3 p-5 bg-[#fff] shadow-xl rounded-xl'>
                                     <p className='text-[14px] xl:text-[15px] font-poppins text-[#7B7B7B]'>B2B and B2C software companies around the globe use Paddle to offload operational complexities so
                                         they can focus on growth....  <span className='text-[#48FA8A]'>Show More</span></p>
@@ -80,13 +80,13 @@ export default function ProspectsActivity() {
                                         {
                                             companykeywords.map((val) => {
                                                 return (
-                                                    <p className='bg-[#F5F5F5] p-1 px-4 rounded-full text-[#7B7B7B] text-[13px] xl:text-[14px]'>{val}</p>
+                                                    <p className='bg-[#F5F5F5] p-1 px-4 rounded-full text-[#7B7B7B] text-[11px] sm:text-[13px] xl:text-[14px]'>{val}</p>
                                                 )
                                             })
                                         }
 
                                     </div>
-                                    <button className='bg-[#F5F5F5] text-[15px] xl:text-[16px] font-poppins font-normal mr-auto p-2 px-5 rounded-md flex items-center'><BiListCheck className='text-[30px]' /> Add To List</button>
+                                    <button className='bg-[#F5F5F5] text-[14px] sm:text-[15px] xl:text-[16px] font-poppins font-normal mr-auto p-2 px-5 rounded-md flex items-center'><BiListCheck className='text-[20px] md:text-[30px]' /> Add To List</button>
                                 </div>
                                 <div className='flex flex-col gap-3 p-5 bg-[#fff] shadow-xl rounded-xl'>
                                     <div className="p-2 flex gap-2 md:gap-0 items-center bg-[#F5F5F5] rounded-md">
@@ -143,7 +143,7 @@ export default function ProspectsActivity() {
                                     <ButtonComponent />
                                 </div>
                             </div>
-                            <div className='md:w-[40%] flex flex-col gap-5'>
+                            <div className='lg:w-[40%] flex flex-col gap-5'>
                                 <div className='flex flex-col gap-1 shadow-xl bg-[#fff] p-3 md:p-5 rounded-xl'>
                                     <div className='flex justify-between w-full items-center'>
                                         <h2 className='text-[15px] xl:text-[17px] font-semibold font-poppins text-[#030621]'>Signals & Communication Advice</h2>

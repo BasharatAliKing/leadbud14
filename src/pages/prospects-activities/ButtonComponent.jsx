@@ -33,7 +33,7 @@ const ButtonComponent = () => {
             <div className='w-full '>
             <div className='flex overflow-x-scroll hide-scrollbar w-full bg-[#F5F5F5] rounded-md'> 
         {buttons.map((button) => (
-          <button className='flex items-center gap-1 py-4 px-5 text-[#030621] font-medium font-poppins text-[14px]'
+          <button className='flex items-center gap-1 py-2 px-3 md:py-4 md:px-5 text-[#030621] font-medium font-poppins text-[14px]'
             key={button.id}
             onClick={() => handleButtonClick(button)}
             style={{
