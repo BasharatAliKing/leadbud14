@@ -42,17 +42,21 @@
     overflow-y: scroll;
     padding-right: 0px;
 }
+.hide-scrollbar::-webkit-scrollbar{
+    display: none;
+}
 #recentmainsidebar::-webkit-scrollbar{
     border-radius: 5px;
     width: 20px;
 }
-
 #recentbtns{
     display: flex;
     flex-direction: row;
     padding-bottom: 0px;
     width: 100%;
     overflow: scroll;
+    padding-bottom: 0px;
+    white-space: nowrap;
 }
 #recentbtns::-webkit-scrollbar{
     width: 0px;
@@ -65,7 +69,7 @@
     .recentmain{
         flex-direction: column;
     }
-    .recentmainsidebar{
+    #recentmainsidebar{
         position: relative;
         max-width: 100%;
         min-width: 100%;

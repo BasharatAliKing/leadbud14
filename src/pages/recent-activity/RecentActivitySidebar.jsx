@@ -27,7 +27,7 @@ export default function RecentActivitySidebar() {
             <IoMdSettings className="text-[18px] text-[#B7B7B7]" />
          </div>
          <div className="bg-[#F5F5F5] mt-2 rounded-[10px] w-full">
-          <div id='recentbtns'>
+          <div  className='pb-0 whitespace-nowrap overflow-x-scroll hide-scrollbar'>
           <button className="text-[13px] active font-medium font-poppins p-2 bg-[#030621] text-[#fff]">Details</button>
             <button className="text-[13px] font-medium font-poppins p-2">Deals</button>
             <button className="text-[13px] font-medium font-poppins p-2">Related Companies</button>

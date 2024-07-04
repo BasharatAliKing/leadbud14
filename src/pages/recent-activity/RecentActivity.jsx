@@ -41,9 +41,9 @@ export default function RecentActivity() {
                                 <p className="text-[#B7B7B7] text-[13px] font-poppins font-normal">Click here to take notes...</p>
                             </div>
                             <h5 className="text-center text-[14px] font-normal font-poppins">07 Oct, 2023</h5>
-                            <div className="flex gap-2 items-center overflow-x-scroll lg:overflow-auto">
+                            <div className="flex gap-2 items-center">
                                 <h4 className="whitespace-nowrap">06:20 pm</h4>
-                                <div className="flex whitespace-nowrap bg-[#fff] rounded-md p-2 gap-1 items-center text-[14px] xl:text-[16px] font-poppins font-normal w-full"><AiFillPlusCircle className="text-[#56F444] text-[16px]" /> You added this prospect through Bulk Domain Search to list new 342 Industry</div>
+                                <div className="flex whitespace-nowrap overflow-scroll hide-scrollbar  bg-[#fff] rounded-md p-2 gap-1 items-center text-[14px] xl:text-[16px] font-poppins font-normal w-full"><AiFillPlusCircle className="text-[#56F444] text-[16px]" /> You added this prospect through Bulk Domain Search to list new 342 Industry</div>
                             </div>
                         </div>
                     </div>
