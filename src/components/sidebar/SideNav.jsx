@@ -33,6 +33,9 @@ const SideNav = () => {
             <Link to="/recent-activities">
               <li className="sub-menu-link">Recent Activities</li>
             </Link>
+            <Link to="/prospects-activity">
+              <li className="sub-menu-link">Prospects Activity</li>
+            </Link>
           </ul>
         </li>
 

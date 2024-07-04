@@ -24,6 +24,7 @@ import SearchSettings from './pages/search-settings/SearchSettings'
 import Error from './pages/Error/Error'
 import FbFanpage from './pages/FbFanpage'
 import RecentActivity from './pages/recent-activity/RecentActivity'
+import ProspectsActivity from './pages/prospects-activities/ProspectsActivity'
 function App() {
 
   return (
@@ -52,6 +53,7 @@ function App() {
         <Route path='/account/search-settings' element={<SearchSettings />} />
         <Route path="/facebook" element={<FbFanpage/>} />
         <Route path="/recent-activities" element={<RecentActivity/>} />
+        <Route path="/prospects-activity" element={<ProspectsActivity/>} />
         <Route path='*' element={<Error/>} />
 
       </Routes>
