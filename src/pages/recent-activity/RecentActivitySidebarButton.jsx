@@ -8,7 +8,7 @@ const RecentActivitySidebarButton = () => {
     const buttons = [
         { id: 1, label: 'Details', data:<Details/> },
         { id: 2, label: 'Deals', data:<Deals/> },
-        { id: 3, label: 'Related Components', data: <RelatedComponents/> },
+        { id: 3, label: 'Related Companies', data: <RelatedComponents/> },
         { id: 4, label: 'Signals', data:<Signals/> },
      
       ];
@@ -27,12 +27,13 @@ const RecentActivitySidebarButton = () => {
             <div className="bg-[#F5F5F5] mt-2 rounded-[10px] w-full">
             <div  className='pb-0 whitespace-nowrap overflow-x-scroll hide-scrollbar rounded-md'>
         {buttons.map((button) => (
-          <button className='text-[13px] font-medium font-poppins px-3 p-2'
+          <button className='text-[13px] font-medium font-poppins p-2'
             key={button.id}
             onClick={() => handleButtonClick(button)}
             style={{
               backgroundColor: activeButton === button.id ? 'black' : '#f5f5f5',
               color: activeButton===button.id ? 'white' : 'black',
+            
             }}
           >
            {button.logo} {button.label}

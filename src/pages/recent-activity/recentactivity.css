@@ -30,8 +30,8 @@
 
 #recentmainsidebar{
     position: relative;
-    max-width: 350px;
-    min-width: 350px;
+    max-width: 370px;
+    min-width: 370px;
     width: auto;
     max-height: calc(100vh - 60px - 0px);
     height: calc(100vh - 60px - 0px);

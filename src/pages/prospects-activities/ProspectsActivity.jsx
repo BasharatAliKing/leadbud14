@@ -48,7 +48,7 @@ export default function ProspectsActivity() {
                     <SideNav />
                 </Sider>
                 <Content>
-                    <div className='mx-auto  w-[95%] md:w-[80%] lg:w-[95%] py-5  xl:w-[75%]  xl:p-10 flex flex-col gap-8'>
+                    <div className='mx-auto  w-[95%] md:w-[80%] lg:w-[95%] py-5  xl:w-[90%]  xl:p-10 flex flex-col gap-4 md:gap-8'>
                         <div className='flex justify-between shadow-xl bg-[#fff] p-3 md:p-5 rounded-md items-center'>
                             <img className='w-[30%] md:w-[20%]' src={Logo} alt="my-img" />
                             <div className="flex gap-3  text-[#56F444]">
@@ -91,43 +91,43 @@ export default function ProspectsActivity() {
                                 <div className='flex flex-col gap-3 p-5 bg-[#fff] shadow-xl rounded-xl'>
                                     <div className="p-2 flex gap-2 md:gap-0 items-center bg-[#F5F5F5] rounded-md">
                                         <h2 className="text-[13px] md:w-[120px] font-normal font-poppins">Industry:</h2>
-                                        <p className="text-[13px] font-normal font-poppins text-[#030621]">Information Technology & Services, Computer Software, Internet</p>
+                                        <input type="text" value='Information Technology & Services, Computer Software, Internet' className='w-full text-[13px] bg-[#F5F5F5] font-normal font-poppins text-[#030621] outline-none border-none' />
                                     </div>
                                     <div className='flex flex-col md:flex-row gap-3'>
                                         <div className='md:w-1/2'>
                                             <div className="p-2 flex gap-2 md:gap-0 items-center ">
-                                                <h2 className="text-[13px] md:w-[120px] font-normal font-poppins">Founding Year:</h2>
-                                                <p className="text-[13px] font-normal font-poppins text-[#030621]">2012</p>
+                                                <h2 className="text-[13px] whitespace-nowrap md:w-[150px] font-normal font-poppins">Founding Year:</h2>
+                                                <input type="text" value='2012' className='w-full text-[13px] font-normal font-poppins text-[#030621] outline-none border-none' />
                                             </div>
                                             <div className="p-2 flex gap-2 md:gap-0 items-center bg-[#F5F5F5] rounded-md">
-                                                <h2 className="text-[13px] md:w-[120px] font-normal font-poppins">Employees:</h2>
-                                                <p className="text-[13px] font-normal font-poppins text-[#030621]">300 Finds Lead</p>
+                                                <h2 className="text-[13px] whitespace-nowrap md:w-[150px] font-normal font-poppins">Employees:</h2>
+                                                <input type="text" value='300 Finds Lead' className='w-full text-[13px] bg-[#F5F5F5] font-normal font-poppins text-[#030621] outline-none border-none' />
                                             </div>
                                             <div className="p-2 flex gap-2 md:gap-0 items-center  ">
-                                                <h2 className="text-[13px] md:w-[120px] font-normal font-poppins">Annual Revenue:</h2>
-                                                <p className="text-[13px] font-normal font-poppins text-[#030621]">$100M</p>
+                                                <h2 className="text-[13px] whitespace-nowrap md:w-[150px] font-normal font-poppins">Annual Revenue:</h2>
+                                                <input type="text" value='$100M' className='w-full text-[13px] font-normal font-poppins text-[#030621] outline-none border-none' />
                                             </div>
                                             <div className="p-2 flex gap-2 md:gap-0 items-center bg-[#F5F5F5] rounded-md">
-                                                <h2 className="text-[13px] md:w-[120px] font-normal font-poppins">Account Stage:</h2>
-                                                <p className="text-[13px] font-normal font-poppins text-[#030621]">Cold</p>
+                                                <h2 className="text-[13px] whitespace-nowrap md:w-[150px] font-normal font-poppins">Account Stage:</h2>
+                                                <input type="text" value='Cold' className='w-full text-[13px] bg-[#F5F5F5] font-normal font-poppins text-[#030621] outline-none border-none' />
                                             </div>
                                         </div>
                                         <div className='md:w-1/2'>
                                             <div className="p-2 flex gap-2 md:gap-0 items-center ">
-                                                <h2 className="text-[13px] md:w-[120px] font-normal font-poppins">Parent Account:</h2>
-                                                <p className="text-[13px] font-normal font-poppins text-[#030621]">None</p>
+                                                <h2 className="text-[13px] whitespace-nowrap md:w-[150px] font-normal font-poppins">Parent Account:</h2>
+                                                <input type="text" value='None' className='w-full text-[13px] font-normal font-poppins text-[#030621] outline-none border-none' />
                                             </div>
                                             <div className="p-2 flex gap-2 md:gap-0 items-center bg-[#F5F5F5] rounded-md">
-                                                <h2 className="text-[13px] md:w-[120px] font-normal font-poppins">Engagement:</h2>
-                                                <p className="text-[13px] font-normal font-poppins text-[#030621]">0 Inbound 0 Outbound</p>
+                                                <h2 className="text-[13px] whitespace-nowrap md:w-[150px] font-normal font-poppins">Engagement:</h2>
+                                                <input type="text" value='0 Inbound 0 Outbound' className='w-full bg-[#F5F5F5] text-[13px] font-normal font-poppins text-[#030621] outline-none border-none' />
                                             </div>
                                             <div className="p-2 flex gap-2 md:gap-0 items-center  ">
-                                                <h2 className="text-[13px] md:w-[120px] font-normal font-poppins">Last 12 Months:</h2>
-                                                <p className="text-[13px] font-normal font-poppins text-[#030621]">--------</p>
+                                                <h2 className="text-[13px] whitespace-nowrap md:w-[150px] font-normal font-poppins">Last 12 Months:</h2>
+                                                <input type="text" value='-------' className='w-full text-[13px] font-normal font-poppins text-[#030621] outline-none border-none' />
                                             </div>
                                             <div className="p-2 flex gap-2 md:gap-0 items-center bg-[#F5F5F5] rounded-md">
-                                                <h2 className="text-[13px] md:w-[120px] font-normal font-poppins">Location:</h2>
-                                                <p className="text-[13px] font-normal font-poppins text-[#030621]">London, United Kingdom</p>
+                                                <h2 className="text-[13px] whitespace-nowrap md:w-[150px] font-normal font-poppins">Location:</h2>
+                                                <input type="text" value='London,United Kingdom' className='w-full bg-[#F5F5F5] text-[13px] font-normal font-poppins text-[#030621] outline-none border-none' />
                                             </div>
                                         </div>
                                     </div>
@@ -194,7 +194,7 @@ export default function ProspectsActivity() {
                                             <h2 className='text-[16px] xl:text-[18px] text-[#030621] font-semibold font-poppins'>Activities</h2>
                                             <h5 className='text-[14px] xl:text-[15px] text-[#48FA8A] font-normal font-poppins cursor-pointer'>Hide Activities</h5>
                                         </div>
-                                        <div className='flex gap-3'>
+                                        <div className='flex flex-wrap gap-3'>
                                             <div className='flex gap-1 items-center'><input type="radio" name='selecttype' /><p className='text-[13px] font-normal text-[#030621] md:text-[14px]'>Note</p></div>
                                             <div className='flex gap-1 items-center'><input type="radio" name='selecttype' /><p className='text-[13px] font-normal text-[#030621] md:text-[14px]'>Call</p></div>
                                             <div className='flex gap-1 items-center'><input type="radio" name='selecttype' /><p className='text-[13px] font-normal text-[#030621] md:text-[14px]'>Action</p></div>
