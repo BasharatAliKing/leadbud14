@@ -9,7 +9,7 @@ export default function News() {
             <div>
                 <div className='flex gap-5  items-center flex-wrap my-4'>
                    <div className='bg-[rgb(245,245,245)] text-[#B7B7B7] rounded-md p-3 px-4 text-[14px] md:text-[16px] flex items-center gap-1'><FiFilter className='font-semibold text-[20px]'/> Filter</div>
-                   <div className='bg-[rgb(245,245,245)] text-[#B7B7B7] rounded-md p-1 px-4 text-[14px] md:text-[16px] flex items-center gap-1 w-full sm:w-auto'><CiSearch className='text-[22px]'/><input type="search" placeholder='Search' className='outline-none placeholder-[#B7B7B7] border-none bg-[rgb(245,245,245)]' /> </div>
+                   <div className='bg-[rgb(245,245,245)] text-[#B7B7B7] rounded-md p-1 px-4 text-[14px] md:text-[16px] flex items-center gap-1 w-full sm:w-auto'><CiSearch className='text-[22px]'/><input type="search" placeholder='Search' className='outline-none placeholder-[#B7B7B7] w-full border-none bg-[rgb(245,245,245)]' /> </div>
                 </div>
                 <div className="p-2 text-[13px] md:-2 flex flex-col bg-[rgb(245,245,245)] rounded-md whitespace-nowrap overflow-scroll lg:overflow-auto">
                     <p className="text-[14px] md:text-[16px] font-normal font-poppins text-[#030621]">City attraction ranked one of the best in the world</p>
