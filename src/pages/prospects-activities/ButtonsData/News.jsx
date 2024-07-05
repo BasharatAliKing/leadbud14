@@ -13,7 +13,7 @@ export default function News() {
                 </div>
                 <div className="p-2 text-[13px] md:-2 flex flex-col bg-[rgb(245,245,245)] rounded-md gap-1 sm:gap-0 ">
                     <p className="text-[14px] md:text-[16px] font-normal font-poppins text-[#030621]">City attraction ranked one of the best in the world</p>
-                    <div className="text-[15px] text-[#7B7B7B] font-normal font-poppins flex flex-col sm:flex-row whitespace-nowrap gap-x-3 sm:gap-x-0 gap-1 sm:gap-5">
+                    <div className="text-[15px] text-[#7B7B7B] font-normal font-poppins flex flex-col sm:flex-row whitespace-nowrap gap-1 sm:gap-5">
                         <h1 className='flex gap-2 text-[#48FA8A]'><IoIosLink className='text-[20px]' /> eveningnews24.co.uk</h1>
                         <h2 className='font-[300]'>Receives Award</h2>
                         <h3>Sep 25, 2023</h3>
@@ -22,7 +22,7 @@ export default function News() {
 
                 <div className="p-2 flex flex-col gap-1 sm:gap-0 ">
                     <p className="text-[13px] md:text-[15px]  font-normal font-poppins text-[#030621]">Paddle announces Paddle Billing API set for SaaS companies</p>
-                    <div className="text-[15px] text-[#7B7B7B] font-normal font-poppins flex flex-col sm:flex-row whitespace-nowrap gap-1 gap-x-3 sm:gap-x-0 sm:gap-5">
+                    <div className="text-[15px] text-[#7B7B7B] font-normal font-poppins flex flex-col sm:flex-row whitespace-nowrap gap-1 sm:gap-5">
                         <h1 className='flex gap-2 text-[#48FA8A]'><IoIosLink className='text-[20px]' /> google.com</h1>
                         <h2 className='font-[300]'>Launches</h2>
                         <h3>Aug 11, 2023</h3>
