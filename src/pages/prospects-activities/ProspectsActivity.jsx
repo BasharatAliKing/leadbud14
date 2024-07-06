@@ -38,6 +38,7 @@ export default function ProspectsActivity() {
         "checkout",
     ]
     const [show, setShow] = useState('Technologies');
+    const [check,setCheck]=useState(true);
     return (
         <Layout className='w-full bg-[#F5F5F5]'>
             <Header className="header">
@@ -158,7 +159,7 @@ export default function ProspectsActivity() {
                                                 <FaChevronRight className=' text-[#030621]' />
                                             </div>
                                             <h4 className='text-[13px] sm:text-[14px] xl:text-[15px] font-normal font-poppins text-[#7B7B7B]'>Recognition = Recognition +1</h4>
-                                            <p className='mt-3 sm:mt-5 text-[12px] sm:text-[13px] xl:text-[14px] font-normal font-poppins text-[#7B7B7B]'>Discuss the recent award or recognition</p>
+                                          {check ?   <p className='mt-3 sm:mt-5 text-[12px] sm:text-[13px] xl:text-[14px] font-normal font-poppins text-[#7B7B7B]'>Discuss the recent award or recognition</p>: null}
                                         </div>
                                     </div>
                                     <div className=' p-4 rounded-xl flex gap-3 w-full'>
@@ -169,7 +170,7 @@ export default function ProspectsActivity() {
                                                 <FaChevronRight className='text-[#030621]' />
                                             </div>
                                             <h4 className='text-[13px] sm:text-[14px] xl:text-[15px] font-normal font-poppins text-[#7B7B7B]'>Recognition = Recognition +1</h4>
-                                            <p className='mt-3 sm:mt-5 text-[12px] sm:text-[13px] xl:text-[14px] font-normal font-poppins text-[#7B7B7B]'>Congratulate them on the new partnership</p>
+                                          {check ?   <p className='mt-3 sm:mt-5 text-[12px] sm:text-[13px] xl:text-[14px] font-normal font-poppins text-[#7B7B7B]'>Congratulate them on the new partnership</p>:null}
                                         </div>
                                     </div>
                                     <div className='bg-[#F5F5F5] p-4 rounded-xl flex gap-3 w-full'>
@@ -180,11 +181,11 @@ export default function ProspectsActivity() {
                                                 <FaChevronRight className='text-[#030621]' />
                                             </div>
                                             <h4 className='text-[13px] sm:text-[14px] xl:text-[15px] font-normal font-poppins text-[#7B7B7B]'>New Offering = New Offering +1</h4>
-                                            <p className='mt-3 sm:mt-5 text-[12px] sm:text-[13px] xl:text-[14px] font-normal font-poppins text-[#7B7B7B]'>Congratulate them on the new offering and</p>
+                                           {check?  <p className='mt-3 sm:mt-5 text-[12px] sm:text-[13px] xl:text-[14px] font-normal font-poppins text-[#7B7B7B]'>Congratulate them on the new offering and</p>:null}
                                         </div>
                                     </div>
                                     <div className='flex mt-3 items-center text-[#030621]'>
-                                        <input type="checkbox" />
+                                        <input type="checkbox" onClick={()=>{setCheck(!check)}} />
                                         <h3 className='text-[13px] xl:text-[14px] font-normal ml-1'>Hide talking tips & snippets</h3>
                                     </div>
                                 </div>
