@@ -6,12 +6,11 @@ import { IoSettingsOutline } from "react-icons/io5";
 export default function Signals() {
     return (
         <>
-            <div className='flex flex-col gap-1 shadow-xl bg-[#fff] p-3 md:p-5 rounded-xl w-full'>
+            <div className='flex flex-col gap-1  rounded-xl w-full'>
                 <div className='flex justify-between w-full items-center'>
-                    <h2 className='text-[14px] xl:text-[17px] font-semibold font-poppins text-[#030621]'>Signals & Communication Advice</h2>
+                    <h2 className='text-[14px] py-2 xl:text-[17px] font-semibold font-poppins text-[#030621]'>Signals & Communication Advice</h2>
                     <FaChevronDown className='text-[16px]' />
                 </div>
-                <h4 className='flex items-center gap-5 font-normal my-3 text-[#B7B7B7] text-[14px] md:text-[15px]'>Top signals for LinkedIn <IoSettingsOutline className='text-[#B7B7B7] text-[20px]' /></h4>
                 <div className='bg-[#F5F5F5] p-4 rounded-xl flex gap-3 w-full'>
                     <HiOutlineSignal className='text-[30px] text-[#48FA8A] mt-2' />
                     <div className='w-full'>

@@ -5,46 +5,21 @@ import Signals from "./ButtonsData/Signals"
 import RelatedComponents from "./ButtonsData/RelatedComp"
 import Deals from "./ButtonsData/Deals";
 const RecentActivitySidebarButton = () => {
-    const buttons = [
-        { id: 1, label: 'Details', data:<Details/> },
-        { id: 2, label: 'Deals', data:<Deals/> },
-        { id: 3, label: 'Related Companies', data: <RelatedComponents/> },
-        { id: 4, label: 'Signals', data:<Signals/> },
-     
-      ];
-  const [activeButton, setActiveButton] = useState(buttons[0].id);
-  const [data, setData] = useState(buttons[0].data);
-
- 
-
-  const handleButtonClick = (button) => {
-    setActiveButton(button.id);
-    setData(button.data);
-  };
+  const [show,setShow]=useState(true);
 
   return (
     <div>
             <div className="bg-[#F5F5F5] mt-2 rounded-[10px] w-full">
             <div  className='pb-0 whitespace-nowrap overflow-x-scroll hide-scrollbar rounded-md'>
-        {buttons.map((button) => (
-          <button className='text-[13px] font-medium font-poppins p-2'
-            key={button.id}
-            onClick={() => handleButtonClick(button)}
-            style={{
-              backgroundColor: activeButton === button.id ? 'black' : '#f5f5f5',
-              color: activeButton===button.id ? 'white' : 'black',
-            
-            }}
-          >
-           {button.logo} {button.label}
-          </button>
-        ))}
-   
+     
+          <button onClick={()=>{setShow(true)}} className='text-[13px] font-medium font-poppins p-2' style={{backgroundColor: show?'black':'', color:show?'white':''}}>Details</button>
+          <button className='text-[13px] font-medium font-poppins p-2' style={{}}>Deals</button>
+          <button className='text-[13px] font-medium font-poppins p-2' style={{}}>Related Companies</button>
+          <button onClick={()=>{setShow(false)}} className='text-[13px] font-medium font-poppins p-2 mr-0' style={{backgroundColor: show?'':'black', color:show?'':'white'}}>Signals</button>
       </div>
       </div>
-
       <div className="data-display">
-        {data && <p>{data}</p>}
+       {show? <Details/> : <Signals/>}
       </div>
     </div>
   );
