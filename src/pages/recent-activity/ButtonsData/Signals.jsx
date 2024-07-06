@@ -23,6 +23,7 @@ export default function Signals() {
                     {check ?     <p className='mt-3 text-[12px] xl:text-[14px] font-normal font-poppins text-[#7B7B7B]'>Discuss the recent award or recognition</p> : null}
                     </div>
                 </div>
+                
                 <div className=' p-4 rounded-xl flex gap-3 w-full'>
                     <HiOutlineSignal className='text-[30px] text-[#48FA8A] mt-2' />
                     <div className='w-full'>
