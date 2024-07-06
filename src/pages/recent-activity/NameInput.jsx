@@ -1,11 +1,15 @@
 import React,{useState} from 'react'
 import { HiDotsHorizontal } from "react-icons/hi";
 import { PiPencilLight } from "react-icons/pi";
+import { ImMoveUp } from "react-icons/im";
+import { ImMoveDown } from "react-icons/im";
+import { RiDeleteBin5Line } from "react-icons/ri";
 export default function NameInput() {
     const [hover,setHover]=useState(false);
     const [fname,setFname]=useState('Tina');
     const [lname,setLname]=useState('Z');
     const [nameinput,setNameinput]=useState(false);
+    const [dotsmenu,setDotsmenu]=useState(false);
     const Nameformsubmit =()=>{
         setNameinput(false);
     }
@@ -34,7 +38,13 @@ export default function NameInput() {
        </form>:  <>
        <div className="flex justify-between items-center">
        <h3 onMouseEnter={()=>{setHover(true)}} onMouseLeave={()=>{setHover(false)}} className="flex items-center text-[#030621] text-[18px] md:text-[22px] font-semibold font-poppins cursor-pointer">{fname +" "+ lname}  {hover?<PiPencilLight onClick={()=>{setNameinput(true)}} className='text-[#B7B7B7] ml-2' />: null}</h3>
-       <HiDotsHorizontal className="text-[20px] text-[#030621]" />
+        <div className='relative'>  <HiDotsHorizontal onClick={()=>{setDotsmenu(!dotsmenu)}} className="text-[20px] text-[#030621]" /></div>
+        {dotsmenu ? <>
+          <ul className='absolute right-5 top-12 py-1 bg-[#F5F5F5]'>
+            <li className='px-2 p-1 cursor-pointer duration-500 flex gap-1 items-center'><ImMoveUp /> Move to List</li>
+            <li className='px-2 p-1 cursor-pointer duration-500 flex gap-1 items-center'><ImMoveDown /> Add to List</li>
+            <li className='px-2 p-1 cursor-pointer duration-500 flex gap-1 items-center'><RiDeleteBin5Line /> Delete</li>
+         </ul></> : null }
          </div>
        </>
         }
