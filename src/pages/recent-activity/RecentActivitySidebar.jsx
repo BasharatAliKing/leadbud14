@@ -1,19 +1,19 @@
 import React from 'react'
-import { HiDotsHorizontal } from "react-icons/hi";
+
 import { GoTag } from "react-icons/go";
 import { IoMdSettings } from "react-icons/io";
 import { TiSocialLinkedin } from "react-icons/ti";
 
 import RecentActivitySidebarButton from "./RecentActivitySidebarButton"
+
 import "./recentactivity.css";
+import NameInput from './NameInput';
 export default function RecentActivitySidebar() {
+ 
   return (
     <>
      <div id='recentmainsidebar' className="p-3 md:p-5  flex flex-col gap-2">
-         <div className="flex justify-between items-center">
-            <h3 className="text-[#030621] text-[18px] md:text-[22px] font-semibold font-poppins">Tina Z</h3>
-            <HiDotsHorizontal className="text-[20px] text-[#030621]" />
-         </div>
+        <NameInput/>
          <div className="flex gap-1 items-center">
             <GoTag className="text-sm text-[#B7B7B7]" />
             <h3 className="text-[#B7B7B7] text-[15px] font-normal font-poppins">Manage tags</h3>
