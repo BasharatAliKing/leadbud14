@@ -3,6 +3,7 @@ import { BiBuildings } from "react-icons/bi";
 import { LuPlusCircle } from "react-icons/lu";
 import { PiPencilLight } from "react-icons/pi";
 import { TiWarningOutline } from "react-icons/ti";
+import AddCompany from './AddCompany';
 export default function Details() {
    const [showmoretext, setShowMoreText] = useState('Show More');
    const [showmore, setShowMore] = useState(false);
@@ -197,7 +198,7 @@ export default function Details() {
             <div className="bg-[#F5F5F5] p-3 rounded-md">
 
                <div className="p-2 flex flex-col  gap-3 md:gap-0 rounded-md ">
-                  <div className='flex gap-2 '>
+                  <div className='flex items-center gap-2 '>
                      <h2 className="text-[13px] w-[150px] font-normal font-poppins">Company:</h2>
                      <div onClick={() => { setSavebtn(true) }} className='flex items-center w-full' onMouseEnter={() => { setHoverCompany(true) }} onMouseLeave={() => { setHoverCompany(false); setIsEditabecompany(false) }}>
                         <input type="text" disabled={!isEditablecompany} value={company} onChange={handlecompanychange} className='bg-[#F5F5F5] text-[13px] border-none outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
@@ -224,14 +225,14 @@ export default function Details() {
                      {hoverjobp ? <PiPencilLight onClick={() => { setIsEditabejobp(true) }} className=' top-[8px] text-[14px] -right-2' /> : null}
                   </div>
                </div>
-               <div className="p-2 flex  gap-3 md:gap-0 ">
+               <div className="p-2 flex items-center gap-3 md:gap-0 ">
                   <h2 className="text-[13px] w-[150px] font-normal font-poppins">Website:</h2>
                   <div onClick={() => { setSavebtn(true) }} className='flex items-center w-full' onMouseEnter={() => { setHoverwebsite(true) }} onMouseLeave={() => { setHoverwebsite(false); setIsEditablewebsite(false) }}>
                      <input type="text" disabled={!isEditablewebsite} value={website} onChange={(e) => { setWebsite() }} className='bg-[#F5F5F5] text-[13px] border-none outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
                      {hoverwebsite ? <PiPencilLight onClick={() => { setIsEditablewebsite(true) }} className=' top-[8px] text-[14px] -right-2' /> : null}
                   </div>
                </div>
-               <div className="p-2 flex gap-3 md:gap-0 bg-[#fff] rounded-md">
+               <div className="p-2 flex items-center gap-3 md:gap-0 bg-[#fff] rounded-md">
                   <h2 className="text-[13px] w-[150px] font-normal font-poppins">HQ Phone:</h2>
                   <div onClick={() => { setSavebtn(true) }} className='flex items-center w-full' onMouseEnter={() => { setHoverhqphone(true) }} onMouseLeave={() => { setHoverhqphone(false); setIsEditablehqphone(false) }}>
                      <input type="text" disabled={!isEditablehqphone} value={hqphone} onChange={(e) => { setHqphone() }} className=' text-[13px] border-none outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
@@ -239,42 +240,9 @@ export default function Details() {
                   </div>
                </div>
             </div>
-            {inputBoxes.map((box, index) => (
-                   <div className="bg-[#F5F5F5] p-3 rounded-md">
-
-                   <div className="p-2 flex flex-col  gap-3 md:gap-0 rounded-md ">
-                      <div className='flex gap-2 '>
-                         <h2 className="text-[13px] w-[150px] font-normal font-poppins">Company:</h2>
-                         <div className='flex items-center w-full'>
-                            <input name={`input1-${box.id}`} type="text" className='bg-[#F5F5F5] text-[13px] border-none outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
-                          </div>
-                      </div>
-                    
-                   </div>
-                   <div className="p-2 flex gap-3 md:gap-0 bg-[#fff] rounded-md items-center">
-                      <h2 className="text-[13px] w-[150px] font-normal font-poppins">Job Position:</h2>
-                      <div className='flex items-center w-full'>
-                         <input name={`input2-${box.id}`} type="text"  className=' text-[13px] border-none outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
-                      </div>
-                   </div>
-                   <div className="p-2 flex  gap-3 md:gap-0 ">
-                      <h2 className="text-[13px] w-[150px] font-normal font-poppins">Website:</h2>
-                      <div className='flex items-center w-full'>
-                         <input name={`input3-${box.id}`} type="text" className='bg-[#F5F5F5] text-[13px] border-none outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
-                      </div>
-                   </div>
-                   <div className="p-2 flex gap-3 md:gap-0 bg-[#fff] rounded-md">
-                      <h2 className="text-[13px] w-[150px] font-normal font-poppins">HQ Phone:</h2>
-                      <div className='flex items-center w-full'>
-                         <input name={`input4-${box.id}`} type="text" className=' text-[13px] border-none outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
-                      </div>
-                   </div>
-                </div>
-      ))}
-
-            <div onClick={addInputBox} className="cursor-pointer bg-[#F5F5F5] rounded-md p-3 flex gap-1 items-center mr-auto text-[#B7B7B7] text-[14px] xl:text-[16px]">
-               <LuPlusCircle /> <h2>Add Company</h2>
-            </div>
+          
+          
+         <AddCompany/>
          </div>
       </>
    )
