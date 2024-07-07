@@ -43,9 +43,9 @@ const AddCompany = () => {
     <div className="bg-[#F5F5F5] p-3 rounded-md" >
         <div className='flex flex-col gap-1' key={setIndex}>
           {set.map(input => (
-            <div className='p-2 flex gap-3 md:gap-0 even:bg-[#fff] rounded-md items-center ' key={input.id}>
+            <div className='p-2 flex gap-3 md:gap-0 hover:bg-[#fff] duration-300 rounded-md items-center ' key={input.id}>
               <label className='text-[13px] w-[150px] font-normal font-poppins'>{input.label}</label>
-              <input className='text-[13px] border-none bg-[#0000] outline-none p-0 font-normal font-poppins text-[#030621] w-full'
+              <input className='text-[13px] rounded-md p-1 bg-[#0000] outline-none font-normal font-poppins text-[#030621] w-full'
                 type="text"
                 value={input.value}
                 onChange={(e) => handleInputChange(setIndex, input.id, e.target.value)}
