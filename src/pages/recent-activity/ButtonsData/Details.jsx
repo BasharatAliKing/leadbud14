@@ -48,6 +48,13 @@ export default function Details() {
    const Companysuggestions = ['Apple', 'Banana', 'Cherry', 'Date', 'Elderberry', 'Fig', 'Grape', 'Honeydew'];
 
 
+ // State to hold the array of input boxes
+ const [inputBoxes, setInputBoxes] = useState([]);
+
+ // Function to add a new input box
+ const addInputBox = () => {
+   setInputBoxes([...inputBoxes, { id: inputBoxes.length }]);
+ };
 
    const showmoredata = () => {
       if (showmoretext == 'Show More') {
@@ -232,8 +239,40 @@ export default function Details() {
                   </div>
                </div>
             </div>
+            {inputBoxes.map((box, index) => (
+                   <div className="bg-[#F5F5F5] p-3 rounded-md">
 
-            <div className="cursor-pointer bg-[#F5F5F5] rounded-md p-3 flex gap-1 items-center mr-auto text-[#B7B7B7] text-[14px] xl:text-[16px]">
+                   <div className="p-2 flex flex-col  gap-3 md:gap-0 rounded-md ">
+                      <div className='flex gap-2 '>
+                         <h2 className="text-[13px] w-[150px] font-normal font-poppins">Company:</h2>
+                         <div className='flex items-center w-full'>
+                            <input name={`input1-${box.id}`} type="text" className='bg-[#F5F5F5] text-[13px] border-none outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
+                          </div>
+                      </div>
+                    
+                   </div>
+                   <div className="p-2 flex gap-3 md:gap-0 bg-[#fff] rounded-md items-center">
+                      <h2 className="text-[13px] w-[150px] font-normal font-poppins">Job Position:</h2>
+                      <div className='flex items-center w-full'>
+                         <input name={`input2-${box.id}`} type="text"  className=' text-[13px] border-none outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
+                      </div>
+                   </div>
+                   <div className="p-2 flex  gap-3 md:gap-0 ">
+                      <h2 className="text-[13px] w-[150px] font-normal font-poppins">Website:</h2>
+                      <div className='flex items-center w-full'>
+                         <input name={`input3-${box.id}`} type="text" className='bg-[#F5F5F5] text-[13px] border-none outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
+                      </div>
+                   </div>
+                   <div className="p-2 flex gap-3 md:gap-0 bg-[#fff] rounded-md">
+                      <h2 className="text-[13px] w-[150px] font-normal font-poppins">HQ Phone:</h2>
+                      <div className='flex items-center w-full'>
+                         <input name={`input4-${box.id}`} type="text" className=' text-[13px] border-none outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
+                      </div>
+                   </div>
+                </div>
+      ))}
+
+            <div onClick={addInputBox} className="cursor-pointer bg-[#F5F5F5] rounded-md p-3 flex gap-1 items-center mr-auto text-[#B7B7B7] text-[14px] xl:text-[16px]">
                <LuPlusCircle /> <h2>Add Company</h2>
             </div>
          </div>
