@@ -9,7 +9,7 @@ export default function RecentActivitySidebar() {
 
    return (
       <>
-         <div id='recentmainsidebar' className="p-3 md:p-5  flex flex-col gap-2">
+         <div id='recentmainsidebar' className="p-3 md:p-5 relative  flex flex-col gap-2">
             <NameInput />
             <div className="flex gap-1 items-center">
                <GoTag className="text-sm text-[#B7B7B7]" />

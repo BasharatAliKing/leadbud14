@@ -16,7 +16,7 @@ export default function Details() {
    const [website, setWebsite] = useState('https://www.leadbud.io');
    const [hqphone, setHqphone] = useState('---');
    const [savebtn,setSavebtn]=useState(false);
-   const [savecomp,setSavecomp]=useState(false);
+
 
    const [hover, setHover] = useState(false);
    const [hoverindustry, setHoverindustry] = useState(false);
@@ -115,7 +115,7 @@ export default function Details() {
                      </div>
                      </div>
                   {filteredSuggestions.length > 0 && (
-                     <ul className="absolute mt-5 bg-[#fff] w-full ml-[200px] cursor-pointer  rounded-md ">
+                     <ul className="absolute mt-5 bg-[#fff] w-full ml-[70px] cursor-pointer  rounded-md ">
                         {filteredSuggestions.map((suggestion, index) => (
                            <li className='hover:bg-[#F5F5F5] duration-700 p-1 px-3 text-[14px]'
                               key={index}
@@ -162,7 +162,7 @@ export default function Details() {
                      </> : ''
                }
                {savebtn? 
-                 <div className="flex gap-3 mt-3">
+                 <div className="flex left-0 pl-16 sm:pl-20 z-[1] md:pl-24 p-2 w-full  md:w-[443px] bottom-0 bg-[#F5F5F5] fixed gap-3 ">
                  <button onClick={()=>{setSavebtn(false)}} className="bg-gradient-to-r from-[#56F444] via-[#55EE44] to-[#48FA8A]  rounded-md text-[#000] text-[13px] xl:text-[15px] p-2 px-3">Save</button>
                  <button className="bg-[#fff] rounded-md text-[13px] xl:text-[15px] p-2 px-3">Cancel</button>
              </div>
@@ -184,7 +184,7 @@ export default function Details() {
                   </div>
               </div>
                   {filteredSuggestionscompany.length > 0 && (
-                     <ul className="absolute mt-5 bg-[#fff] w-full ml-[200px] cursor-pointer p-5 rounded-md ">
+                     <ul className="absolute mt-5 bg-[#fff] w-full ml-[200px] cursor-pointer p-1 rounded-md ">
                         {filteredSuggestionscompany.map((suggestion, index) => (
                            <li className='hover:bg-[#F5F5F5] duration-700 p-1 px-3 text-[14px]'
                               key={index}
@@ -217,10 +217,7 @@ export default function Details() {
                      {hoverhqphone ? <PiPencilLight onClick={() => { setIsEditablehqphone(true) }} className=' top-[8px] text-[14px] -right-2' /> : null}
                   </div>
                </div>
-              {savecomp? <div className="flex gap-3 mt-3">
-                 <button onClick={()=>{setSavecomp(false)}} className="bg-gradient-to-r from-[#56F444] via-[#55EE44] to-[#48FA8A]  rounded-md text-[#000] text-[13px] xl:text-[15px] p-2 px-3">Save</button>
-                 <button className="bg-[#fff] rounded-md text-[13px] xl:text-[15px] p-2 px-3">Cancel</button>
-             </div> :null }
+            
             </div>
             <div onClick={handleAddCompany} className="cursor-pointer bg-[#F5F5F5] rounded-md p-3 flex gap-1 items-center mr-auto text-[#B7B7B7] text-[14px] xl:text-[16px]">
                <LuPlusCircle /> <h2>Add Company</h2>

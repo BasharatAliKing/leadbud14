@@ -57,6 +57,17 @@
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.374); 
 }
+.tolist::-webkit-scrollbar{
+   width: 6px;
+}
+.tolist::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.162); 
+    border-radius: 10px;
+}
+.tolist::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.374); 
+}
 #recentbtns{
     display: flex;
     flex-direction: row;
@@ -73,6 +84,29 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+.custom-toast {
+    position: fixed;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; */
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.317);
+  }
+  .toaster{
+    position: fixed;
+      top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+  }
+
 @media (max-width:805px){
     
 }
