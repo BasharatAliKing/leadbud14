@@ -137,7 +137,7 @@ export default function Details() {
                <div className="p-2 flex flex-col  gap-2 md:gap-0 hover:bg-[#fff] duration-300 rounded-md">
                   <div className='flex gap-2 md:gap-0'><h2 className="text-[13px] w-[100px] mt-2 font-normal font-poppins">Industry:</h2>
                      <div onClick={() => { setSavebtn(true) }} className='relative flex items-center w-full' onMouseEnter={() => { setHoverindustry(true) }} onMouseLeave={() => { setHoverindustry(false); setIsEditableindustry(false) }}>
-                        <input type="text" disabled={!isEditableindustry} value={industry} onChange={handleemailchange} className='bg-[#fff] text-[13px] p-1 rounded-md outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
+                        <input type="text" disabled={!isEditableindustry} value={industry} onChange={handleemailchange} className='bg-[#fff] text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
                         {hoverindustry ? <PiPencilLight onClick={() => { setIsEditableindustry(true) }} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                      </div>
                   </div>
@@ -168,7 +168,7 @@ export default function Details() {
                         <div className="p-2 flex hover:bg-[#fff] duration-300 gap-2 md:gap-0 items-center rounded-md">
                            <h2 className="text-[13px] w-[100px] font-normal font-poppins">Location:</h2>
                            <div onClick={() => { setSavebtn(true) }} className='relative flex items-center w-full' onMouseEnter={() => { setHoverlocation(true) }} onMouseLeave={() => { setHoverlocation(false); setIsEditabelocation(false) }}>
-                              <input type="text" disabled={!isEditabelocation} value={location} onChange={(e) => { setLocation() }} className='bg-[#fff] text-[13px] p-1 rounded-md outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
+                              <input type="text" disabled={!isEditabelocation} value={location} onChange={(e) => { setLocation() }} className='bg-[#fff] text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
                               {hoverlocation ? <PiPencilLight onClick={() => { setIsEditabelocation(true) }} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                            </div>
                         </div>
@@ -182,7 +182,7 @@ export default function Details() {
                         <div className="p-2 flex hover:bg-[#fff] duration-300 gap-2 md:gap-0 items-center rounded-md">
                            <h2 className="text-[13px] w-[100px] font-normal font-poppins">Personal:</h2>
                            <div onClick={() => { setSavebtn(true) }} className='relative flex items-center w-full' onMouseEnter={() => { setHoverpersonal(true) }} onMouseLeave={() => { setHoverpersonal(false); setIsEditabepersonal(false) }}>
-                              <input type="text" disabled={!isEditablepersonal} value={personal} onChange={(e) => { setPersonal() }} className='bg-[#fff] text-[13px] p-1 rounded-md outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
+                              <input type="text" disabled={!isEditablepersonal} value={personal} onChange={(e) => { setPersonal() }} className='bg-[#fff] text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
                               {hoverpersonal ? <PiPencilLight onClick={() => { setIsEditabepersonal(true) }} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                            </div>
                         </div>
@@ -221,7 +221,7 @@ export default function Details() {
                <div className="p-2 flex gap-3 md:gap-0 hover:bg-[#fff] duration-300 rounded-md items-center">
                   <h2 className="text-[13px] w-[150px] font-normal font-poppins">Job Position:</h2>
                   <div onClick={() => { setSavebtn(true) }} className='relative flex items-center w-full' onMouseEnter={() => { setHoverjobp(true) }} onMouseLeave={() => { setHoverjobp(false); setIsEditabejobp(false) }}>
-                     <input type="text" disabled={!isEditablejobp} value={jobp} onChange={(e) => { setJobp() }} className=' text-[13px] p-1 rounded-md outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
+                     <input type="text" disabled={!isEditablejobp} value={jobp} onChange={(e) => { setJobp() }} className=' text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
                      {hoverjobp ? <PiPencilLight onClick={() => { setIsEditabejobp(true) }} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                   </div>
                </div>
@@ -235,7 +235,7 @@ export default function Details() {
                <div className="p-2 flex items-center gap-3 md:gap-0 hover:bg-[#fff] duration-300 rounded-md">
                   <h2 className="text-[13px] w-[150px] font-normal font-poppins">HQ Phone:</h2>
                   <div onClick={() => { setSavebtn(true) }} className='relative flex items-center w-full' onMouseEnter={() => { setHoverhqphone(true) }} onMouseLeave={() => { setHoverhqphone(false); setIsEditablehqphone(false) }}>
-                     <input type="text" disabled={!isEditablehqphone} value={hqphone} onChange={(e) => { setHqphone() }} className=' text-[13px] p-1 rounded-md outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
+                     <input type="text" disabled={!isEditablehqphone} value={hqphone} onChange={(e) => { setHqphone() }} className='bg-[#0000] text-[13px] p-1 rounded-md outline-none font-normal font-poppins text-[#030621] w-full' />
                      {hoverhqphone ? <PiPencilLight onClick={() => { setIsEditablehqphone(true) }} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                   </div>
                </div>
