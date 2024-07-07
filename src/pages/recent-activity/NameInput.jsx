@@ -44,7 +44,7 @@ export default function NameInput() {
       <h3 className='text-[16px] md:text-[18px] text-[#000] font-medium '>Are You Sure ?</h3>
       <div className="flex gap-3 justify-center w-full">
                  <button onClick={()=>{setDeletetoast(false)}}  className="bg-gradient-to-r from-[#56F444] via-[#55EE44] to-[#48FA8A]  rounded-md text-[#000] text-[13px] xl:text-[15px] p-2 px-3">Delete</button>
-                 <button className="bg-[#d7d7d7] rounded-md text-[13px] xl:text-[15px] p-2 px-3">Cancel</button>
+                 <button onClick={()=>{setDeletetoast(false)}} className="bg-[#d7d7d7] rounded-md text-[13px] xl:text-[15px] p-2 px-3">Cancel</button>
              </div>
      </div>
       </div>
