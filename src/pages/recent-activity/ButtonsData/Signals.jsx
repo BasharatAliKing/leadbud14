@@ -47,13 +47,13 @@ export default function Signals() {
             newPartnership ? <>
                <div className='custom-toast '>
                   <div className='pb-10 flex flex-col gap-3 bg-[#fefefe]  w-[300px] md:w-2/4 text-start toaster rounded-xl shadow-xl p-5 z-10'>
-                <RxCrossCircled onClick={()=>{setNewpartnership(false)}} className='ml-auto'/>
+                <RxCrossCircled onClick={()=>{setNewpartnership(false)}} className='hover:scale-110 cursor-pointer duration-500 ml-auto'/>
                    <h3 className='text-[16px] md:text-[18px] text-[#000] font-medium '>New Partnership</h3>
                     <div className='flex gap-5 p-3 shadow-md rounded-md bg-[#ebebeb] w-full items-center'>
                     <HiOutlineSignal className='text-[30px] text-[#48FA8A]' />
                             <h2 className='cursor-pointer text-[14px] xl:text-[16px] font-semibold font-poppins text-[#030621]'>Recently Promoted</h2>
                         </div>
-                        <div className=''>
+                        <div className='flex flex-col gap-2'>
                         <div className='flex gap-2 items-center'>
                            <h3 className='flex gap-1 text-[#0000ffbc] items-center text-[12px] bg-[#ebebeb] p-1 rounded-md'><FaRegUser/>People</h3>
                           <h4 className='text-[13px]'>Where....</h4>
@@ -78,13 +78,13 @@ export default function Signals() {
             newproduct ? <>
                <div className='custom-toast '>
                   <div className='pb-10 flex flex-col gap-3 bg-[#fefefe]  w-[300px] md:w-2/4 text-start toaster rounded-xl shadow-xl p-5 z-10'>
-                <RxCrossCircled onClick={()=>{setNewproduct(false)}} className='ml-auto'/>
+                <RxCrossCircled onClick={()=>{setNewproduct(false)}} className='hover:scale-110 cursor-pointer duration-500 ml-auto'/>
                    <h3 className='text-[16px] md:text-[18px] text-[#000] font-medium '>New product or service</h3>
                     <div className='flex gap-5 p-3 shadow-md rounded-md bg-[#ebebeb] w-full items-center'>
                     <HiOutlineSignal className='text-[30px] text-[#48FA8A]' />
                             <h2 className='cursor-pointer text-[14px] xl:text-[16px] font-semibold font-poppins text-[#030621]'>Recently Promoted</h2>
                         </div>
-                        <div className=''>
+                        <div className='flex flex-col gap-2'>
                         <div className='flex gap-2 items-center'>
                            <h3 className='flex gap-1 text-[#0000ffbc] items-center text-[12px] bg-[#ebebeb] p-1 rounded-md'><FaRegUser/>People</h3>
                           <h4 className='text-[13px]'>Where....</h4>
