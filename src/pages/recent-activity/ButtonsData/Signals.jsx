@@ -108,13 +108,12 @@ export default function Signals() {
             <div className='flex flex-col gap-1  rounded-xl w-full'>
                 <div className='flex justify-between w-full items-center'>
                     <h2 className='text-[14px] py-2 xl:text-[17px] font-semibold font-poppins text-[#030621]'>Signals & Communication Advice</h2>
-                    <FaChevronDown className='text-[16px]' />
                 </div>
                 <div className='bg-[#F5F5F5] p-4 rounded-xl flex gap-3 w-full'>
                     <HiOutlineSignal className='text-[30px] text-[#48FA8A] mt-2' />
-                    <div className='w-full'>
+                    <div onClick={()=>{setAward(true)}} className='w-full'>
                         <div className='flex justify-between w-full items-center'>
-                            <h2 onClick={()=>{setAward(true)}} className='cursor-pointer text-[14px] xl:text-[16px] font-semibold font-poppins text-[#030621]'>Award or recognition</h2>
+                            <h2 className='cursor-pointer text-[14px] xl:text-[16px] font-semibold font-poppins text-[#030621]'>Award or recognition</h2>
                             <FaChevronRight className='text-[#030621] text-[12px]' />
                         </div>
                         <h4 className='text-[13px] xl:text-[15px] font-normal font-poppins text-[#7B7B7B]'>Recognition = Recognition +1</h4>
@@ -124,9 +123,9 @@ export default function Signals() {
                 
                 <div className=' p-4 rounded-xl flex gap-3 w-full'>
                     <HiOutlineSignal className='text-[30px] text-[#48FA8A] mt-2' />
-                    <div className='w-full'>
+                    <div onClick={()=>{setNewpartnership(true)}} className='w-full'>
                         <div className='flex justify-between w-full items-center'>
-                            <h2 onClick={()=>{setNewpartnership(true)}} className='cursor-pointer text-[14px] xl:text-[16px] font-semibold font-poppins text-[#030621]'>New Partnership</h2>
+                            <h2 className='cursor-pointer text-[14px] xl:text-[16px] font-semibold font-poppins text-[#030621]'>New Partnership</h2>
                             <FaChevronRight className='text-[#030621] text-[12px]' />
                         </div>
                         <h4 className=' text-[13px] xl:text-[15px] font-normal font-poppins text-[#7B7B7B]'>Recognition = Recognition +1</h4>
@@ -135,9 +134,9 @@ export default function Signals() {
                 </div>
                 <div className='bg-[#F5F5F5] p-4 rounded-xl flex gap-3 w-full'>
                     <HiOutlineSignal className='text-[30px] text-[#48FA8A] mt-2' />
-                    <div className='w-full'>
+                    <div onClick={()=>{setNewproduct(true)}} className='w-full'>
                         <div className='flex justify-between w-full items-center'>
-                            <h2 onClick={()=>{setNewproduct(true)}} className='cursor-pointer text-[14px] xl:text-[16px] font-semibold font-poppins text-[#030621]'>New product or service</h2>
+                            <h2 className='cursor-pointer text-[14px] xl:text-[16px] font-semibold font-poppins text-[#030621]'>New product or service</h2>
                             <FaChevronRight className='text-[#030621] text-[12px]' />
                         </div>
                         <h4 className=' text-[13px] xl:text-[15px] font-normal font-poppins text-[#7B7B7B]'>New Offering = New Offering +1</h4>

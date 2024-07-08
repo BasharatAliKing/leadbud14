@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState , useRef } from 'react'
 import { BiBuildings } from "react-icons/bi";
 import { LuPlusCircle } from "react-icons/lu";
 import { PiPencilLight } from "react-icons/pi";
@@ -47,6 +47,98 @@ export default function Details() {
 
    const suggestions = ['Apple', 'Banana', 'Cherry', 'Date', 'Elderberry', 'Fig', 'Grape', 'Honeydew'];
    const Companysuggestions = ['Apple', 'Banana', 'Cherry', 'Date', 'Elderberry', 'Fig', 'Grape', 'Honeydew'];
+
+   const inputRefemail = useRef(null);  // Create a ref for the input element
+   const inputRefindustry = useRef(null);  
+   const inputRefcountry = useRef(null);  
+   const inputReflocation = useRef(null);  
+   const inputRefwork = useRef(null);  
+   const inputRefpersonal = useRef(null);  
+   const inputRefcompany = useRef(null);  
+   const inputRefwebsite = useRef(null);  
+   const inputRefjobposition = useRef(null);  
+   const inputRefhqphone = useRef(null);  
+
+   const handleIconClick = () => {
+      setIsEditableemail(true);
+      setTimeout(() => {
+         if (inputRefemail.current) {
+            inputRefemail.current.focus();  // Focus the input element when the icon is clicked
+         }
+      }, 0);
+   };
+   const handleIconClickindustry = () => {
+      setIsEditableindustry(true)
+      setTimeout(() => {
+         if (inputRefindustry.current) {
+            inputRefindustry.current.focus();  // Focus the input element when the icon is clicked
+         }
+      }, 0);
+   };
+   const handleIconClickcountry = () => {
+      setIsEditablecountry(true)
+      setTimeout(() => {
+         if (inputRefcountry.current) {
+            inputRefcountry.current.focus();  // Focus the input element when the icon is clicked
+         }
+      }, 0);
+   };
+   const handleIconClicklocation = () => {
+      setIsEditabelocation(true)
+      setTimeout(() => {
+         if (inputReflocation.current) {
+            inputReflocation.current.focus();  // Focus the input element when the icon is clicked
+         }
+      }, 0);
+   };
+   const handleIconClickwork = () => {
+      setIsEditabework(true)
+      setTimeout(() => {
+         if (inputRefwork.current) {
+            inputRefwork.current.focus();  // Focus the input element when the icon is clicked
+         }
+      }, 0);
+   };
+   const handleIconClickpersonal = () => {
+      setIsEditabepersonal(true)
+      setTimeout(() => {
+         if (inputRefpersonal.current) {
+            inputRefpersonal.current.focus();  // Focus the input element when the icon is clicked
+         }
+      }, 0);
+   };
+   const handleIconClickcompany = () => {
+      setIsEditabecompany(true)
+      setTimeout(() => {
+         if (inputRefcompany.current) {
+            inputRefcompany.current.focus();  // Focus the input element when the icon is clicked
+         }
+      }, 0);
+   };
+   const handleIconClickwebsite = () => {
+      setIsEditablewebsite(true)
+      setTimeout(() => {
+         if (inputRefwebsite.current) {
+            inputRefwebsite.current.focus();  // Focus the input element when the icon is clicked
+         }
+      }, 0);
+   };
+   const handleIconClickjobposition = () => {
+      setIsEditabejobp(true)
+      setTimeout(() => {
+         if (inputRefjobposition.current) {
+            inputRefjobposition.current.focus();  // Focus the input element when the icon is clicked
+         }
+      }, 0);
+   };
+   const handleIconClickhqphone = () => {
+      setIsEditablehqphone(true)
+      setTimeout(() => {
+         if (inputRefhqphone.current) {
+            inputRefhqphone.current.focus();  // Focus the input element when the icon is clicked
+         }
+      }, 0);
+   };
 
 
  // State to hold the array of input boxes
@@ -126,23 +218,24 @@ export default function Details() {
             : null
          }
          <div className='flex flex-col gap-4'>
+       
             <div className="bg-[#F5F5F5] p-3 rounded-md">
                <div className="p-2 flex gap-2 hover:bg-[#fff] duration-300 md:gap-0 items-center ">
                   <h2 className="text-[13px] w-[100px] font-normal font-poppins">Email:</h2>
                   <div onClick={() => { setSavebtn(true) }} className='relative flex items-center w-full' onMouseEnter={() => { setHover(true) }} onMouseLeave={() => { setHover(false); setIsEditableemail(false) }}>
-                     <input type="text" disabled={!isEditableemail} value={email} onChange={() => { setEmail() }} className='bg-[#F5F5F5] text-[13px] p-1 rounded-md outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
-                     {hover ? <PiPencilLight onClick={() => { setIsEditableemail(true) }} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
+                     <input ref={inputRefemail} type="text" disabled={!isEditableemail}  value={email} onChange={() => { setEmail() }} className='bg-[#F5F5F5] text-[13px] p-1 rounded-md outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
+                     {hover ? <PiPencilLight onClick={handleIconClick} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                   </div>
                </div>
                <div className="p-2 flex flex-col  gap-2 md:gap-0 hover:bg-[#fff] duration-300 rounded-md">
                   <div className='flex gap-2 md:gap-0'><h2 className="text-[13px] w-[100px] mt-2 font-normal font-poppins">Industry:</h2>
                      <div onClick={() => { setSavebtn(true) }} className='relative flex items-center w-full' onMouseEnter={() => { setHoverindustry(true) }} onMouseLeave={() => { setHoverindustry(false); setIsEditableindustry(false) }}>
-                        <input type="text" disabled={!isEditableindustry} value={industry} onChange={handleemailchange} className='bg-[#fff] text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
-                        {hoverindustry ? <PiPencilLight onClick={() => { setIsEditableindustry(true) }} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
+                        <input  ref={inputRefindustry} type="text" disabled={!isEditableindustry}  value={industry} onChange={handleemailchange} className='bg-[#fff] text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
+                        {hoverindustry ? <PiPencilLight onClick={handleIconClickindustry} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                      </div>
                   </div>
                   {filteredSuggestions.length > 0 && (
-                     <ul className="absolute mt-7 bg-[#fff] w-full ml-[70px] cursor-pointer  rounded-md ">
+                     <ul className="absolute mt-7 bg-[#fff] z-10 w-full ml-[70px] cursor-pointer  rounded-md ">
                         {filteredSuggestions.map((suggestion, index) => (
                            <li className='hover:bg-[#F5F5F5] duration-700 p-1 px-3 text-[14px]'
                               key={index}
@@ -158,8 +251,8 @@ export default function Details() {
                <div className="p-2 flex gap-2 hover:bg-[#fff] duration-300 md:gap-0 items-center  ">
                   <h2 className="text-[13px] w-[100px] font-normal font-poppins">Country:</h2>
                   <div onClick={() => { setSavebtn(true) }} className='relative flex items-center w-full' onMouseEnter={() => { setHovercountry(true) }} onMouseLeave={() => { setHovercountry(false); setIsEditablecountry(false) }}>
-                     <input type="text" disabled={!isEditablecountry} value={country} onChange={(e) => { setCountry() }} className='bg-[#F5F5F5] text-[13px] p-1 rounded-md outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
-                     {hovercountry ? <PiPencilLight onClick={() => { setIsEditablecountry(true) }} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
+                     <input ref={inputRefcountry} type="text" disabled={!isEditablecountry} value={country} onChange={(e) => { setCountry() }} className='bg-[#F5F5F5] text-[13px] p-1 rounded-md outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
+                     {hovercountry ? <PiPencilLight onClick={handleIconClickcountry} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                   </div>
                </div>
                {
@@ -168,22 +261,22 @@ export default function Details() {
                         <div className="p-2 flex hover:bg-[#fff] duration-300 gap-2 md:gap-0 items-center rounded-md">
                            <h2 className="text-[13px] w-[100px] font-normal font-poppins">Location:</h2>
                            <div onClick={() => { setSavebtn(true) }} className='relative flex items-center w-full' onMouseEnter={() => { setHoverlocation(true) }} onMouseLeave={() => { setHoverlocation(false); setIsEditabelocation(false) }}>
-                              <input type="text" disabled={!isEditabelocation} value={location} onChange={(e) => { setLocation() }} className='bg-[#fff] text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
-                              {hoverlocation ? <PiPencilLight onClick={() => { setIsEditabelocation(true) }} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
+                              <input ref={inputReflocation} type="text" disabled={!isEditabelocation} value={location} onChange={(e) => { setLocation() }} className='bg-[#fff] text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
+                              {hoverlocation ? <PiPencilLight onClick={handleIconClicklocation} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                            </div>
                         </div>
                         <div className="p-2 flex hover:bg-[#fff] duration-300 gap-2 md:gap-0 items-center  ">
                            <h2 className="text-[13px] w-[100px] font-normal font-poppins">Work:</h2>
                            <div onClick={() => { setSavebtn(true) }} className='relative flex items-center w-full' onMouseEnter={() => { setHoverwork(true) }} onMouseLeave={() => { setHoverwork(false); setIsEditabework(false) }}>
-                              <input type="text" disabled={!isEditablework} value={work} onChange={(e) => { setWork() }} className='bg-[#F5F5F5] text-[13px] p-1 rounded-md outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
-                              {hoverwork ? <PiPencilLight onClick={() => { setIsEditabework(true) }} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
+                              <input ref={inputRefwork} type="text" disabled={!isEditablework} value={work} onChange={(e) => { setWork() }} className='bg-[#F5F5F5] text-[13px] p-1 rounded-md outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
+                              {hoverwork ? <PiPencilLight onClick={handleIconClickwork} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                            </div>
                         </div>
                         <div className="p-2 flex hover:bg-[#fff] duration-300 gap-2 md:gap-0 items-center rounded-md">
                            <h2 className="text-[13px] w-[100px] font-normal font-poppins">Personal:</h2>
                            <div onClick={() => { setSavebtn(true) }} className='relative flex items-center w-full' onMouseEnter={() => { setHoverpersonal(true) }} onMouseLeave={() => { setHoverpersonal(false); setIsEditabepersonal(false) }}>
-                              <input type="text" disabled={!isEditablepersonal} value={personal} onChange={(e) => { setPersonal() }} className='bg-[#fff] text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
-                              {hoverpersonal ? <PiPencilLight onClick={() => { setIsEditabepersonal(true) }} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
+                              <input ref={inputRefpersonal} type="text" disabled={!isEditablepersonal} value={personal} onChange={(e) => { setPersonal() }} className='bg-[#fff] text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
+                              {hoverpersonal ? <PiPencilLight onClick={handleIconClickpersonal} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                            </div>
                         </div>
                      </> : ''
@@ -201,8 +294,8 @@ export default function Details() {
                   <div className='flex gap-2 md:gap-0 '>
                      <h2 className="text-[13px] w-[150px] mt-[6px] font-normal font-poppins">Company:</h2>
                      <div onClick={() => { setSavebtn(true) }} className='relative flex items-center w-full' onMouseEnter={() => { setHoverCompany(true) }} onMouseLeave={() => { setHoverCompany(false); setIsEditabecompany(false) }}>
-                        <input type="text" disabled={!isEditablecompany} value={company} onChange={handlecompanychange} className='bg-[#F5F5F5] text-[13px] p-1 rounded-md outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
-                        {hovercompany ? <PiPencilLight onClick={() => { setIsEditabecompany(true) }} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
+                        <input ref={inputRefcompany} type="text" disabled={!isEditablecompany} value={company} onChange={handlecompanychange} className='bg-[#F5F5F5] text-[13px] p-1 rounded-md outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
+                        {hovercompany ? <PiPencilLight onClick={handleIconClickcompany} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                      </div>
                   </div>
                   {filteredSuggestionscompany.length > 0 && (
@@ -221,22 +314,22 @@ export default function Details() {
                <div className="p-2 flex gap-3 md:gap-0 hover:bg-[#fff] duration-300 rounded-md items-center">
                   <h2 className="text-[13px] w-[150px] font-normal font-poppins">Job Position:</h2>
                   <div onClick={() => { setSavebtn(true) }} className='relative flex items-center w-full' onMouseEnter={() => { setHoverjobp(true) }} onMouseLeave={() => { setHoverjobp(false); setIsEditabejobp(false) }}>
-                     <input type="text" disabled={!isEditablejobp} value={jobp} onChange={(e) => { setJobp() }} className=' text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
-                     {hoverjobp ? <PiPencilLight onClick={() => { setIsEditabejobp(true) }} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
+                     <input ref={inputRefjobposition} type="text" disabled={!isEditablejobp} value={jobp} onChange={(e) => { setJobp() }} className=' text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
+                     {hoverjobp ? <PiPencilLight onClick={handleIconClickjobposition} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                   </div>
                </div>
                <div className="p-2 flex items-center hover:bg-[#fff] duration-300 gap-3 md:gap-0 ">
                   <h2 className="text-[13px] w-[150px] font-normal font-poppins">Website:</h2>
                   <div onClick={() => { setSavebtn(true) }} className='relative flex items-center w-full' onMouseEnter={() => { setHoverwebsite(true) }} onMouseLeave={() => { setHoverwebsite(false); setIsEditablewebsite(false) }}>
-                     <input type="text" disabled={!isEditablewebsite} value={website} onChange={(e) => { setWebsite() }} className='bg-[#F5F5F5] text-[13px] p-1 rounded-md outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
-                     {hoverwebsite ? <PiPencilLight onClick={() => { setIsEditablewebsite(true) }} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
+                     <input ref={inputRefwebsite}  type="text" disabled={!isEditablewebsite} value={website} onChange={(e) => { setWebsite() }} className='bg-[#F5F5F5] text-[13px] p-1 rounded-md outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
+                     {hoverwebsite ? <PiPencilLight onClick={handleIconClickwebsite} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                   </div>
                </div>
                <div className="p-2 flex items-center gap-3 md:gap-0 hover:bg-[#fff] duration-300 rounded-md">
                   <h2 className="text-[13px] w-[150px] font-normal font-poppins">HQ Phone:</h2>
                   <div onClick={() => { setSavebtn(true) }} className='relative flex items-center w-full' onMouseEnter={() => { setHoverhqphone(true) }} onMouseLeave={() => { setHoverhqphone(false); setIsEditablehqphone(false) }}>
-                     <input type="text" disabled={!isEditablehqphone} value={hqphone} onChange={(e) => { setHqphone() }} className='bg-[#0000] text-[13px] p-1 rounded-md outline-none font-normal font-poppins text-[#030621] w-full' />
-                     {hoverhqphone ? <PiPencilLight onClick={() => { setIsEditablehqphone(true) }} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
+                     <input ref={inputRefhqphone} type="text" disabled={!isEditablehqphone} value={hqphone} onChange={(e) => { setHqphone() }} className='bg-[#0000] text-[13px] p-1 rounded-md outline-none font-normal font-poppins text-[#030621] w-full' />
+                     {hoverhqphone ? <PiPencilLight onClick={handleIconClickhqphone} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                   </div>
                </div>
             </div>

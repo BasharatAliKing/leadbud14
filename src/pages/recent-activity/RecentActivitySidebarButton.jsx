@@ -13,8 +13,8 @@ const RecentActivitySidebarButton = () => {
             <div  className='pb-0 whitespace-nowrap overflow-x-scroll hide-scrollbar rounded-md'>
      
           <button onClick={()=>{setShow(true)}} className='text-[13px] font-medium font-poppins p-2' style={{backgroundColor: show?'black':'', color:show?'white':''}}>Details</button>
-          <button className='text-[13px] font-medium font-poppins p-2' style={{}}>Deals</button>
-          <button className='text-[13px] font-medium font-poppins p-2' style={{}}>Related Companies</button>
+          <button className='hover:cursor-not-allowed text-[13px] font-medium font-poppins p-2' style={{}}>Deals</button>
+          <button className='hover:cursor-not-allowed text-[13px] font-medium font-poppins p-2' style={{}}>Related Companies</button>
           <button onClick={()=>{setShow(false)}} className='text-[13px] font-medium font-poppins p-2 mr-0' style={{backgroundColor: show?'':'black', color:show?'':'white'}}>Signals</button>
       </div>
       </div>
