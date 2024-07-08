@@ -13,6 +13,7 @@ const AddCompany = () => {
   const [dataArray, setDataArray] = useState([]);
   const [errorMessage, setErrorMessage] = useState('');
   const [showin ,setShowin]=useState(false);
+  const [addcompsave,setAddCompSave]=useState(false);
 
   const handleInputChange = (setIndex, inputId, value) => {
     const newInputSets = [...inputSets];
@@ -33,7 +34,7 @@ const AddCompany = () => {
     } else {
     //   setErrorMessage('Please fill in all input fields before adding new ones.');
     setShowin(true);
-    }
+  }
   };
 
   return (
@@ -45,13 +46,14 @@ const AddCompany = () => {
           {set.map(input => (
             <div className='p-2 flex gap-3 md:gap-0 hover:bg-[#fff] duration-300 rounded-md items-center ' key={input.id}>
               <label className='text-[13px] w-[150px] font-normal font-poppins'>{input.label}</label>
-              <input className='text-[13px] rounded-md p-1 bg-[#0000] outline-none font-normal font-poppins text-[#030621] w-full'
+              <input className='text-[13px] rounded-md p-1 bg-[#0000] border font-normal font-poppins text-[#030621] w-full'
                 type="text"
                 value={input.value}
                 onChange={(e) => handleInputChange(setIndex, input.id, e.target.value)}
               />
             </div>
           ))}
+         
           </div>
         </div>
       ))} 

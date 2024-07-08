@@ -31,7 +31,7 @@ export default function RecentActivity() {
                        
            <div className="recentsectwo">
                        <div className=" p-2 lg:p-5 lg:w-5/6">
-                       <div className="flex flex-col gap-4">
+                       <div className="flex flex-col gap-4 md:mt-1">
                             <div className="p-6 md:mt-3  bg-[#fff]  rounded-xl shadow-lg flex flex-col gap-4">
                                 <div className="flex gap-5 lg:gap-10 items-center">
                                     <h1 className=" text-[16px] xl:text-[20px] font-semibold font-poppins text-[#030621]">Recent Activities</h1>
