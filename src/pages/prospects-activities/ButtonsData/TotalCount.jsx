@@ -19,11 +19,11 @@ export default function TotalCount() {
             </div>
         </div>
          {/* total chart */}
-        <div className='relative flex flex-col gap-7 w-full overflow-x-auto hide-scrollbar'>
-         <div className='flex gap-2 max-w-[10000px] w-full items-center'><h6 className='w-[50px] text-end'>15,000</h6> <div className='h-[2px] bg-[#D8D8D8] overflow-hidden w-full'></div> </div>
-         <div className='flex gap-2 max-w-[10000px] w-full items-center'><h6 className='w-[50px] text-end'>10,000</h6> <div className='h-[2px] bg-[#D8D8D8] overflow-hidden w-full'></div> </div>
-         <div className='flex gap-2 max-w-[10000px] w-full items-center'><h6 className='w-[50px] text-end'>5,000</h6> <div className='h-[2px] bg-[#D8D8D8] overflow-hidden w-full'></div> </div>
-         <div className='flex gap-2 max-w-[10000px] w-full items-center'><h6 className='w-[50px] text-end'>0</h6> <div className='h-[2px] bg-[#D8D8D8] overflow-hidden w-full'></div> </div>
+        <div className='relative flex flex-col gap-7  overflow-x-auto hide-scrollbar xl:mx-auto'>
+         <div className='flex gap-2 max-w-[10000px] min-w-[700px] w-[700px] items-center'><h6 className='w-[50px] text-end'>15,000</h6> <div className='h-[2px] bg-[#D8D8D8] overflow-hidden w-full'></div> </div>
+         <div className='flex gap-2 max-w-[10000px] min-w-[700px] w-[700px] items-center'><h6 className='w-[50px] text-end'>10,000</h6> <div className='h-[2px] bg-[#D8D8D8] overflow-hidden w-full'></div> </div>
+         <div className='flex gap-2 max-w-[10000px] min-w-[700px] w-[700px] items-center'><h6 className='w-[50px] text-end'>5,000</h6> <div className='h-[2px] bg-[#D8D8D8] overflow-hidden w-full'></div> </div>
+         <div className='flex gap-2 max-w-[10000px] min-w-[700px] w-[700px] items-center'><h6 className='w-[50px] text-end'>0</h6> <div className='h-[2px] bg-[#D8D8D8] overflow-hidden w-full'></div> </div>
          <div className='flex justify-between absolute bottom-[10px] left-16 gap-3'>
             <div className='w-[20px] h-[140px] bg-[#56F444] rounded-t-full relative'>
                 <div className='absolute bottom-0 w-[20px] h-[120px] bg-[#003CFF] rounded-t-full '></div>
