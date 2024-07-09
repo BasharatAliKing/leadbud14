@@ -72,7 +72,7 @@ export default function ProspectsActivity() {
                             </div>
                         </div>
                         <div className='w-full flex flex-col lg:flex-row gap-5'>
-                            <div className='lg:w-[60%] flex flex-col gap-6'>
+                            <div className='lg:w-[62%] flex flex-col gap-6'>
                                 <div className='flex flex-col gap-3 p-5 bg-[#fff] shadow-xl rounded-xl'>
                                     <p className='text-[14px] xl:text-[15px] font-poppins text-[#7B7B7B]'>B2B and B2C software companies around the globe use Paddle to offload operational complexities so
                                         they can focus on growth....  <span className='text-[#48FA8A]'>Show More</span></p>
@@ -144,7 +144,7 @@ export default function ProspectsActivity() {
                                     <ButtonComponent />
                                 </div>
                             </div>
-                            <div className='lg:w-[40%] flex flex-col gap-5'>
+                            <div className='lg:w-[38%] flex flex-col gap-5'>
                                <SignalsSide/>
                                 <div className='flex flex-col gap-4 shadow-xl bg-[#fff] p-3 md:p-5 rounded-xl'>
                                     <div className='flex flex-col gap-4 p-3 bg-[#F5F5F5] rounded-xl'>

@@ -16,7 +16,7 @@ const ButtonComponent = () => {
   return (
     <div>
             <div className='w-full '>
-            <div className='flex overflow-x-scroll hide-scrollbar w-full bg-[#F5F5F5] rounded-md'> 
+            <div className='flex overflow-x-scroll justify-between hide-scrollbar w-full bg-[#F5F5F5] rounded-md'> 
          
           <button style={{backgroundColor: btnclick===1 ? '#56f444': btnclick===0 ? '#56f444' : '' }} onClick={()=>{setBtnclick(1)}} className='prosbtn flex items-center gap-1 py-2 px-3 md:py-4  text-[#030621] font-medium font-poppins text-[13px]'><GrTechnology/> Technology</button>
           <button style={{backgroundColor: btnclick===2 ? '#56f444':''}} onClick={()=>{setBtnclick(2)}} className='prosbtn flex items-center gap-1 py-2 px-3 md:py-4  text-[#030621] font-medium font-poppins text-[13px]'><FaSackDollar/> Funding Rounds</button>
