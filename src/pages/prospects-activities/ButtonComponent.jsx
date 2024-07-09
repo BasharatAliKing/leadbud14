@@ -11,7 +11,7 @@ import JobPostings from './ButtonsData/JobPostings';
 import News from './ButtonsData/News';
 import EmployeeT from './ButtonsData/EmployeeT';
 const ButtonComponent = () => {
-  const [btnclick,setBtnclick]=useState(5);
+  const [btnclick,setBtnclick]=useState(0);
 
   return (
     <div>
