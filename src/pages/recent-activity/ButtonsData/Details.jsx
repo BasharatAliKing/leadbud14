@@ -383,23 +383,44 @@ export default function Details() {
                </div>
                <div className="p-2 flex gap-3 md:gap-0 hover:bg-[#F5F5F5] duration-300 rounded-md items-center">
                   <h2 className="text-[13px] w-[150px] font-normal font-poppins">Job Position:</h2>
-                  <div onClick={() => { setSavebtn(true) }} className='relative flex items-center w-full' onMouseEnter={() => { setHoverjobp(true) }} onMouseLeave={() => { setHoverjobp(false); setIsEditabejobp(false) }}>
+                  <div onClick={() => { setSavebtn(true) }} className='flex flex-col gap-1 w-full' onMouseEnter={() => { setHoverjobp(true) }} onMouseLeave={() => { setJobpPrevval(false) ; setHoverjobp(false); setIsEditabejobp(false) }}>
+                  {jobpprevval ? <div className='flex items-center gap-1'>
+                           <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
+                           <h2 className='text-[12px]'>Leadbud.io</h2>
+                           <RiDeleteBin5Line className='text-[red] text-[12px]' />
+                        </div> : null}
+                   <div className='flex relative items-center w-full'>
                      <input ref={inputRefjobposition} type="text" disabled={!isEditablejobp} value={jobp} onChange={(e) => { setJobp() }} className='border-0 focus:border focus:outline-none text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
                      {hoverjobp ? <PiPencilLight onClick={handleIconClickjobposition} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                   </div>
+                   </div>
                </div>
                <div className="p-2 flex items-center hover:bg-[#F5F5F5] duration-300 gap-3 md:gap-0 ">
                   <h2 className="text-[13px] w-[150px] font-normal font-poppins">Website:</h2>
-                  <div onClick={() => { setSavebtn(true) }} className='relative flex items-center w-full' onMouseEnter={() => { setHoverwebsite(true) }} onMouseLeave={() => { setHoverwebsite(false); setIsEditablewebsite(false) }}>
+                  <div onClick={() => { setSavebtn(true) }} className=' flex flex-col gap-1 w-full' onMouseEnter={() => { setHoverwebsite(true) }} onMouseLeave={() => { setWebsitePrevval(false) ; setHoverwebsite(false); setIsEditablewebsite(false) }}>
+                  {websiteprevval ? <div className='flex items-center gap-1'>
+                           <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
+                           <h2 className='text-[12px]'> https://www.leadbud.io</h2>
+                           <RiDeleteBin5Line className='text-[red] text-[12px]' />
+                        </div> : null}
+                  <div className='flex items-center relative w-full'>
                      <input ref={inputRefwebsite} type="text" disabled={!isEditablewebsite} value={website} onChange={(e) => { setWebsite() }} className=' border-0 focus:border focus:outline-none bg-[#0000] text-[13px] p-1 rounded-md outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
                      {hoverwebsite ? <PiPencilLight onClick={handleIconClickwebsite} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
+                  </div>
                   </div>
                </div>
                <div className="p-2 flex items-center gap-3 md:gap-0 hover:bg-[#F5F5F5] duration-300 rounded-md">
                   <h2 className="text-[13px] w-[150px] font-normal font-poppins">HQ Phone:</h2>
-                  <div onClick={() => { setSavebtn(true) }} className='relative flex items-center w-full' onMouseEnter={() => { setHoverhqphone(true) }} onMouseLeave={() => { setHoverhqphone(false); setIsEditablehqphone(false) }}>
+                  <div onClick={() => { setSavebtn(true) }} className='flex flex-col  w-full' onMouseEnter={() => { setHoverhqphone(true) }} onMouseLeave={() => { setHqphonePrevval(false) ; setHoverhqphone(false); setIsEditablehqphone(false) }}>
+                  {hqphoneprevval ? <div className='flex items-center gap-1'>
+                           <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
+                           <h2 className='text-[12px]'>---</h2>
+                           <RiDeleteBin5Line className='text-[red] text-[12px]' />
+                        </div> : null}
+                  <div className='flex relative w-full items-center'>
                      <input ref={inputRefhqphone} type="text" disabled={!isEditablehqphone} value={hqphone} onChange={(e) => { setHqphone() }} className=' border-0 focus:border focus:outline-none bg-[#0000] text-[13px] p-1 rounded-md outline-none font-normal font-poppins text-[#030621] w-full' />
                      {hoverhqphone ? <PiPencilLight onClick={handleIconClickhqphone} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
+                  </div>
                   </div>
                </div>
             </div>
