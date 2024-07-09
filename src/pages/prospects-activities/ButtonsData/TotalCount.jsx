@@ -167,6 +167,10 @@ export default function TotalCount() {
             </div>
             </div>
         </div>
+        <div className='flex justify-around -mt-7'>
+            <h3>2023</h3>
+            <h3>2024</h3>
+        </div>
         <div className='flex flex-wrap items-start md:justify-center gap-x-5 gap-1 '>
             <div className='flex gap-1 items-center'>
                 <div className='h-[10px] w-[10px] rounded-full bg-[#56F444]'></div>

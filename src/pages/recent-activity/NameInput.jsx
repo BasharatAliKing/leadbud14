@@ -79,10 +79,10 @@ export default function NameInput() {
             <li onClick={()=>{setSubmenu(2)}} className='px-2 p-1 cursor-pointer duration-500 flex gap-1 items-center'><ImMoveDown /> Add to List</li>
             <li onClick={()=>{ setDotsmenu(false); setDeletetoast(true)}} className='px-2 p-1 cursor-pointer duration-500 flex gap-1 items-center'><RiDeleteBin5Line /> Delete</li>
             </ul>
-            <ul className='tolist absolute right-5 top-12  bg-[#F5F5F5] max-h-[250px] overflow-y-scroll'>
+            <ul className='tolist absolute right-5 top-12 z-10  bg-[#F5F5F5] max-h-[250px] overflow-y-scroll'>
            { submenu ===0 ? null:
             submenu==1?<>
-            <div className='flex flex-col gap-2 p-3'>
+            <div className='flex flex-col gap-2 p-3 '>
               <div c>
                 <h3>Move to List</h3>
               </div>
