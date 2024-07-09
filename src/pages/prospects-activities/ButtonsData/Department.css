@@ -1,0 +1,25 @@
+.circle-container{
+    position: relative;
+    display: inline-block;
+}
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 60%;
+    height: 200px;
+    max-height: 250px;
+    margin-top: -20px;
+}
+
+.circle {
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+.circle-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 80px;
+}

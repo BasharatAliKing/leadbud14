@@ -11,7 +11,7 @@ import JobPostings from './ButtonsData/JobPostings';
 import News from './ButtonsData/News';
 import EmployeeT from './ButtonsData/EmployeeT';
 const ButtonComponent = () => {
-  const [btnclick,setBtnclick]=useState(0);
+  const [btnclick,setBtnclick]=useState(5);
 
   return (
     <div>
@@ -22,11 +22,11 @@ const ButtonComponent = () => {
           <button style={{backgroundColor: btnclick===2 ? '#56f444':''}} onClick={()=>{setBtnclick(2)}} className='prosbtn flex items-center gap-1 py-2 px-3 md:py-4  text-[#030621] font-medium font-poppins text-[13px]'><FaSackDollar/> Funding Rounds</button>
           <button style={{backgroundColor: btnclick===3 ? '#56f444':''}} onClick={()=>{setBtnclick(3)}} className='prosbtn flex items-center gap-1 py-2 px-3 md:py-4  text-[#030621] font-medium font-poppins text-[13px]'><IoBagHandleOutline/> Job Posting</button>
           <button style={{backgroundColor: btnclick===4 ? '#56f444':''}} onClick={()=>{setBtnclick(4)}} className='prosbtn flex items-center gap-1 py-2 px-3 md:py-4  text-[#030621] font-medium font-poppins text-[13px]'><FaRadio/> News</button>
-          <button  className='prosbtn flex items-center gap-1 py-2 px-3 md:py-4  text-[#030621] font-medium font-poppins text-[13px]'><FaUsersCog/> Employee Trends</button>
+          <button style={{backgroundColor: btnclick===5 ? '#56f444':''}} onClick={()=>{setBtnclick(5)}} className='prosbtn flex items-center gap-1 py-2 px-3 md:py-4  text-[#030621] font-medium font-poppins text-[13px]'><FaUsersCog/> Employee Trends</button>
       </div>
       </div>
        {
-        btnclick===0 ? <Technologies/> : btnclick===1 ? <Technologies/> : btnclick ===2 ? <Funding/> : btnclick===3 ? <JobPostings/> : btnclick===4 ? <News/> : null
+        btnclick===0 ? <Technologies/> : btnclick===1 ? <Technologies/> : btnclick ===2 ? <Funding/> : btnclick===3 ? <JobPostings/> : btnclick===4 ? <News/> : btnclick===5 ?<EmployeeT/>:null
        }
 
     </div>
