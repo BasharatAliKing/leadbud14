@@ -45,6 +45,7 @@ const AddCompany = () => {
 
   return (
     <>
+    
      {
             alerttoast ? <>
                <div className='custom-toast'>
