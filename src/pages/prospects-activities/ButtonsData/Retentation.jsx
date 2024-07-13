@@ -175,7 +175,7 @@ export default function Retentation() {
          <div className='flex gap-2 max-w-[10000px] min-w-[800px] w-[800px]  items-center'><h6 className='w-[30px] sm:w-[50px] text-end'>-100</h6> <div className='h-[2px] bg-[#D8D8D8] overflow-hidden w-full'></div> </div>
          <div className='flex gap-2 max-w-[10000px] min-w-[800px] w-[800px]  items-center'><h6 className='w-[30px] sm:w-[50px] text-end'>-200</h6> <div className='h-[2px] bg-[#D8D8D8] overflow-hidden w-full'></div> </div>
        </div>
-       <div className='flex justify-around -mt-4'>
+       <div className='flex justify-around -mt-4 max-w-[10000px] min-w-[800px] w-[800px] xl:mx-auto'>
             <h3>2023</h3>
             <h3>2024</h3>
         </div>

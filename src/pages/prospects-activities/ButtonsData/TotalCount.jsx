@@ -167,7 +167,7 @@ export default function TotalCount() {
             </div>
             </div>
         </div>
-        <div className='flex justify-around -mt-7'>
+        <div className='flex justify-around -mt-7 xl:mx-auto max-w-[10000px] min-w-[700px] w-[700px]'>
             <h3>2023</h3>
             <h3>2024</h3>
         </div>

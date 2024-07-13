@@ -74,6 +74,7 @@ export default function Details() {
    const handleIconClick = () => {
       setIsEditableemail(true);
       setEmailprev(true);
+      setIndustryPrevval(false); setCountryPrevval(false); setLocationPrevval(false); setWorkPrevval(false); setPersonalPrevval(false); setCompPrevval(false); setJobpPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false)
       setTimeout(() => {
          if (inputRefemail.current) {
             inputRefemail.current.focus();  // Focus the input element when the icon is clicked
@@ -83,6 +84,8 @@ export default function Details() {
    const handleIconClickindustry = () => {
       setIsEditableindustry(true);
       setIndustryPrevval(true);
+      setEmailprev(false);
+     setCountryPrevval(false); setLocationPrevval(false); setWorkPrevval(false); setPersonalPrevval(false); setCompPrevval(false); setJobpPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false)
       setTimeout(() => {
          if (inputRefindustry.current) {
             inputRefindustry.current.focus();  // Focus the input element when the icon is clicked
@@ -92,6 +95,7 @@ export default function Details() {
    const handleIconClickcountry = () => {
       setIsEditablecountry(true);
       setCountryPrevval(true);
+      setEmailprev(false); setIndustryPrevval(false); setLocationPrevval(false); setWorkPrevval(false); setPersonalPrevval(false); setCompPrevval(false); setJobpPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false)
       setTimeout(() => {
          if (inputRefcountry.current) {
             inputRefcountry.current.focus();  // Focus the input element when the icon is clicked
@@ -101,6 +105,7 @@ export default function Details() {
    const handleIconClicklocation = () => {
       setIsEditabelocation(true);
       setLocationPrevval(true);
+      setEmailprev(false); setIndustryPrevval(false); setCountryPrevval(false); setWorkPrevval(false); setPersonalPrevval(false); setCompPrevval(false); setJobpPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false)
       setTimeout(() => {
          if (inputReflocation.current) {
             inputReflocation.current.focus();  // Focus the input element when the icon is clicked
@@ -110,6 +115,7 @@ export default function Details() {
    const handleIconClickwork = () => {
       setIsEditabework(true);
       setWorkPrevval(true);
+      setEmailprev(false); setIndustryPrevval(false); setCountryPrevval(false); setLocationPrevval(false); setPersonalPrevval(false); setCompPrevval(false); setJobpPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false)
       setTimeout(() => {
          if (inputRefwork.current) {
             inputRefwork.current.focus();  // Focus the input element when the icon is clicked
@@ -119,6 +125,7 @@ export default function Details() {
    const handleIconClickpersonal = () => {
       setIsEditabepersonal(true);
       setPersonalPrevval(true);
+      setEmailprev(false); setIndustryPrevval(false); setCountryPrevval(false); setLocationPrevval(false); setWorkPrevval(false); setCompPrevval(false); setJobpPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false)
       setTimeout(() => {
          if (inputRefpersonal.current) {
             inputRefpersonal.current.focus();  // Focus the input element when the icon is clicked
@@ -128,6 +135,7 @@ export default function Details() {
    const handleIconClickcompany = () => {
       setIsEditabecompany(true);
       setCompPrevval(true);
+      setEmailprev(false); setIndustryPrevval(false); setCountryPrevval(false); setLocationPrevval(false); setWorkPrevval(false); setPersonalPrevval(false); setJobpPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false)
       setTimeout(() => {
          if (inputRefcompany.current) {
             inputRefcompany.current.focus();  // Focus the input element when the icon is clicked
@@ -137,6 +145,7 @@ export default function Details() {
    const handleIconClickwebsite = () => {
       setIsEditablewebsite(true);
       setWebsitePrevval(true);
+      setEmailprev(false); setIndustryPrevval(false); setCountryPrevval(false); setLocationPrevval(false); setWorkPrevval(false); setPersonalPrevval(false); setCompPrevval(false); setJobpPrevval(false); setHqphonePrevval(false)
       setTimeout(() => {
          if (inputRefwebsite.current) {
             inputRefwebsite.current.focus();  // Focus the input element when the icon is clicked
@@ -146,6 +155,7 @@ export default function Details() {
    const handleIconClickjobposition = () => {
       setIsEditabejobp(true);
       setJobpPrevval(true);
+      setEmailprev(false); setIndustryPrevval(false); setCountryPrevval(false); setLocationPrevval(false); setWorkPrevval(false); setPersonalPrevval(false); setCompPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false)
       setTimeout(() => {
          if (inputRefjobposition.current) {
             inputRefjobposition.current.focus();  // Focus the input element when the icon is clicked
@@ -155,6 +165,7 @@ export default function Details() {
    const handleIconClickhqphone = () => {
       setIsEditablehqphone(true);
       setHqphonePrevval(true);
+      setEmailprev(false); setIndustryPrevval(false); setCountryPrevval(false); setLocationPrevval(false); setWorkPrevval(false); setPersonalPrevval(false); setCompPrevval(false); setJobpPrevval(false); setWebsitePrevval(false);
       setTimeout(() => {
          if (inputRefhqphone.current) {
             inputRefhqphone.current.focus();  // Focus the input element when the icon is clicked
@@ -225,17 +236,17 @@ export default function Details() {
                      <h3 className='text-[16px] md:text-[18px] text-[#000] font-medium '>Unsaved Changes</h3>
                      <p className='text-[12px]'>Are you sure you want to revert new changes in this  prospect file ? All unsaved changes will be lost</p>
                      <div className="flex gap-3 justify-center w-full mt-3">
-                        <button onClick={() => { setCanceltoast(false) }} className="bg-gradient-to-r from-[#56F444] via-[#55EE44] to-[#48FA8A]  rounded-md text-[#000] text-[13px] xl:text-[15px] p-2 px-3">Revert Changes</button>
+                        <button onClick={() => { setCanceltoast(false) ; setEmail('tina.z@snov-cctv.com'); setIndustry('Electric & Electronic'); setLocation('China'); setCountry('China'); setWork('---'); setPersonal('---'); setCompany('Leadbud.io'); setJobp('Sales'); setWebsite('https://www.leadbud.io'); setHqphone('---') }} className="bg-gradient-to-r from-[#56F444] via-[#55EE44] to-[#48FA8A]  rounded-md text-[#000] text-[13px] xl:text-[15px] p-2 px-3">Revert Changes</button>
                         <button onClick={() => { setCanceltoast(false) }} className="bg-[#d7d7d7] rounded-md text-[13px] xl:text-[15px] p-2 px-3">Cancel</button>
                      </div>
                   </div>
                </div>
             </> : null
          }
-         {savebtn ?
+         {  savebtn ?
             <div className="flex left-0 pl-16 sm:pl-20 z-[1] md:pl-24 p-2 w-full  md:w-[443px] bottom-0 bg-[#F5F5F5] fixed gap-3 ">
-               <button onClick={() => { setSavebtn(false) }} className="bg-gradient-to-r from-[#56F444] via-[#55EE44] to-[#48FA8A]  rounded-md text-[#000] text-[13px] xl:text-[15px] p-2 px-3">Save</button>
-               <button onClick={() => { setSavebtn(false); setCanceltoast(true) }} className="bg-[#fff] rounded-md text-[13px] xl:text-[15px] p-2 px-3">Cancel</button>
+               <button onClick={() => { setSavebtn(false); setEmailprev(false); setIndustryPrevval(false); setCountryPrevval(false); setLocationPrevval(false); setWorkPrevval(false); setPersonalPrevval(false); setCompPrevval(false); setJobpPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false) }} className="bg-gradient-to-r from-[#56F444] via-[#55EE44] to-[#48FA8A]  rounded-md text-[#000] text-[13px] xl:text-[15px] p-2 px-3">Save</button>
+               <button onClick={() => { setSavebtn(false); setCanceltoast(true) ; setEmailprev(false); setIndustryPrevval(false); setCountryPrevval(false); setLocationPrevval(false); setWorkPrevval(false); setPersonalPrevval(false); setCompPrevval(false); setJobpPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false) }} className="bg-[#fff] rounded-md text-[13px] xl:text-[15px] p-2 px-3">Cancel</button>
             </div>
             : null
          }
@@ -244,7 +255,7 @@ export default function Details() {
             <div className="">
                <div className="p-2 flex gap-2 hover:bg-[#F5F5F5] duration-300 md:gap-0 items-center ">
                   <h2 className="text-[13px] w-[100px] font-normal font-poppins">Email:</h2>
-                  <div onClick={() => { setSavebtn(true) }} className=' flex flex-col gap-1 items-start w-full' onMouseEnter={() => { setHover(true) }} onMouseLeave={() => { setEmailprev(false); setHover(false); setIsEditableemail(false) }}>
+                  <div onClick={() => { setSavebtn(true) }} className=' flex flex-col gap-1 items-start w-full' onMouseEnter={() => { setHover(true) }} onMouseLeave={() => { setHover(false); setIndustryPrevval(false); setCountryPrevval(false); setLocationPrevval(false); setWorkPrevval(false); setPersonalPrevval(false); setCompPrevval(false); setJobpPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false) }}>
                      {emailprevval ? <div className='flex items-center gap-1'>
                         <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
                         <h2 className='text-[12px]'>tina@snov-cctv.io</h2>
@@ -257,7 +268,7 @@ export default function Details() {
                </div>
                <div className="p-2 flex flex-col  gap-2 md:gap-0 hover:bg-[#F5F5F5] duration-300 rounded-md">
                   <div className='flex gap-2 md:gap-0'><h2 className="text-[13px] w-[100px] mt-2 font-normal font-poppins">Industry:</h2>
-                     <div onClick={() => { setSavebtn(true) }} className='flex flex-col gap-1  w-full' onMouseEnter={() => { setHoverindustry(true) }} onMouseLeave={() => { setIndustryPrevval(false); setHoverindustry(false); setIsEditableindustry(false) }}>
+                     <div onClick={() => { setSavebtn(true) }} className='flex flex-col gap-1  w-full' onMouseEnter={() => { setHoverindustry(true) }} onMouseLeave={() => {  setHoverindustry(false); }}>
                         {industryprevval ? <div className='flex items-center gap-1'>
                            <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
                            <h2 className='text-[12px]'>Electric & Electronic</h2>
@@ -285,7 +296,7 @@ export default function Details() {
                </div>
                <div className="p-2 flex gap-2 hover:bg-[#F5F5F5] duration-300 md:gap-0 items-center  ">
                   <h2 className="text-[13px] w-[100px] font-normal font-poppins">Country:</h2>
-                  <div onClick={() => { setSavebtn(true) }} className='flex flex-col gap-1 w-full' onMouseEnter={() => { setHovercountry(true) }} onMouseLeave={() => { setCountryPrevval(false); setHovercountry(false); setIsEditablecountry(false) }}>
+                  <div onClick={() => { setSavebtn(true) }} className='flex flex-col gap-1 w-full' onMouseEnter={() => { setHovercountry(true) }} onMouseLeave={() => {setHovercountry(false) }}>
                      {countryprevval ? <div className='flex items-center gap-1'>
                         <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
                         <h2 className='text-[12px]'>China</h2>
@@ -302,7 +313,7 @@ export default function Details() {
                      <>
                         <div className="p-2 flex hover:bg-[#F5F5F5] duration-300 gap-2 md:gap-0 items-center rounded-md">
                            <h2 className="text-[13px] w-[100px] font-normal font-poppins">Location:</h2>
-                           <div onClick={() => { setSavebtn(true) }} className='flex flex-col gap-1 w-full' onMouseEnter={() => { setHoverlocation(true) }} onMouseLeave={() => { setLocationPrevval(false); setHoverlocation(false); setIsEditabelocation(false) }}>
+                           <div onClick={() => { setSavebtn(true) }} className='flex flex-col gap-1 w-full' onMouseEnter={() => { setHoverlocation(true) }} onMouseLeave={() => {setHoverlocation(false) }}>
                               {locationprevval ? <div className='flex items-center gap-1'>
                                  <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
                                  <h2 className='text-[12px]'>China</h2>
@@ -316,7 +327,7 @@ export default function Details() {
                         </div>
                         <div className="p-2 flex hover:bg-[#F5F5F5] duration-300 gap-2 md:gap-0 items-center  ">
                            <h2 className="text-[13px] w-[100px] font-normal font-poppins">Work:</h2>
-                           <div onClick={() => { setSavebtn(true) }} className='flex flex-col gap-1 w-full' onMouseEnter={() => { setHoverwork(true) }} onMouseLeave={() => { setWorkPrevval(false); setHoverwork(false); setIsEditabework(false) }}>
+                           <div onClick={() => { setSavebtn(true) }} className='flex flex-col gap-1 w-full' onMouseEnter={() => { setHoverwork(true) }} onMouseLeave={() => {setHoverwork(false) }}>
                               {workprevval ? <div className='flex items-center gap-1'>
                                  <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
                                  <h2 className='text-[12px]'>---</h2>
@@ -330,7 +341,7 @@ export default function Details() {
                         </div>
                         <div className="p-2 flex hover:bg-[#F5F5F5] duration-300 gap-2 md:gap-0 items-center rounded-md">
                            <h2 className="text-[13px] w-[100px] font-normal font-poppins">Personal:</h2>
-                           <div onClick={() => { setSavebtn(true) }} className='flex flex-col gap-1 w-full' onMouseEnter={() => { setHoverpersonal(true) }} onMouseLeave={() => { setPersonalPrevval(false); setHoverpersonal(false); setIsEditabepersonal(false) }}>
+                           <div onClick={() => { setSavebtn(true) }} className='flex flex-col gap-1 w-full' onMouseEnter={() => { setHoverpersonal(true) }} onMouseLeave={() => { setHoverpersonal(false); }}>
                               {personalprevval ? <div className='flex items-center gap-1'>
                                  <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
                                  <h2 className='text-[12px]'>---</h2>
@@ -356,7 +367,7 @@ export default function Details() {
                <div className="p-2 flex flex-col hover:bg-[#F5F5F5] duration-300 gap-3 md:gap-0 rounded-md ">
                   <div className='flex gap-2 md:gap-0 '>
                      <h2 className="text-[13px] w-[150px] mt-[6px] font-normal font-poppins">Company:</h2>
-                     <div onClick={() => { setSavebtn(true) }} className='flex flex-col gap-1 w-full' onMouseEnter={() => { setHoverCompany(true) }} onMouseLeave={() => { setCompPrevval(false) ;setHoverCompany(false); setIsEditabecompany(false) }}>
+                     <div onClick={() => { setSavebtn(true) }} className='flex flex-col gap-1 w-full' onMouseEnter={() => { setHoverCompany(true) }} onMouseLeave={() => { setHoverCompany(false)}}>
                         {compprevval ? <div className='flex items-center gap-1'>
                            <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
                            <h2 className='text-[12px]'>Leadbud.io</h2>
@@ -383,7 +394,7 @@ export default function Details() {
                </div>
                <div className="p-2 flex gap-3 md:gap-0 hover:bg-[#F5F5F5] duration-300 rounded-md items-center">
                   <h2 className="text-[13px] w-[150px] font-normal font-poppins">Job Position:</h2>
-                  <div onClick={() => { setSavebtn(true) }} className='flex flex-col gap-1 w-full' onMouseEnter={() => { setHoverjobp(true) }} onMouseLeave={() => { setJobpPrevval(false) ; setHoverjobp(false); setIsEditabejobp(false) }}>
+                  <div onClick={() => { setSavebtn(true) }} className='flex flex-col gap-1 w-full' onMouseEnter={() => { setHoverjobp(true) }} onMouseLeave={() => {  setHoverjobp(false) }}>
                   {jobpprevval ? <div className='flex items-center gap-1'>
                            <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
                            <h2 className='text-[12px]'>Leadbud.io</h2>
@@ -397,7 +408,7 @@ export default function Details() {
                </div>
                <div className="p-2 flex items-center hover:bg-[#F5F5F5] duration-300 gap-3 md:gap-0 ">
                   <h2 className="text-[13px] w-[150px] font-normal font-poppins">Website:</h2>
-                  <div onClick={() => { setSavebtn(true) }} className=' flex flex-col gap-1 w-full' onMouseEnter={() => { setHoverwebsite(true) }} onMouseLeave={() => { setWebsitePrevval(false) ; setHoverwebsite(false); setIsEditablewebsite(false) }}>
+                  <div onClick={() => { setSavebtn(true) }} className=' flex flex-col gap-1 w-full' onMouseEnter={() => { setHoverwebsite(true) }} onMouseLeave={() => {setHoverwebsite(false) }}>
                   {websiteprevval ? <div className='flex items-center gap-1'>
                            <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
                            <h2 className='text-[12px]'> https://www.leadbud.io</h2>
@@ -411,7 +422,7 @@ export default function Details() {
                </div>
                <div className="p-2 flex items-center gap-3 md:gap-0 hover:bg-[#F5F5F5] duration-300 rounded-md">
                   <h2 className="text-[13px] w-[150px] font-normal font-poppins">HQ Phone:</h2>
-                  <div onClick={() => { setSavebtn(true) }} className='flex flex-col  w-full' onMouseEnter={() => { setHoverhqphone(true) }} onMouseLeave={() => { setHqphonePrevval(false) ; setHoverhqphone(false); setIsEditablehqphone(false) }}>
+                  <div onClick={() => { setSavebtn(true) }} className='flex flex-col  w-full' onMouseEnter={() => { setHoverhqphone(true) }} onMouseLeave={() => { setHoverhqphone(false) }}>
                   {hqphoneprevval ? <div className='flex items-center gap-1'>
                            <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
                            <h2 className='text-[12px]'>---</h2>
