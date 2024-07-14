@@ -15,8 +15,6 @@ const AddCompany = () => {
   const [showin, setShowin] = useState(false);
   const [addCompsave, setAddCompSave] = useState(false);
   const [alerttoast, setAlertToast] = useState(false);
-  const [showCompanies, setShowCompanies] = useState(false);
-  const [AddJobppen, setAddJobPen] = useState(false);
   const [inputSets, setInputSets] = useState([]);
 
   const [enabledInput, setEnabledInput] = useState(null);
@@ -216,13 +214,11 @@ const AddCompany = () => {
           }
         </div>
       </> : null}
-
       <div onClick={addInputSet} className="cursor-pointer bg-[#F5F5F5] rounded-md p-3 flex gap-1 items-center mr-auto text-[#B7B7B7] text-[14px] xl:text-[16px]">
         <LuPlusCircle /> <h2>Add Company</h2>
       </div>
     </>
   );
 };
-
 export default AddCompany;
 

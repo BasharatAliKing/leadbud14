@@ -5,6 +5,7 @@ import { ImMoveUp } from "react-icons/im";
 import { ImMoveDown } from "react-icons/im";
 import { RiDeleteBin5Line } from "react-icons/ri";
 import "./recentactivity.css";
+import { IoIosRefresh } from "react-icons/io";
 export default function NameInput() {
     const [hover,setHover]=useState(false);
     const [fname,setFname]=useState('Tina');
@@ -77,6 +78,7 @@ export default function NameInput() {
           <ul className='absolute right-5 top-12 py-1 bg-[#F5F5F5]'>
             <li onClick={()=>{setSubmenu(1)}}  className='px-2 p-1 cursor-pointer duration-500 flex gap-1 items-center'><ImMoveUp /> Move to List</li>
             <li onClick={()=>{setSubmenu(2)}} className='px-2 p-1 cursor-pointer duration-500 flex gap-1 items-center'><ImMoveDown /> Add to List</li>
+            <li onClick={()=>{setDotsmenu(false)}} className='px-2 p-1 cursor-pointer duration-500 flex gap-1 items-center'><IoIosRefresh/> Refresh</li>
             <li onClick={()=>{ setDotsmenu(false); setDeletetoast(true)}} className='px-2 p-1 cursor-pointer duration-500 flex gap-1 items-center'><RiDeleteBin5Line /> Delete</li>
             </ul>
             <ul className='tolist absolute right-5 top-12 z-10  bg-[#F5F5F5] max-h-[250px] overflow-y-scroll'>
