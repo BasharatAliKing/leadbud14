@@ -135,7 +135,6 @@ const AddCompany = () => {
                   {/* <PiPencilLight className=' top-[8px] text-[14px] absolute right-[2px]' /> */}
                   {/* {hoveredInput === index && (
                     <PiPencilLight  onClick={() => {handlePenClick(index); setPenClick(index)}} className=' top-[8px] text-[14px] absolute right-[2px]' />
-                  
                   )} */}
 
                 </div>
