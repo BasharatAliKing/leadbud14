@@ -5,7 +5,7 @@ import { ImMoveUp } from "react-icons/im";
 import { ImMoveDown } from "react-icons/im";
 import { RiDeleteBin5Line } from "react-icons/ri";
 import "./recentactivity.css";
-import { IoIosRefresh } from "react-icons/io";
+import { LuRefreshCw } from "react-icons/lu";
 export default function NameInput({load}) {
   const [hover, setHover] = useState(false);
   const [fname, setFname] = useState('Tina');
@@ -74,8 +74,8 @@ export default function NameInput({load}) {
             <div className="flex justify-between items-center">
               <h3 onMouseEnter={() => { setHover(true) }} onMouseLeave={() => { setHover(false) }} className="flex items-center text-[#030621] text-[18px] md:text-[22px] font-semibold font-poppins cursor-pointer">{fname + " " + lname}  {hover ? <PiPencilLight onClick={() => { setNameinput(true) }} className='text-[#B7B7B7] ml-2' /> : null}</h3>
               <div className='relative flex gap-2 items-center'>
-                <IoIosRefresh onClick={()=>{load(true)}} className='cursor-pointer' />
-                <HiDotsHorizontal onClick={() => { setSubmenu(0); setDotsmenu(!dotsmenu) }} className="text-[20px] text-[#030621]" />
+                <LuRefreshCw onClick={()=>{load(true)}} className="cursor-pointer text-[16px] p-1 h-6 w-6 rounded-md bg-[#F5F5F5] xl:text-[20px]" />
+                <HiDotsHorizontal onClick={() => { setSubmenu(0); setDotsmenu(!dotsmenu) }} className="bg-[#F5F5F5] rounded-md h-6 w-auto p-1 text-[20px] text-[#030621]" />
 
               </div>
               {dotsmenu ? <>
