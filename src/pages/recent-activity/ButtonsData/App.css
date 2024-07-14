@@ -1,0 +1,28 @@
+
+.box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+}
+
+.input-container {
+  position: relative;
+  margin: 10px 0;
+}
+
+.input-container input {
+  padding-right: 30px;
+}
+
+.pencil-icon {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: none;
+}
+
+.input-container:hover .pencil-icon {
+  display: inline;
+}

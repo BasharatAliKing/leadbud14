@@ -18,6 +18,11 @@ const AddCompany = () => {
   const [showCompanies, setShowCompanies] = useState(false);
   const [AddJobppen, setAddJobPen] = useState(false);
   const [inputSets, setInputSets] = useState([]);
+
+  const [enabledInput, setEnabledInput] = useState(null);
+  const [hoveredInput, setHoveredInput] = useState(null);
+  const [penclick, setPenClick] = useState(null);
+
   const [currentInputs, setCurrentInputs] = useState({
     input1: '',
     input2: '',
@@ -37,8 +42,8 @@ const AddCompany = () => {
   const addInputSet = () => {
     setShowin(true);
     setAddCompSave(true);
-  
-   setAlertToast(false);
+
+    setAlertToast(false);
   };
 
   const enableEditing = (index) => {
@@ -61,7 +66,7 @@ const AddCompany = () => {
   const handleCompsave = () => {
     const { input1, input2, input3, input4 } = currentInputs;
     if (!input1 || !input2 || !input3 || !input4) {
-    setAlertToast(true);
+      setAlertToast(true);
       return;
     }
     setInputSets((prev) => [...prev, { ...currentInputs, disabled: true }]);
@@ -74,9 +79,11 @@ const AddCompany = () => {
     setAddCompSave(false);
     setShowin(false);
   }
- const handleMouseOver = (e,index)=>{
-     
- }
+  const handlePenClick = (e, index) => {
+    setEnabledInput(index);
+    setPenClick(index);
+
+  }
   return (
     <>
 
@@ -94,65 +101,72 @@ const AddCompany = () => {
         </> : null
       }
 
-      
-          {inputSets.map((set, index) => (
-            <div key={index} className='rounded-md'>
-              <>
-                <div className="p-2 flex flex-col hover:bg-[#F5F5F5] duration-300 gap-3 md:gap-0 rounded-md ">
-                  <div className='flex gap-2 md:gap-0 items-center '>
-                    <h2 className="text-[13px] w-[150px] mt-[6px] font-normal font-poppins">Company:</h2>
-                    <input type="text" name="input1"
-                      value={set.input1}
-                      onChange={(e) => handleExistingInputChange(e, index)}
-                      disabled={set.disabled}
-                      className='mt-[6px] border-0 focus:border focus:outline-none bg-[#0000] text-[13px] p-1 rounded-md outline-none font-normal font-poppins text-[#030621] w-full' />
-                  </div>
-                </div>
-                <div onMouseEnter={()=>{ handleMouseOver(e,index)}} onMouseLeave={(e) => { setAddJobPen(false) }} className="cursor-pointer p-2 flex gap-3 md:gap-0 hover:bg-[#F5F5F5] duration-300 rounded-md items-center">
-                  <h2 className="text-[13px] w-[150px] font-normal font-poppins">Job Position:</h2>
-                  <div className='flex flex-col gap-1 w-full' >
-                  
-                      {/* <div className='flex items-center gap-1'>
-                        <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
-                        <h2 className='text-[12px]'></h2>
-                        <RiDeleteBin5Line className='cursor-pointer text-[red] text-[12px]' />
-                      </div>  */}
-                    <div className='flex relative items-center w-full'>
-                      <input type="text" name="input2"
-                        value={set.input2}
-                        onChange={(e) => handleExistingInputChange(e, index)}
-                        disabled={set.disabled}
-                        className='border-0 focus:border focus:outline-none text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
-                       {/* <PiPencilLight className=' top-[8px] text-[14px] absolute right-[2px]' /> */}
-                    </div>
-                  </div>
-                </div>
-                <div className="p-2 flex flex-col hover:bg-[#F5F5F5] duration-300 gap-3 md:gap-0 rounded-md ">
-                  <div className='flex gap-2 md:gap-0 items-center '>
-                    <h2 className="text-[13px] w-[150px] mt-[6px] font-normal font-poppins">Website:</h2>
-                    <input type="text" name="input3"
-                      value={set.input3}
-                      onChange={(e) => handleExistingInputChange(e, index)}
-                      disabled={set.disabled}
-                      className='mt-[6px] border-0 focus:border focus:outline-none bg-[#0000] text-[13px] p-1 rounded-md outline-none font-normal font-poppins text-[#030621] w-full' />
-                  </div>
-                </div>
-                <div className="p-2 flex flex-col hover:bg-[#F5F5F5] duration-300 gap-3 md:gap-0 rounded-md ">
-                  <div className='flex gap-2 md:gap-0 items-center '>
-                    <h2 className="text-[13px] w-[150px] mt-[6px] font-normal font-poppins">HQ Phone:</h2>
-                    <input type="text" name="input4"
-                      value={set.input4}
-                      onChange={(e) => handleExistingInputChange(e, index)}
-                      disabled={set.disabled}
-                      className='mt-[6px] border-0 focus:border focus:outline-none bg-[#0000] text-[13px] p-1 rounded-md outline-none font-normal font-poppins text-[#030621] w-full' />
-                  </div>
-                </div>
-              </>
+
+      {inputSets.map((set, index) => (
+        <div key={index} className='rounded-md'>
+          <>
+            <div className="p-2 flex flex-col hover:bg-[#F5F5F5] duration-300 gap-3 md:gap-0 rounded-md ">
+              <div className='flex gap-2 md:gap-0 items-center '>
+                <h2 className="text-[13px] w-[150px] mt-[6px] font-normal font-poppins">Company:</h2>
+                <input type="text" name="input1"
+                  value={set.input1}
+                  onChange={(e) => handleExistingInputChange(e, index)}
+                  disabled={set.disabled}
+                  className='mt-[6px] border-0 focus:border focus:outline-none bg-[#0000] text-[13px] p-1 rounded-md outline-none font-normal font-poppins text-[#030621] w-full' />
+              </div>
             </div>
-            
-          ))}
-          
-      
+            <div onMouseEnter={() => setHoveredInput(index)} onMouseLeave={() => setHoveredInput(null)} className="cursor-pointer p-2 flex gap-3 md:gap-0 hover:bg-[#F5F5F5] duration-300 rounded-md items-center">
+              <h2 className="text-[13px] w-[150px] font-normal font-poppins">Job Position:</h2>
+              <div className='flex flex-col gap-1 w-full' >
+              {/* {penclick === index && (
+                 <div className='flex items-center gap-1'>
+                        <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
+                        <h2 className='text-[12px]'>{set.input2}</h2>
+                        <RiDeleteBin5Line className='cursor-pointer text-[red] text-[12px]' />
+                      </div>  
+                )} */}
+                <div className='flex relative items-center w-full'>
+                  <input type="text" name="input2"
+                    value={set.input2}
+                    onChange={(e) => handleExistingInputChange(e, index)}
+                    disabled={set.disabled}
+                    // disabled={enabledInput !== index}
+                    className='border-0 focus:border focus:outline-none text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
+                  {/* <PiPencilLight className=' top-[8px] text-[14px] absolute right-[2px]' /> */}
+                  {/* {hoveredInput === index && (
+                    <PiPencilLight  onClick={() => {handlePenClick(index); setPenClick(index)}} className=' top-[8px] text-[14px] absolute right-[2px]' />
+                  
+                  )} */}
+
+                </div>
+              </div>
+            </div>
+            <div className="p-2 flex flex-col hover:bg-[#F5F5F5] duration-300 gap-3 md:gap-0 rounded-md ">
+              <div className='flex gap-2 md:gap-0 items-center '>
+                <h2 className="text-[13px] w-[150px] mt-[6px] font-normal font-poppins">Website:</h2>
+                <input type="text" name="input3"
+                  value={set.input3}
+                  onChange={(e) => handleExistingInputChange(e, index)}
+                  disabled={set.disabled}
+                  className='mt-[6px] border-0 focus:border focus:outline-none bg-[#0000] text-[13px] p-1 rounded-md outline-none font-normal font-poppins text-[#030621] w-full' />
+              </div>
+            </div>
+            <div className="p-2 flex flex-col hover:bg-[#F5F5F5] duration-300 gap-3 md:gap-0 rounded-md ">
+              <div className='flex gap-2 md:gap-0 items-center '>
+                <h2 className="text-[13px] w-[150px] mt-[6px] font-normal font-poppins">HQ Phone:</h2>
+                <input type="text" name="input4"
+                  value={set.input4}
+                  onChange={(e) => handleExistingInputChange(e, index)}
+                  disabled={set.disabled}
+                  className='mt-[6px] border-0 focus:border focus:outline-none bg-[#0000] text-[13px] p-1 rounded-md outline-none font-normal font-poppins text-[#030621] w-full' />
+              </div>
+            </div>
+          </>
+        </div>
+
+      ))}
+
+
       {showin ? <>
         <div className="bg-[#F5F5F5] p-3 rounded-md" >
           <div className='flex flex-col gap-1'>
@@ -207,7 +221,7 @@ const AddCompany = () => {
       <div onClick={addInputSet} className="cursor-pointer bg-[#F5F5F5] rounded-md p-3 flex gap-1 items-center mr-auto text-[#B7B7B7] text-[14px] xl:text-[16px]">
         <LuPlusCircle /> <h2>Add Company</h2>
       </div>
-      </>
+    </>
   );
 };
 
