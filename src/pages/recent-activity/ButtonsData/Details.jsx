@@ -256,10 +256,10 @@ export default function Details() {
                <div className="p-2 flex gap-2 hover:bg-[#F5F5F5] duration-300 md:gap-0 items-center ">
                   <h2 className="text-[13px] w-[100px] font-normal font-poppins">Email:</h2>
                   <div onClick={() => { setSavebtn(true) }} className=' flex flex-col gap-1 items-start w-full' onMouseEnter={() => { setHover(true) }} onMouseLeave={() => { setHover(false); setIndustryPrevval(false); setCountryPrevval(false); setLocationPrevval(false); setWorkPrevval(false); setPersonalPrevval(false); setCompPrevval(false); setJobpPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false) }}>
-                     {emailprevval ? <div className='flex items-center gap-1'>
+                     {emailprevval ? <div className='flex w-full items-center gap-1'>
                         <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
                         <h2 className='text-[12px]'>tina@snov-cctv.io</h2>
-                        <RiDeleteBin5Line onClick={()=>{setEmail('')}} className='cursor-pointer text-[red] text-[12px]' />
+                        <RiDeleteBin5Line onClick={()=>{setEmail('')}} className='cursor-pointer ml-auto text-[red] text-[12px]' />
                      </div> : null}
                      <div className='flex items-center w-full relative'>
                         <input ref={inputRefemail} type="text" disabled={!isEditableemail} value={email} onChange={() => { setEmail() }} className='bg-[#0000] text-[13px] border-0 focus:border focus:outline-none p-1 rounded-md font-normal font-poppins text-[#030621] w-full' />
@@ -273,7 +273,7 @@ export default function Details() {
                         {industryprevval ? <div className='flex items-center gap-1'>
                            <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
                            <h2 className='text-[12px]'>Electric & Electronic</h2>
-                           <RiDeleteBin5Line onClick={()=>{setIndustry('')}} className='cursor-pointer text-[red] text-[12px]' />
+                           <RiDeleteBin5Line onClick={()=>{setIndustry('')}} className='cursor-pointer ml-auto text-[red] text-[12px]' />
                         </div> : null}
                         <div className='relative flex items-center w-full'>
                            <input ref={inputRefindustry} type="text" disabled={!isEditableindustry} value={industry} onChange={handleemailchange} className=' border-0 focus:border focus:outline-none bg-[#fff] text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
@@ -301,7 +301,7 @@ export default function Details() {
                      {countryprevval ? <div className='flex items-center gap-1'>
                         <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
                         <h2 className='text-[12px]'>China</h2>
-                        <RiDeleteBin5Line onClick={()=>{setCountry('')}} className='cursor-pointer text-[red] text-[12px]' />
+                        <RiDeleteBin5Line onClick={()=>{setCountry('')}} className='cursor-pointer ml-auto text-[red] text-[12px]' />
                      </div> : null}
                      <div className='relative flex items-center '>
                         <input ref={inputRefcountry} type="text" disabled={!isEditablecountry} value={country} onChange={(e) => { setCountry() }} className=' border-0 focus:border focus:outline-none bg-[#0000] text-[13px] p-1 rounded-md outline-none font-normal font-poppins text-[#030621] w-full' />
@@ -318,7 +318,7 @@ export default function Details() {
                               {locationprevval ? <div className='flex items-center gap-1'>
                                  <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
                                  <h2 className='text-[12px]'>China</h2>
-                                 <RiDeleteBin5Line onClick={()=>{setLocation('')}} className='cursor-pointer text-[red] text-[12px]' />
+                                 <RiDeleteBin5Line onClick={()=>{setLocation('')}} className='cursor-pointer ml-auto text-[red] text-[12px]' />
                               </div> : null}
                               <div className='relative flex items-center w-full'>
                                  <input ref={inputReflocation} type="text" disabled={!isEditabelocation} value={location} onChange={(e) => { setLocation() }} className=' border-0 focus:border focus:outline-none bg-[#fff] text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
@@ -332,7 +332,7 @@ export default function Details() {
                               {workprevval ? <div className='flex items-center gap-1'>
                                  <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
                                  <h2 className='text-[12px]'>---</h2>
-                                 <RiDeleteBin5Line onClick={()=>{setWork('')}} className='cursor-pointer text-[red] text-[12px]' />
+                                 <RiDeleteBin5Line onClick={()=>{setWork('')}} className='cursor-pointer ml-auto text-[red] text-[12px]' />
                               </div> : null}
                               <div className='flex items-center relative w-full'>
                                  <input ref={inputRefwork} type="text" disabled={!isEditablework} value={work} onChange={(e) => { setWork() }} className=' border-0 focus:border focus:outline-none bg-[#0000] text-[13px] p-1 rounded-md outline-none font-normal font-poppins text-[#030621] w-full' />
@@ -346,7 +346,7 @@ export default function Details() {
                               {personalprevval ? <div className='flex items-center gap-1'>
                                  <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
                                  <h2 className='text-[12px]'>---</h2>
-                                 <RiDeleteBin5Line onClick={()=>{setPersonal('')}} className='cursor-pointer text-[red] text-[12px]' />
+                                 <RiDeleteBin5Line onClick={()=>{setPersonal('')}} className='cursor-pointer ml-auto text-[red] text-[12px]' />
                               </div> : null}
                               <div className='flex relative items-center w-full'>
                                  <input ref={inputRefpersonal} type="text" disabled={!isEditablepersonal} value={personal} onChange={(e) => { setPersonal() }} className='border-0 focus:border focus:outline-none bg-[#fff] text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
@@ -371,7 +371,7 @@ export default function Details() {
                         {compprevval ? <div className='flex items-center gap-1'>
                            <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
                            <h2 className='text-[12px]'>Leadbud.io</h2>
-                           <RiDeleteBin5Line onClick={()=>{setCompany('')}} className='cursor-pointer text-[red] text-[12px]' />
+                           <RiDeleteBin5Line onClick={()=>{setCompany('')}} className='cursor-pointer ml-auto text-[red] text-[12px]' />
                         </div> : null}
                         <div className='flex relative items-center w-full'>
                            <input ref={inputRefcompany} type="text" disabled={!isEditablecompany} value={company} onChange={handlecompanychange} className=' border-0 focus:border focus:outline-none bg-[#0000] text-[13px] p-1 rounded-md outline-none font-normal font-poppins text-[#030621] w-full' />
@@ -398,7 +398,7 @@ export default function Details() {
                   {jobpprevval ? <div className='flex items-center gap-1'>
                            <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
                            <h2 className='text-[12px]'>Leadbud.io</h2>
-                           <RiDeleteBin5Line onClick={()=>{setJobp('')}} className='cursor-pointer text-[red] text-[12px]' />
+                           <RiDeleteBin5Line onClick={()=>{setJobp('')}} className='cursor-pointer ml-auto text-[red] text-[12px]' />
                         </div> : null}
                    <div className='flex relative items-center w-full'>
                      <input ref={inputRefjobposition} type="text" disabled={!isEditablejobp} value={jobp} onChange={(e) => { setJobp() }} className='border-0 focus:border focus:outline-none text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
@@ -412,7 +412,7 @@ export default function Details() {
                   {websiteprevval ? <div className='flex items-center gap-1'>
                            <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
                            <h2 className='text-[12px]'> https://www.leadbud.io</h2>
-                           <RiDeleteBin5Line onClick={()=>{setWebsite('')}} className='cursor-pointer text-[red] text-[12px]' />
+                           <RiDeleteBin5Line onClick={()=>{setWebsite('')}} className='cursor-pointer ml-auto text-[red] text-[12px]' />
                         </div> : null}
                   <div className='flex items-center relative w-full'>
                      <input ref={inputRefwebsite} type="text" disabled={!isEditablewebsite} value={website} onChange={(e) => { setWebsite() }} className=' border-0 focus:border focus:outline-none bg-[#0000] text-[13px] p-1 rounded-md outline-none p-0 font-normal font-poppins text-[#030621] w-full' />
@@ -426,7 +426,7 @@ export default function Details() {
                   {hqphoneprevval ? <div className='flex items-center gap-1'>
                            <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
                            <h2 className='text-[12px]'>---</h2>
-                           <RiDeleteBin5Line onClick={()=>{setHqphone('')}} className='cursor-pointer text-[red] text-[12px]' />
+                           <RiDeleteBin5Line onClick={()=>{setHqphone('')}} className='cursor-pointer ml-auto text-[red] text-[12px]' />
                         </div> : null}
                   <div className='flex relative w-full items-center'>
                      <input ref={inputRefhqphone} type="text" disabled={!isEditablehqphone} value={hqphone} onChange={(e) => { setHqphone() }} className=' border-0 focus:border focus:outline-none bg-[#0000] text-[13px] p-1 rounded-md outline-none font-normal font-poppins text-[#030621] w-full' />
