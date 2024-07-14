@@ -6,7 +6,7 @@ import { ImMoveDown } from "react-icons/im";
 import { RiDeleteBin5Line } from "react-icons/ri";
 import "./recentactivity.css";
 import { IoIosRefresh } from "react-icons/io";
-export default function NameInput() {
+export default function NameInput({load}) {
   const [hover, setHover] = useState(false);
   const [fname, setFname] = useState('Tina');
   const [lname, setLname] = useState('Z');
@@ -74,7 +74,7 @@ export default function NameInput() {
             <div className="flex justify-between items-center">
               <h3 onMouseEnter={() => { setHover(true) }} onMouseLeave={() => { setHover(false) }} className="flex items-center text-[#030621] text-[18px] md:text-[22px] font-semibold font-poppins cursor-pointer">{fname + " " + lname}  {hover ? <PiPencilLight onClick={() => { setNameinput(true) }} className='text-[#B7B7B7] ml-2' /> : null}</h3>
               <div className='relative flex gap-2 items-center'>
-                <IoIosRefresh className='cursor-pointer' />
+                <IoIosRefresh onClick={()=>{load(true)}} className='cursor-pointer' />
                 <HiDotsHorizontal onClick={() => { setSubmenu(0); setDotsmenu(!dotsmenu) }} className="text-[20px] text-[#030621]" />
 
               </div>
