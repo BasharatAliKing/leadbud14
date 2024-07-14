@@ -13,7 +13,6 @@ const AddCompany = () => {
   const [inputs, setInputs] = useState([]);
   const [dataArray, setDataArray] = useState([]);
   const [inputSets, setInputSets] = useState([initialInputSet()]);
-  const [errorMessage, setErrorMessage] = useState('');
   const [showin, setShowin] = useState(false);
   const [addCompsave, setAddCompSave] = useState(false);
   const [alerttoast, setAlertToast] = useState(false);
@@ -67,7 +66,7 @@ const AddCompany = () => {
           </div>
         </> : null
       }
-
+      
       {
         showCompanies ? <>
           {dataArray.map((data, index) => (
@@ -114,7 +113,6 @@ const AddCompany = () => {
           <div className="bg-[#F5F5F5] p-3 rounded-md" >
             <div className='flex flex-col gap-1' key={setIndex}>
               {inputs.map(input => (
-
                 <div key={input.id} className='p-2 flex gap-3 md:gap-0 hover:bg-[#fff] duration-300 rounded-md items-center '>
                   <label className='text-[13px] w-[150px] font-normal font-poppins'>{input.label}</label>
                   <input onClick={() => { }} className='text-[13px] rounded-md p-1 bg-[#0000] border font-normal font-poppins text-[#030621] w-full'
@@ -124,7 +122,6 @@ const AddCompany = () => {
                   />
                 </div>
               ))}
-
             </div>
             {addCompsave ?
               <div className="flex left-0 pl-16 sm:pl-20 z-[1] md:pl-24 p-2 py-4 w-full  md:w-[443px] bottom-0 bg-[#F5F5F5] fixed gap-3 ">
