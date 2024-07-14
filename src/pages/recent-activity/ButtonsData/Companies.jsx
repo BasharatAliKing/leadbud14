@@ -35,7 +35,7 @@ export default function Companies({updateCompanyData,objectIndex,companyValue, w
   
     const handleIconClickcompany = () => {
         setSaveCompanyBtn(true);
-        setIsEditabecompany(true);
+        setIsEditabecompany(true); setIsEditablewebsite(false); setIsEditabejobp(false); setIsEditablehqphone(false);
         setCompPrevval(true);
         setJobpPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false)
         setTimeout(() => {
@@ -47,7 +47,7 @@ export default function Companies({updateCompanyData,objectIndex,companyValue, w
 
     const handleIconClickwebsite = () => {
         setSaveCompanyBtn(true);
-        setIsEditablewebsite(true);
+        setIsEditabecompany(false); setIsEditablewebsite(true); setIsEditabejobp(false); setIsEditablehqphone(false);
         setWebsitePrevval(true);
         setCompPrevval(false); setJobpPrevval(false); setHqphonePrevval(false)
         setTimeout(() => {
@@ -58,7 +58,7 @@ export default function Companies({updateCompanyData,objectIndex,companyValue, w
     };
     const handleIconClickjobposition = () => {
         setSaveCompanyBtn(true);
-        setIsEditabejobp(true);
+        setIsEditabecompany(false); setIsEditablewebsite(false); setIsEditabejobp(true); setIsEditablehqphone(false);
         setJobpPrevval(true);
         setCompPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false)
         setTimeout(() => {
@@ -68,8 +68,8 @@ export default function Companies({updateCompanyData,objectIndex,companyValue, w
         }, 0);
     };
     const handleIconClickhqphone = () => {
-        setSaveCompanyBtn(true);
-        setIsEditablehqphone(true);
+        setSaveCompanyBtn(true); 
+        setIsEditabecompany(false); setIsEditablewebsite(false); setIsEditabejobp(false); setIsEditablehqphone(true);
         setHqphonePrevval(true);
         setCompPrevval(false); setJobpPrevval(false); setWebsitePrevval(false);
         setTimeout(() => {
@@ -175,7 +175,7 @@ export default function Companies({updateCompanyData,objectIndex,companyValue, w
                     </div>
                 </div>
             </div>
-            <hr />
+            <hr  className='my-2'/>
             {saveCompanyBtn ?
             <div className="flex left-0 pl-16 sm:pl-20 z-[1] md:pl-24 p-2  w-full  md:w-[443px] bottom-0 bg-[#F5F5F5] fixed gap-3 ">
                <button onClick={saveCompButon} className="bg-gradient-to-r from-[#56F444] via-[#55EE44] to-[#48FA8A]  rounded-md text-[#000] text-[13px] xl:text-[15px] p-2 px-3">Save</button>
