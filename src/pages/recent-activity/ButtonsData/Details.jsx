@@ -13,7 +13,7 @@ export default function Details() {
    }
    const [showmoretext, setShowMoreText] = useState('Show More');
    const [showmore, setShowMore] = useState(false);
-   const [email, setEmail] = useState('tina.z@snov-cctv.com');
+   const [email, setEmail] = useState('tina.z@snov-cctv.io');
    const [industry, setIndustry] = useState('Electric & Electronic');
    const [country, setCountry] = useState('China');
    const [location, setLocation] = useState('China');
@@ -177,8 +177,8 @@ export default function Details() {
                      <h3 className='text-[16px] md:text-[18px] text-[#000] font-medium '>Unsaved Changes</h3>
                      <p className='text-[12px]'>Are you sure you want to revert new changes in this  prospect file ? All unsaved changes will be lost</p>
                      <div className="flex gap-3 justify-center w-full mt-3">
-                        <button onClick={() => { setCanceltoast(false); setSaveCompanyBtn(false) }} className="bg-gradient-to-r from-[#56F444] via-[#55EE44] to-[#48FA8A]  rounded-md text-[#000] text-[13px] xl:text-[15px] p-2 px-3">Revert Changes</button>
-                        <button onClick={() => { setCanceltoast(false) ; setSaveCompanyBtn(false) }} className="bg-[#d7d7d7] rounded-md text-[13px] xl:text-[15px] p-2 px-3">Cancellllll</button>
+                        <button onClick={() => { setCanceltoast(false); }} className="bg-gradient-to-r from-[#56F444] via-[#55EE44] to-[#48FA8A]  rounded-md text-[#000] text-[13px] xl:text-[15px] p-2 px-3">Revert Changes</button>
+                        <button onClick={() => { setSavebtn(false); setEmail('tina.z@snov-cctv.io'); setIndustry('Electric & Electronic'); setCountry('China'); setLocation('China'); setWork('---'); setPersonal('---'); setCanceltoast(false) ; setSaveCompanyBtn(false) }} className="bg-[#d7d7d7] rounded-md text-[13px] xl:text-[15px] p-2 px-3">Cancel</button>
                      </div>
                   </div>
                </div>
@@ -187,7 +187,7 @@ export default function Details() {
          {savebtn ?
             <div className="flex left-0 pl-16 sm:pl-20 z-[1] md:pl-24 p-2 w-full  md:w-[443px] bottom-0 bg-[#F5F5F5] fixed gap-3 ">
                <button onClick={() => { setSavebtn(false); setEmailprev(false); setIndustryPrevval(false); setCountryPrevval(false); setLocationPrevval(false); setWorkPrevval(false); setPersonalPrevval(false); setCompPrevval(false); setJobpPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false) }} className="bg-gradient-to-r from-[#56F444] via-[#55EE44] to-[#48FA8A]  rounded-md text-[#000] text-[13px] xl:text-[15px] p-2 px-3">Save</button>
-               <button onClick={() => { setSavebtn(false); setCanceltoast(true); setEmailprev(false); setIndustryPrevval(false); setCountryPrevval(false); setLocationPrevval(false); setWorkPrevval(false); setPersonalPrevval(false); setCompPrevval(false); setJobpPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false) }} className="bg-[#fff] rounded-md text-[13px] xl:text-[15px] p-2 px-3">Cancel</button>
+               <button onClick={() => { setCanceltoast(true); setEmailprev(false); setIndustryPrevval(false); setCountryPrevval(false); setLocationPrevval(false); setWorkPrevval(false); setPersonalPrevval(false); setCompPrevval(false); setJobpPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false) }} className="bg-[#fff] rounded-md text-[13px] xl:text-[15px] p-2 px-3">Cancel</button>
             </div>
             : null
          }

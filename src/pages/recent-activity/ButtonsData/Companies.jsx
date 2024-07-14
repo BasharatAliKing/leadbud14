@@ -179,7 +179,7 @@ export default function Companies({updateCompanyData,objectIndex,companyValue, w
             {saveCompanyBtn ?
             <div className="flex left-0 pl-16 sm:pl-20 z-[1] md:pl-24 p-2 py-4  w-full  md:w-[443px] bottom-0 bg-[#F5F5F5] fixed gap-3 ">
                <button onClick={saveCompButon} className="bg-gradient-to-r from-[#56F444] via-[#55EE44] to-[#48FA8A]  rounded-md text-[#000] text-[13px] xl:text-[15px] p-2 px-3">Save</button>
-               <button onClick={() => {  setCompPrevval(false); setJobpPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false) }} className="bg-[#fff] rounded-md text-[13px] xl:text-[15px] p-2 px-3">Cancel</button>
+               <button onClick={() => { setSaveCompanyBtn(false); setCompPrevval(false); setJobpPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false) }} className="bg-[#fff] rounded-md text-[13px] xl:text-[15px] p-2 px-3">Cancel</button>
             </div>
             : null
          }
