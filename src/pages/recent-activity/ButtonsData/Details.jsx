@@ -13,13 +13,73 @@ export default function Details() {
    }
    const [showmoretext, setShowMoreText] = useState('Show More');
    const [showmore, setShowMore] = useState(false);
-   const [email, setEmail] = useState('tina.z@snov-cctv.io');
-   const [industry, setIndustry] = useState('Electric & Electronic');
-   const [country, setCountry] = useState('China');
-   const [location, setLocation] = useState('China');
-   const [work, setWork] = useState('---');
-   const [personal, setPersonal] = useState('---');
-
+   // const [email, setEmail] = useState('tina.z@snov-cctv.io');
+    const [industry, setIndustry] = useState('Electric & Electronic');
+    const [submitIndustry, setsubmitIndustry] = useState('Electric & Electronic');
+   // const [country, setCountry] = useState('China');
+   // const [location, setLocation] = useState('China');
+   // const [work, setWork] = useState('---');
+   // const [personal, setPersonal] = useState('---');
+   const [submittedvalue,setSubmittedValue]=useState({
+      email:"tina.z@snov-cctv.io", 
+      industry:"Electric & Electronic",
+      country:"China",
+      location:"China",
+      work:"---",
+      personal:"---",
+   })
+   const [displayvalue,setDisplayValue]=useState({ 
+      email:"tina.z@snov-cctv.io", 
+      industry:"Electric & Electronic",
+      country:"China",
+      location:"China",
+      work:"---",
+      personal:"---",
+   });
+   const handleChangeSimple = (e)=>{
+      const {name,value}=e.target;
+      e.preventDefault();
+      setDisplayValue({
+         ...displayvalue,
+           [name]:value,
+      });
+   }
+   const handleSimpleSubmit=(e)=>{
+      e.preventDefault();
+      setSubmittedValue(displayvalue);
+      setsubmitIndustry(industry);
+      setSavebtn(false); setEmailprev(false); setIndustryPrevval(false); setCountryPrevval(false); setLocationPrevval(false); setWorkPrevval(false); setPersonalPrevval(false);
+   }
+   const handleDeleteIconClickemail =()=>{
+       setDisplayValue({
+         ...displayvalue,
+         email:'',
+       })
+   }
+   const handleDeleteIconClickcountry =()=>{
+       setDisplayValue({
+         ...displayvalue,
+         country:'',
+       })
+   }
+   const handleDeleteIconClicklocation =()=>{
+       setDisplayValue({
+         ...displayvalue,
+         location:'',
+       })
+   }
+   const handleDeleteIconClickwork =()=>{
+       setDisplayValue({
+         ...displayvalue,
+         work:'',
+       })
+   }
+   const handleDeleteIconClickpersonal =()=>{
+       setDisplayValue({
+         ...displayvalue,
+         personal:'',
+       })
+   }
    const [savebtn, setSavebtn] = useState(false);
    const [companiesArrayData, setCompaniesArrayData] = useState([
       { company: 'Leadbud.io', jobPosition: 'Sales', website: 'https://www.leadbud.io', hqPhone: '' },
@@ -186,7 +246,7 @@ export default function Details() {
          }
          {savebtn ?
             <div className="flex left-0 pl-16 sm:pl-20 z-[1] md:pl-24 p-2 w-full  md:w-[443px] bottom-0 bg-[#F5F5F5] fixed gap-3 ">
-               <button onClick={() => { setSavebtn(false); setEmailprev(false); setIndustryPrevval(false); setCountryPrevval(false); setLocationPrevval(false); setWorkPrevval(false); setPersonalPrevval(false); setCompPrevval(false); setJobpPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false) }} className="bg-gradient-to-r from-[#56F444] via-[#55EE44] to-[#48FA8A]  rounded-md text-[#000] text-[13px] xl:text-[15px] p-2 px-3">Save</button>
+               <button onClick={handleSimpleSubmit} className="bg-gradient-to-r from-[#56F444] via-[#55EE44] to-[#48FA8A]  rounded-md text-[#000] text-[13px] xl:text-[15px] p-2 px-3">Save</button>
                <button onClick={() => { setCanceltoast(true); setEmailprev(false); setIndustryPrevval(false); setCountryPrevval(false); setLocationPrevval(false); setWorkPrevval(false); setPersonalPrevval(false); setCompPrevval(false); setJobpPrevval(false); setWebsitePrevval(false); setHqphonePrevval(false) }} className="bg-[#fff] rounded-md text-[13px] xl:text-[15px] p-2 px-3">Cancel</button>
             </div>
             : null
@@ -200,11 +260,11 @@ export default function Details() {
                   <div onClick={() => { setSavebtn(true) }} className=' flex flex-col gap-1 items-start w-full' onMouseEnter={() => { setHover(true) }} onMouseLeave={() => { setHover(false); }}>
                      {emailprevval ? <div className='flex w-full items-center gap-1'>
                         <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
-                        <h2 className='text-[12px]'>tina@snov-cctv.io</h2>
-                        <RiDeleteBin5Line onClick={() => { setEmail('') }} className='cursor-pointer ml-auto text-[red] text-[12px]' />
-                     </div> : null}
+                        <h2 className='text-[12px]'>{submittedvalue.email}</h2>
+                        <RiDeleteBin5Line onClick={handleDeleteIconClickemail} className='cursor-pointer ml-auto text-[red] text-[12px]' />
+                     </div> : null} 
                      <div className='flex items-center w-full relative'>
-                        <input ref={inputRefemail} type="text" disabled={!isEditableemail} value={email} onChange={() => { setEmail() }} className='bg-[#0000] text-[13px] border-0 focus:border focus:outline-none p-1 rounded-md font-normal font-poppins text-[#030621] w-full' />
+                        <input ref={inputRefemail} name="email" type="text" disabled={!isEditableemail} value={displayvalue.email} onChange={handleChangeSimple} className='bg-[#0000] text-[13px] border-0 focus:border focus:outline-none p-1 rounded-md font-normal font-poppins text-[#030621] w-full' />
                         {hover ? <PiPencilLight onClick={handleIconClick} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                      </div> </div>
                </div>
@@ -214,17 +274,17 @@ export default function Details() {
                      <div onClick={() => { setSavebtn(true) }} className='flex flex-col gap-1  w-full' onMouseEnter={() => { setHoverindustry(true) }} onMouseLeave={() => { setHoverindustry(false) }}>
                         {industryprevval ? <div className='flex items-center gap-1'>
                            <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
-                           <h2 className='text-[12px]'>Electric & Electronic</h2>
+                           <h2 className='text-[12px]'>{submitIndustry}</h2>
                            <RiDeleteBin5Line onClick={() => { setIndustry('') }} className='cursor-pointer ml-auto text-[red] text-[12px]' />
                         </div> : null}
                         <div className='relative flex items-center w-full'>
-                           <input ref={inputRefindustry} type="text" disabled={!isEditableindustry} value={industry} onChange={handleemailchange} className=' border-0 focus:border focus:outline-none bg-[#fff] text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
+                           <input ref={inputRefindustry} name="industry" type="text" disabled={!isEditableindustry} value={industry} onChange={handleemailchange} className=' border-0 focus:border focus:outline-none bg-[#fff] text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
                            {hoverindustry ? <PiPencilLight onClick={handleIconClickindustry} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                         </div>
                      </div>
                   </div>
                   {filteredSuggestions.length > 0 && (
-                     <ul className="absolute mt-16  bg-[#fff] z-10 w-full ml-[70px] cursor-pointer  rounded-md ">
+                     <ul className="absolute mt-12  bg-[#fff] z-10 w-full ml-[70px] cursor-pointer  rounded-md ">
                         {filteredSuggestions.map((suggestion, index) => (
                            <li className='hover:bg-[#F5F5F5] duration-700 p-1 px-3 text-[14px]'
                               key={index}
@@ -242,11 +302,11 @@ export default function Details() {
                   <div onClick={() => { setSavebtn(true) }} className='flex flex-col gap-1 w-full' onMouseEnter={() => { setHovercountry(true) }} onMouseLeave={() => { setHovercountry(false) }}>
                      {countryprevval ? <div className='flex items-center gap-1'>
                         <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
-                        <h2 className='text-[12px]'>China</h2>
-                        <RiDeleteBin5Line onClick={() => { setCountry('') }} className='cursor-pointer ml-auto text-[red] text-[12px]' />
+                        <h2 className='text-[12px]'>{submittedvalue.country}</h2>
+                        <RiDeleteBin5Line onClick={handleDeleteIconClickcountry} className='cursor-pointer ml-auto text-[red] text-[12px]' />
                      </div> : null}
                      <div className='relative flex items-center '>
-                        <input ref={inputRefcountry} type="text" disabled={!isEditablecountry} value={country} onChange={(e) => { setCountry() }} className=' border-0 focus:border focus:outline-none bg-[#0000] text-[13px] p-1 rounded-md outline-none font-normal font-poppins text-[#030621] w-full' />
+                        <input ref={inputRefcountry} name="country" type="text" disabled={!isEditablecountry} value={displayvalue.country} onChange={handleChangeSimple} className=' border-0 focus:border focus:outline-none bg-[#0000] text-[13px] p-1 rounded-md outline-none font-normal font-poppins text-[#030621] w-full' />
                         {hovercountry ? <PiPencilLight onClick={handleIconClickcountry} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                      </div>
                   </div>
@@ -259,11 +319,11 @@ export default function Details() {
                            <div onClick={() => { setSavebtn(true) }} className='flex flex-col gap-1 w-full' onMouseEnter={() => { setHoverlocation(true) }} onMouseLeave={() => { setHoverlocation(false) }}>
                               {locationprevval ? <div className='flex items-center gap-1'>
                                  <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
-                                 <h2 className='text-[12px]'>China</h2>
-                                 <RiDeleteBin5Line onClick={() => { setLocation('') }} className='cursor-pointer ml-auto text-[red] text-[12px]' />
+                                 <h2 className='text-[12px]'>{submittedvalue.location}</h2>
+                                 <RiDeleteBin5Line onClick={handleDeleteIconClicklocation} className='cursor-pointer ml-auto text-[red] text-[12px]' />
                               </div> : null}
                               <div className='relative flex items-center w-full'>
-                                 <input ref={inputReflocation} type="text" disabled={!isEditabelocation} value={location} onChange={(e) => { setLocation() }} className=' border-0 focus:border focus:outline-none bg-[#fff] text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
+                                 <input ref={inputReflocation} name="location" type="text" disabled={!isEditabelocation} value={displayvalue.location} onChange={handleChangeSimple} className=' border-0 focus:border focus:outline-none bg-[#fff] text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
                                  {hoverlocation ? <PiPencilLight onClick={handleIconClicklocation} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                               </div>
                            </div>
@@ -273,11 +333,11 @@ export default function Details() {
                            <div onClick={() => { setSavebtn(true) }} className='flex flex-col gap-1 w-full' onMouseEnter={() => { setHoverwork(true) }} onMouseLeave={() => { setHoverwork(false) }}>
                               {workprevval ? <div className='flex items-center gap-1'>
                                  <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
-                                 <h2 className='text-[12px]'>---</h2>
-                                 <RiDeleteBin5Line onClick={() => { setWork('') }} className='cursor-pointer ml-auto text-[red] text-[12px]' />
+                                 <h2 className='text-[12px]'>{submittedvalue.work}</h2>
+                                 <RiDeleteBin5Line onClick={handleDeleteIconClickwork} className='cursor-pointer ml-auto text-[red] text-[12px]' />
                               </div> : null}
                               <div className='flex items-center relative w-full'>
-                                 <input ref={inputRefwork} type="text" disabled={!isEditablework} value={work} onChange={(e) => { setWork() }} className=' border-0 focus:border focus:outline-none bg-[#0000] text-[13px] p-1 rounded-md outline-none font-normal font-poppins text-[#030621] w-full' />
+                                 <input ref={inputRefwork} name="work" type="text" disabled={!isEditablework} value={displayvalue.work} onChange={handleChangeSimple} className=' border-0 focus:border focus:outline-none bg-[#0000] text-[13px] p-1 rounded-md outline-none font-normal font-poppins text-[#030621] w-full' />
                                  {hoverwork ? <PiPencilLight onClick={handleIconClickwork} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                               </div>
                            </div>
@@ -287,11 +347,11 @@ export default function Details() {
                            <div onClick={() => { setSavebtn(true) }} className='flex flex-col gap-1 w-full' onMouseEnter={() => { setHoverpersonal(true) }} onMouseLeave={() => { setHoverpersonal(false); }}>
                               {personalprevval ? <div className='flex items-center gap-1'>
                                  <div className='w-[10px] h-[10px] bg-green rounded-full'></div>
-                                 <h2 className='text-[12px]'>---</h2>
-                                 <RiDeleteBin5Line onClick={() => { setPersonal('') }} className='cursor-pointer ml-auto text-[red] text-[12px]' />
+                                 <h2 className='text-[12px]'>{submittedvalue.personal}</h2>
+                                 <RiDeleteBin5Line onClick={handleDeleteIconClickpersonal} className='cursor-pointer ml-auto text-[red] text-[12px]' />
                               </div> : null}
                               <div className='flex relative items-center w-full'>
-                                 <input ref={inputRefpersonal} type="text" disabled={!isEditablepersonal} value={personal} onChange={(e) => { setPersonal() }} className='border-0 focus:border focus:outline-none bg-[#fff] text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
+                                 <input ref={inputRefpersonal} name="personal" type="text" disabled={!isEditablepersonal} value={displayvalue.personal} onChange={handleChangeSimple} className='border-0 focus:border focus:outline-none bg-[#fff] text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full' />
                                  {hoverpersonal ? <PiPencilLight onClick={handleIconClickpersonal} className=' top-[8px] text-[14px] absolute right-[2px]' /> : null}
                               </div>
                            </div>
