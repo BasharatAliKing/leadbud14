@@ -56,7 +56,7 @@ export default function Companies({
       updateData(company, website, jobp, hqphone, objectIndex);
     }
   }, [company, website, jobp, hqphone]);
-
+  console.log(companyValue,websiteValue,hqPhoneValue,jobPositionValue);
   const handleIconClickcompany = () => {
     setSaveCompanyBtn(true);
     setIsEditabecompany(true);
@@ -156,7 +156,7 @@ export default function Companies({
           </h2>
           <div
             onClick={() => {
-              setSavebtn(true);
+           //   setSavebtn(true);
             }}
             className="flex flex-col gap-1 w-full"
             onMouseEnter={() => {
@@ -219,7 +219,7 @@ export default function Companies({
         </h2>
         <div
           onClick={() => {
-            setSavebtn(true);
+        //    setSavebtn(true);
           }}
           className="flex flex-col gap-1 w-full"
           onMouseEnter={() => {
@@ -251,7 +251,7 @@ export default function Companies({
               placeholder="---"
               value={jobp}
               onChange={(e) => {
-                setJobp();
+                setJobp(e.target.value);
               }}
               className="border-0 focus:border focus:outline-none text-[13px] p-1 rounded-md outline-none bg-[#0000] font-normal font-poppins text-[#030621] w-full"
             />
@@ -270,7 +270,7 @@ export default function Companies({
         </h2>
         <div
           onClick={() => {
-            setSavebtn(true);
+         //   setSavebtn(true);
           }}
           className=" flex flex-col gap-1 w-full"
           onMouseEnter={() => {
@@ -288,7 +288,7 @@ export default function Companies({
               </h2>
               <RiDeleteBin5Line
                 onClick={() => {
-                  setWebsite("");
+             //     setWebsite("");
                 }}
                 className="cursor-pointer ml-auto text-[red] text-[12px]"
               />
@@ -302,7 +302,7 @@ export default function Companies({
               value={website}
               placeholder="---"
               onChange={(e) => {
-                setWebsite();
+                setWebsite(e.target.value);
               }}
               className=" border-0 focus:border focus:outline-none bg-[#0000] text-[13px] p-1 rounded-md outline-none p-0 font-normal font-poppins text-[#030621] w-full"
             />
@@ -321,7 +321,7 @@ export default function Companies({
         </h2>
         <div
           onClick={() => {
-            setSavebtn(true);
+          //  setSavebtn(true);
           }}
           className="flex flex-col  w-full"
           onMouseEnter={() => {
@@ -353,7 +353,7 @@ export default function Companies({
               placeholder="---"
               value={hqphone}
               onChange={(e) => {
-                setHqphone();
+                setHqphone(e.target.value);
               }}
               className=" border-0 focus:border focus:outline-none bg-[#0000] text-[13px] p-1 rounded-md outline-none font-normal font-poppins text-[#030621] w-full"
             />

@@ -87,13 +87,14 @@ export default function Details() {
 
    const [temData, settemData] = useState(null);
    // company,website,jobp,hqphone,objectIndex
+   console.log(temData ," temp Data...");
    const updateCompanyData = () => {
       setCompaniesArrayData(prevCompaniesArrayData => {
          return prevCompaniesArrayData.map((company, i) =>
             i === temData.objectIndex ? { company: temData?.company, jobPosition: temData?.jobp, website: temData?.website, hqPhone: temData?.hqphone } : company
          );
       });
-     // setSaveCompanyBtn(false);
+      settemData(null);
    };
    const updateCompanyArrayData = (newObjectData) => {
       setCompaniesArrayData([...companiesArrayData, newObjectData]);
@@ -368,7 +369,7 @@ export default function Details() {
             <div className="">
                {companiesArrayData.map((val, index) => {
                   return (
-                     <Companies updateCompanyData={updateCompanyData} handleCompanybtn={handleCompanySaveBtn} updateData={(company, website, jobp, hqphone, objectIndex) => { settemData({ company, website, jobp, hqphone, objectIndex }) }} key={index} objectIndex={index} companyValue={val.company} websiteValue={val.website} jobPositionValue={val.jobPosition} hqPhoneValue={val.hqPhone} />
+                     <Companies updateCompanyData={updateCompanyData} handleCompanybtn={handleCompanySaveBtn} updateData={(company, website, jobp, hqphone, objectIndex) => { settemData({ company, website, jobp, hqphone, objectIndex }) }} key={index} objectIndex={index} companyValue={val.company} websiteValue={val.website} jobPositionValue={val.jobPosition} hqPhoneValue={val.hqPhone} dataLength={companiesArrayData.length} />
                   )
                })}
             </div>
